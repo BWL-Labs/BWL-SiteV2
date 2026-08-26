@@ -323,61 +323,61 @@ export default function Home() {
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>What we do</div>
 <div style={{display:"flex",alignItems:"center",gap:"14px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
-<span data-bw-wheel-index="">01</span><span style={{width:"60px",height:"1px",background:"#080705",display:"block",position:"relative",overflow:"hidden"}}><span data-bw-wheel-bar="" style={{position:"absolute",inset:"0",background:"#080705",transformOrigin:"0 50%",scale:".25 1",transition:"scale .5s cubic-bezier(.22,1,.36,1)"}}></span></span><span>08</span>
+<span data-bw-wheel-index="">01</span><span style={{width:"60px",height:"1px",background:"var(--hair)",display:"block",position:"relative",overflow:"hidden"}}><span data-bw-wheel-bar="" style={{position:"absolute",inset:"0",background:"var(--fg)",transformOrigin:"0 50%",scale:".25 1",transition:"scale .5s cubic-bezier(.22,1,.36,1)"}}></span></span><span>08</span>
 </div>
 </div>
 <div style={{flex:"1",maxWidth:"1440px",margin:"0 auto",padding:"0 40px",width:"100%",display:"grid",gridTemplateColumns:"clamp(178px,17vw,224px) minmax(0,.96fr) minmax(0,1.04fr)",alignItems:"center",gap:"clamp(24px,3vw,56px)"}}>
 <div style={{position:"relative",height:"min(52vh,400px)"}}>
 <span style={{position:"absolute",left:"-10px",top:"50%",width:"min(19vh,158px)",height:"calc(min(19vh,158px) * 2)",translate:"0 -50%",border:"1px solid rgba(8,7,5,.16)",borderLeft:"0",borderRadius:"0 999px 999px 0",display:"block"}}></span>
 <span data-bw-needle="" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-42deg)",transition:"transform 1.1s cubic-bezier(.16,1,.3,1)",display:"block"}}>
-<span style={{position:"absolute",left:"0",top:"0",width:"min(19vh,158px)",height:"1px",translate:"0 -50%",background:"linear-gradient(90deg,rgba(8,7,5,.6),rgba(8,7,5,.12))",display:"block"}}></span>
+<span style={{position:"absolute",left:"0",top:"0",width:"min(19vh,158px)",height:"1px",translate:"0 -50%",background:"linear-gradient(90deg,var(--hair-hi),var(--hair))",display:"block"}}></span>
 </span>
-<span style={{position:"absolute",left:"-10px",top:"50%",width:"7px",height:"7px",borderRadius:"50%",background:"#080705",translate:"-50% -50%",display:"block"}}></span>
-<button data-bw-node="0" aria-label="Service 01" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-70deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<span style={{position:"absolute",left:"-10px",top:"50%",width:"7px",height:"7px",borderRadius:"50%",background:"var(--fg)",translate:"-50% -50%",display:"block"}}></span>
+<button data-bw-node="0" aria-label="Service 01" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-70deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(70deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>01</span>
 </span>
 </button>
-<button data-bw-node="1" aria-label="Service 02" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-50deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="1" aria-label="Service 02" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-50deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(50deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>02</span>
 </span>
 </button>
-<button data-bw-node="2" aria-label="Service 03" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-30deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="2" aria-label="Service 03" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-30deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(30deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>03</span>
 </span>
 </button>
-<button data-bw-node="3" aria-label="Service 04" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-10deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="3" aria-label="Service 04" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(-10deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(10deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>04</span>
 </span>
 </button>
-<button data-bw-node="4" aria-label="Service 05" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(10deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="4" aria-label="Service 05" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(10deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(-10deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>05</span>
 </span>
 </button>
-<button data-bw-node="5" aria-label="Service 06" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(30deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="5" aria-label="Service 06" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(30deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(-30deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>06</span>
 </span>
 </button>
-<button data-bw-node="6" aria-label="Service 07" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(50deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="6" aria-label="Service 07" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(50deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(-50deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>07</span>
 </span>
 </button>
-<button data-bw-node="7" aria-label="Service 08" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(70deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"#080705",fontFamily:"'JetBrains Mono',monospace"}}>
+<button data-bw-node="7" aria-label="Service 08" style={{position:"absolute",left:"-10px",top:"50%",width:"0",height:"0",transform:"rotate(70deg) translateX(min(19vh,158px))",background:"none",border:"0",padding:"0",cursor:"pointer",color:"var(--fg-mute)",fontFamily:"'JetBrains Mono',monospace"}}>
 <span style={{position:"absolute",left:"0",top:"0",translate:"-50% -50%",transform:"rotate(-70deg)",display:"flex",alignItems:"center",gap:"9px",padding:"10px"}}>
-<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid rgba(8,7,5,.45)",background:"#FFFFFA",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
+<span data-bw-dot="" style={{width:"9px",height:"9px",borderRadius:"50%",border:"1px solid var(--hair-hi)",background:"var(--bg)",display:"block",flexShrink:"0",transition:"background .5s ease,transform .5s cubic-bezier(.16,1,.3,1),border-color .5s ease"}}></span>
 <span data-bw-nodenum="" style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",opacity:".45",transition:"opacity .5s ease,color .5s ease"}}>08</span>
 </span>
 </button>

@@ -1056,13 +1056,13 @@ class Component extends DCLogic {
       const num = node.querySelector("[data-bw-nodenum]");
       const active = idx === i;
       if (dot) {
-        dot.style.background = active ? "#080705" : "#FFFFFA";
-        dot.style.borderColor = active ? "#080705" : "rgba(8,7,5,.4)";
+        dot.style.background = active ? "var(--fg)" : "var(--bg)";
+        dot.style.borderColor = active ? "var(--fg)" : "var(--hair-hi)";
         dot.style.transform = active ? "scale(1.5)" : "scale(1)";
       }
       if (num) {
         num.style.opacity = active ? "1" : "0.4";
-        num.style.color = active ? "#C84A1F" : "#080705";
+        num.style.color = active ? "var(--accent)" : "var(--fg-mute)";
       }
     });
     document.querySelectorAll("[data-bw-panel]").forEach((p) => {
