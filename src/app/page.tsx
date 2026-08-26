@@ -1,69 +1,48 @@
-import Image from "next/image";
+import { WorldMap } from "@/components/ui/world-map";
+import { ThemeToggle } from "@/components/theme-toggle";
+
+const ROUTES: { label: string; from: [number, number]; to: [number, number] }[] = [
+  { label: "Dubai → New Delhi", from: [25.2048, 55.2708], to: [28.6139, 77.209] },
+  { label: "Dubai → London", from: [25.2048, 55.2708], to: [51.5074, -0.1278] },
+  { label: "New Delhi → Singapore", from: [28.6139, 77.209], to: [1.3521, 103.8198] },
+  { label: "Dubai → New York", from: [25.2048, 55.2708], to: [40.7128, -74.006] },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="min-h-screen w-full">
+      <header className="flex items-center justify-between px-6 py-5 md:px-10">
+        <span className="font-[family-name:var(--font-display)] text-2xl font-black tracking-tight">
+          BW
+        </span>
+        <ThemeToggle />
+      </header>
+
+      <section className="mx-auto max-w-7xl px-6 pt-10 md:px-10">
+        <p className="flex items-center gap-2 font-[family-name:var(--font-mono)] text-[11px] uppercase tracking-[0.2em] text-[var(--accent)]">
+          <span aria-hidden className="inline-block size-2 bg-[var(--accent)]" />
+          Idea → Pipeline
+        </p>
+
+        <h1 className="mt-6 max-w-[14ch] font-[family-name:var(--font-anton)] text-5xl leading-[0.9] tracking-tight md:text-7xl">
+          Working from Dubai and New Delhi.
+        </h1>
+
+        <p className="mt-6 max-w-[52ch] text-base leading-relaxed text-[var(--fg-mute)]">
+          A micro-product studio for anyone who has to be chosen. Brand design,
+          websites and portfolios, interactive marketing assets, and B2B sales
+          activation.
+        </p>
+      </section>
+
+      <section className="mx-auto mt-12 max-w-7xl px-6 pb-24 md:px-10">
+        <WorldMap
+          arcs={ROUTES.map((r) => ({
+            start: { lat: r.from[0], lng: r.from[1] },
+            end: { lat: r.to[0], lng: r.to[1] },
+          }))}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
