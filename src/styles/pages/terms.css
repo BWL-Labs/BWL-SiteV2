@@ -1,0 +1,27 @@
+
+  html { background: var(--bw-bg); scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bw-bg); color: var(--bw-fg); font-family: Archivo, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: var(--bw-fg); text-decoration: underline; text-underline-offset: 2px; }
+  a:hover { color: #C84A1F; }
+  ::selection { background: var(--bw-fg); color: var(--bw-bg); }
+  :root { --bw-bg:#FFFFFA; --bw-fg:#080705; --bw-rule:rgba(8,7,5,.14); --bw-head:linear-gradient(180deg,rgba(255,255,252,.52),rgba(255,255,250,.18)); --bw-head-bd:rgba(255,255,255,.55); --bw-toggle-bd:rgba(8,7,5,.22); }
+  html[data-bw-theme="dark"] { --bw-bg:#080705; --bw-fg:#FBFFFE; --bw-rule:rgba(255,255,250,.16); --bw-head:linear-gradient(180deg,rgba(20,20,20,.78),rgba(8,7,5,.42)); --bw-head-bd:rgba(255,255,250,.1); --bw-toggle-bd:rgba(255,255,250,.24); }
+  html[data-bw-theme="dark"] [data-bw-icon="sun"] { display: none; }
+  html:not([data-bw-theme="dark"]) [data-bw-icon="moon"] { display: none; }
+  [data-bw-logo] { filter: brightness(0) saturate(100%); transition: filter .3s ease; }
+  html[data-bw-theme="dark"] [data-bw-logo] { filter: none; }
+  @keyframes bwBlink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.15; } }
+
+
+.terms-p1:active { transform:scale(.97) !important }
+.terms-p2:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+.terms-p3:active { transform:scale(.93) !important }
+.terms-p4:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+.terms-p5:active { transform:scale(.97) !important }
+.terms-p6:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+.terms-p7:active { transform:scale(.97) !important }
+.terms-p8:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+.terms-p9:active { transform:scale(.97) !important }
+.terms-p10:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
