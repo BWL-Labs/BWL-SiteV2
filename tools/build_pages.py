@@ -75,7 +75,7 @@ def build_state(logic):
     return hooks, body, True
 
 def emit(fname, slug, route, comp):
-    jsx, css, logic, props, needs_fragment = convert(os.path.join(SRC, fname), slug)
+    jsx, css, logic, props, needs_fragment, uses_footer = convert(os.path.join(SRC, fname), slug)
     jsx = fix_links(jsx)
     css = fix_links(css)
 
@@ -84,6 +84,8 @@ def emit(fname, slug, route, comp):
     imports = ['"use client";', ""]
     if needs_fragment:
         imports.append('import { Fragment } from "react";')
+    if uses_footer:
+        imports.append('import { SiteFooter } from "@/components/site-footer";')
     imports.append(f'import "@/styles/pages/{slug}.css";')
     if has_logic:
         imports.append(f'import {{ use{comp}Logic }} from "@/generated/{slug}.logic";')

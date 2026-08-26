@@ -1,47 +1,141 @@
 "use client";
 
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
-import { useTheme } from "next-themes";
+
+export interface MapPoint {
+  lat: number;
+  lng: number;
+  label?: string;
+  /** IANA zone — renders a live local clock under the label */
+  tz?: string;
+  /** which side the label sits on; lets close-together cities separate */
+  anchor?: "start" | "end";
+}
 
 export interface MapArc {
-  start: { lat: number; lng: number; label?: string };
-  end: { lat: number; lng: number; label?: string };
+  start: { lat: number; lng: number };
+  end: { lat: number; lng: number };
 }
 
 interface WorldMapProps {
-  arcs?: MapArc[];
-  /** brand default is gold; rust is reserved for the named products */
+  /** connection arcs; endpoints get a pulsing dot */
+  dots?: MapArc[];
+  /** labelled points (city, coordinates, live local time) */
+  markers?: MapPoint[];
+  /** brand default is gold; rust stays reserved for the named products */
   lineColor?: string;
   className?: string;
 }
 
+const VW = 800;
+const VH = 400;
+
+const project = (lat: number, lng: number) => ({
+  x: (lng + 180) * (VW / 360),
+  y: (90 - lat) * (VH / 180),
+});
+
+function useLocalTime(tz?: string) {
+  const [t, setT] = useState("");
+  useEffect(() => {
+    if (!tz) return;
+    const tick = () => {
+      try {
+        setT(
+          new Intl.DateTimeFormat("en-GB", {
+            timeZone: tz,
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          }).format(new Date()) + " LOCAL"
+        );
+      } catch {
+        /* unknown zone — stay blank rather than show a wrong time */
+      }
+    };
+    tick();
+    const id = setInterval(tick, 30_000);
+    return () => clearInterval(id);
+  }, [tz]);
+  return t;
+}
+
+function Marker({ p, color }: { p: MapPoint; color: string }) {
+  const time = useLocalTime(p.tz);
+  const { x, y } = project(p.lat, p.lng);
+  const anchor = p.anchor ?? "start";
+  const dx = anchor === "start" ? 11 : -11;
+  const coord =
+    `${Math.abs(p.lat).toFixed(2)}°${p.lat >= 0 ? "N" : "S"} ` +
+    `${Math.abs(p.lng).toFixed(2)}°${p.lng >= 0 ? "E" : "W"}`;
+  return (
+    <g>
+      <circle cx={x} cy={y} r="3" fill={color} />
+      <circle cx={x} cy={y} r="3" fill={color} opacity="0.5">
+        <animate attributeName="r" from="3" to="11" dur="1.6s" repeatCount="indefinite" />
+        <animate attributeName="opacity" from="0.5" to="0" dur="1.6s" repeatCount="indefinite" />
+      </circle>
+      {/* casing keeps map labels legible over the dot field, whatever sits behind */}
+      <g
+        style={{ paintOrder: "stroke fill" }}
+        stroke="var(--bw-bg)"
+        strokeWidth={3}
+        strokeLinejoin="round"
+      >
+        <text
+          x={x + dx}
+          y={y - 4}
+          textAnchor={anchor}
+          fill={color}
+          style={{ font: "500 11px/1 var(--font-mono), monospace", letterSpacing: "2px" }}
+        >
+          {p.label}
+        </text>
+        <text
+          x={x + dx}
+          y={y + 8}
+          textAnchor={anchor}
+          fill="var(--fg-mute)"
+          style={{ font: "400 8px/1 var(--font-mono), monospace", letterSpacing: "1px" }}
+        >
+          {coord}
+        </text>
+        {time ? (
+          <text
+            x={x + dx}
+            y={y + 19}
+            textAnchor={anchor}
+            fill="var(--fg-mute)"
+            style={{ font: "400 8px/1 var(--font-mono), monospace", letterSpacing: "1px" }}
+          >
+            {time}
+          </text>
+        ) : null}
+      </g>
+    </g>
+  );
+}
+
 export function WorldMap({
-  arcs = [],
-  lineColor = "#E6AF2E",
+  dots = [],
+  markers = [],
+  lineColor = "var(--accent)",
   className = "",
 }: WorldMapProps) {
-  const svgRef = useRef<SVGSVGElement>(null);
-  const { resolvedTheme } = useTheme();
-  const isDark = resolvedTheme === "dark";
-
-  /* DottedMap re-samples world geometry on every construction — memoise it or
-     every theme toggle and re-render pays that cost again. */
+  /* The dot field is generated once with `currentColor`, then inlined rather
+     than used as an <img>. That lets CSS drive the colour, so a theme flip is
+     instant and there is no server/client mismatch from reading the theme in JS. */
   const svgMap = useMemo(() => {
     const map = new DottedMap({ height: 100, grid: "diagonal" });
     return map.getSVG({
       radius: 0.22,
-      color: isDark ? "rgba(255,255,250,0.28)" : "rgba(8,7,5,0.30)",
+      color: "currentColor",
       shape: "circle",
       backgroundColor: "transparent",
     });
-  }, [isDark]);
-
-  const project = (lat: number, lng: number) => ({
-    x: (lng + 180) * (800 / 360),
-    y: (90 - lat) * (400 / 180),
-  });
+  }, []);
 
   const curve = (a: { x: number; y: number }, b: { x: number; y: number }) => {
     const midX = (a.x + b.x) / 2;
@@ -50,63 +144,50 @@ export function WorldMap({
   };
 
   return (
-    <div className={`relative aspect-[2/1] w-full ${className}`}>
-      {/* plain <img>: the dot field is an inline data-URI, so next/image's
-          optimiser has nothing to optimise and would only add a round trip */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        alt=""
+    <div className={`relative w-full ${className}`}>
+      <div
         aria-hidden="true"
-        draggable={false}
-        className="pointer-events-none h-full w-full select-none [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)]"
+        className="bw-dotfield pointer-events-none absolute inset-0 select-none"
+        dangerouslySetInnerHTML={{ __html: svgMap }}
       />
 
       <svg
-        ref={svgRef}
-        viewBox="0 0 800 400"
+        viewBox={`0 0 ${VW} ${VH}`}
+        preserveAspectRatio="xMidYMid meet"
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full select-none"
       >
         <defs>
           <linearGradient id="bw-arc" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor={lineColor} stopOpacity="0" />
-            <stop offset="12%" stopColor={lineColor} stopOpacity="1" />
-            <stop offset="88%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="14%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="86%" stopColor={lineColor} stopOpacity="1" />
             <stop offset="100%" stopColor={lineColor} stopOpacity="0" />
           </linearGradient>
         </defs>
 
-        {arcs.map((arc, i) => (
+        {dots.map((d, i) => (
           <motion.path
             key={`arc-${i}`}
-            d={curve(project(arc.start.lat, arc.start.lng), project(arc.end.lat, arc.end.lng))}
+            d={curve(project(d.start.lat, d.start.lng), project(d.end.lat, d.end.lng))}
             fill="none"
             stroke="url(#bw-arc)"
             strokeWidth="1"
             strokeLinecap="round"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
-            transition={{ duration: 1, delay: 0.4 * i, ease: [0.2, 0.7, 0.2, 1] }}
+            transition={{ duration: 1.1, delay: 0.25 * i, ease: [0.2, 0.7, 0.2, 1] }}
           />
         ))}
 
-        {arcs.flatMap((arc, i) =>
-          [arc.start, arc.end].map((pt, j) => {
-            const p = project(pt.lat, pt.lng);
-            return (
-              <g key={`pt-${i}-${j}`}>
-                <circle cx={p.x} cy={p.y} r="2.4" fill={lineColor} />
-                <circle cx={p.x} cy={p.y} r="2.4" fill={lineColor} opacity="0.5">
-                  {/* SMIL keeps the ping off the main thread and out of React's
-                      render loop; it also no-ops under reduced motion below */}
-                  <animate attributeName="r" from="2.4" to="9" dur="1.6s" repeatCount="indefinite" />
-                  <animate attributeName="opacity" from="0.5" to="0" dur="1.6s" repeatCount="indefinite" />
-                </circle>
-              </g>
-            );
-          })
-        )}
+        {dots.map((d, i) => {
+          const p = project(d.end.lat, d.end.lng);
+          return <circle key={`dst-${i}`} cx={p.x} cy={p.y} r="1.8" fill={lineColor} opacity="0.75" />;
+        })}
+
+        {markers.map((m, i) => (
+          <Marker key={`m-${i}`} p={m} color={lineColor} />
+        ))}
       </svg>
     </div>
   );

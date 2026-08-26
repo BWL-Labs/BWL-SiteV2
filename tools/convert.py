@@ -143,6 +143,7 @@ class Conv(HTMLParser):
         self.helmet_style, self.helmet_raw = [], []
         self._raw_tag = None
         self.needs_fragment = False
+        self.uses_footer = False
 
     # ---- pseudo-state hoisting -------------------------------------------
     def pseudo_class(self, pseudo, css):
@@ -166,6 +167,16 @@ class Conv(HTMLParser):
 
     def _emit_tag(self, tag, attrs, self_closing):
         tag = TAG.get(tag, tag)
+        if self.skip_depth:
+            if not self_closing and tag not in VOID:
+                self.skip_depth += 1
+            return
+        if tag == "footer" and any(k == "class" and "site-footer" in (v or "") for k, v in attrs):
+            # the footer was copy-pasted into all 13 pages; it is one component now
+            self.out.append("<SiteFooter />")
+            self.uses_footer = True
+            self.skip_depth = 1
+            return
         if tag in ("script", "style") and self.in_helmet:
             self._raw_tag = tag
             return
@@ -244,6 +255,9 @@ class Conv(HTMLParser):
 
     def handle_endtag(self, tag):
         tag = TAG.get(tag, tag)
+        if self.skip_depth:
+            self.skip_depth -= 1
+            return
         if self._raw_tag == tag:
             self._raw_tag = None; return
         if tag == "helmet":
@@ -267,6 +281,7 @@ class Conv(HTMLParser):
         self.out.append(f"</{tag}>")
 
     def handle_data(self, data):
+        if self.skip_depth: return
         if self._raw_tag == "style":
             self.helmet_style.append(data); return
         if self._raw_tag == "script" or self.in_helmet:
@@ -284,9 +299,11 @@ class Conv(HTMLParser):
                 self.out.append(p.replace("{", "&#123;").replace("}", "&#125;"))
 
     def handle_entityref(self, name):
+        if self.skip_depth: return
         if not self.in_helmet: self.out.append(f"&{name};")
 
     def handle_charref(self, name):
+        if self.skip_depth: return
         if not self.in_helmet: self.out.append(f"&#{name};")
 
     def handle_comment(self, data):
@@ -321,7 +338,7 @@ def convert(path, slug):
 
     logic, props = extract_logic(src)
     page_css = "\n".join(c.helmet_style) + "\n\n" + "\n".join(c.rules)
-    return jsx, page_css, logic, props, c.needs_fragment
+    return jsx, page_css, logic, props, c.needs_fragment, c.uses_footer
 
 
 if __name__ == "__main__":

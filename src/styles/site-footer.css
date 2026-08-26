@@ -1,0 +1,104 @@
+/* Shared site footer, lifted out of the homepage sheet.
+   Only the homepage carries this footer; the service pages have their own strip. */
+
+/* ── site footer (approved build) — classes namespaced bwf-, scoped to .site-footer ── */
+  :root {
+    --bg: var(--bw-bg); --fg: var(--bw-fg); --hair: var(--bw-rule);
+    --fg-mute:rgba(8,7,5,.70); --hair-hi:rgba(8,7,5,.30);
+    --accent:#C84A1F; --map-line:rgba(8,7,5,.30); --tint:.12; --tint-home:.62; --land:rgba(8,7,5,.05); --dot:rgba(8,7,5,.26); --dot-home:rgba(8,7,5,.52);
+    --grat:rgba(8,7,5,.05); --btn-bg:#080705; --btn-fg:#FFFFFA;
+  }
+.site-footer{position:relative;width:100%;min-height:860px;padding:10rem 0 2.5rem;overflow:hidden;isolation:isolate;color:var(--fg)}
+.site-footer .bwf-map{position:absolute;inset:0;z-index:-2;opacity:.85;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 82%,transparent 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 82%,transparent 100%)}
+.site-footer .bwf-map-h{position:absolute;inset:0;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.14) 12%,#000 26%,#000 88%,transparent 100%);
+    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.14) 12%,#000 26%,#000 88%,transparent 100%)}
+.site-footer .bwf-map svg{background:none}
+.site-footer .bwf-map svg{width:100%;height:100%;display:block}
+.site-footer .bwf-pins{position:absolute;inset:0;z-index:0;pointer-events:none}
+.site-footer .bwf-pins svg{width:100%;height:100%;display:block}
+.site-footer .bwf-c{stroke:none;transition:fill .35s ease}
+.site-footer .bwf-k0{fill:url(#bwf-dots)}
+.site-footer .bwf-k1{fill:url(#bwf-dots)}
+.site-footer .bwf-k2{fill:url(#bwf-dots)}
+.site-footer .bwf-home{fill:url(#bwf-dots-home);stroke:none}
+.site-footer .bwf-grat line{stroke:var(--grat);stroke-width:1;vector-effect:non-scaling-stroke}
+.site-footer .bwf-arc-base{fill:none;stroke:var(--map-line);stroke-width:2;vector-effect:non-scaling-stroke}
+.site-footer .bwf-arc{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;vector-effect:non-scaling-stroke;
+    stroke-dasharray:700;stroke-dashoffset:700;animation:bwfDraw 2.6s cubic-bezier(.4,0,.2,1) .3s forwards}
+@keyframes bwfDraw{to{stroke-dashoffset:0}}
+.site-footer .bwf-spark{fill:var(--accent);opacity:.7}
+.site-footer .bwf-spark-glow{fill:var(--accent);opacity:.12}
+.site-footer .bwf-dot{fill:var(--accent)}
+.site-footer .bwf-halo{fill:none;stroke:var(--accent);stroke-width:2;transform-box:fill-box;transform-origin:center;
+    animation:bwfPing 3.4s ease-out infinite}
+@keyframes bwfPing{0%{transform:scale(1);opacity:.8}100%{transform:scale(4.5);opacity:0}}
+.site-footer .bwf-pname{font-family:'JetBrains Mono',monospace;paint-order:stroke fill;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;font-size:25px;font-weight:500;letter-spacing:4px;fill:var(--accent)}
+.site-footer .bwf-pcoord{font-family:'JetBrains Mono',monospace;paint-order:stroke fill;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;font-size:19px;letter-spacing:2px;fill:var(--fg-mute)}
+.site-footer .bwf-ptime{font-family:'JetBrains Mono',monospace;paint-order:stroke fill;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round;font-size:19px;letter-spacing:2px;fill:var(--fg-mute);opacity:.85}
+.site-footer .bwf-inner,.site-footer .bwf-base{max-width:none;width:100%;margin-left:0;margin-right:0;
+    padding-left:clamp(1.5rem,4vw,4rem);padding-right:clamp(1.5rem,4vw,4rem)}
+.site-footer .bwf-inner{position:relative;z-index:2}
+.site-footer .bwf-eyebrow{font-family:'JetBrains Mono',monospace;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--accent);display:flex;align-items:center;gap:.6rem;margin-bottom:1.6rem}
+.site-footer .bwf-eyebrow::before{content:'';width:8px;height:8px;background:var(--accent)}
+.site-footer h2{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(2.75rem,6.5vw,6rem);line-height:.88;
+    color:var(--fg);margin:0 0 2.4rem;max-width:12ch;letter-spacing:0;text-transform:none}
+.site-footer .bwf-acts{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
+.site-footer .bwf-btn{display:inline-flex;align-items:center;gap:.6rem;border-radius:999px;padding:.9rem 1.5rem;
+    font-size:.9375rem;font-weight:500;text-decoration:none;border:1px solid transparent;cursor:pointer;
+    transition:background-color .25s ease,border-color .25s ease,color .25s ease,transform 140ms cubic-bezier(.2,.7,.2,1);
+    font-family:'Inter',sans-serif}
+.site-footer .bwf-btn:active{transform:scale(.97)}
+.site-footer .bwf-btn--p{background:var(--btn-bg);color:var(--btn-fg)}
+.site-footer .bwf-btn--p::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--btn-fg);
+    animation:bwfBeat 2.4s ease-in-out infinite}
+@keyframes bwfBeat{0%,100%{opacity:1}50%{opacity:.35}}
+.site-footer .bwf-btn--p:hover{background:var(--accent);color:#080705;opacity:1}
+.site-footer .bwf-btn--p:hover::before{background:#080705}
+.site-footer .bwf-btn--g{border-color:var(--hair-hi);color:var(--fg);background:transparent}
+.site-footer .bwf-btn--g:hover{border-color:var(--accent);color:var(--accent);opacity:1}
+.site-footer .bwf-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.site-footer .bwf-copied{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);opacity:0;transition:opacity .2s}
+.site-footer .bwf-copied.bwf-on{opacity:1}
+.site-footer .bwf-base{position:relative;z-index:2;margin-top:6rem;padding-top:1.5rem;
+    padding-right:calc(clamp(1.5rem,4vw,4rem) + 7.5rem);
+    border-top:1px solid var(--hair);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.site-footer .bwf-base span,.site-footer .bwf-base a{font-family:'JetBrains Mono',monospace;font-size:.75rem;letter-spacing:.1em;color:var(--fg-mute)}
+.site-footer .bwf-base nav{display:flex;gap:1.75rem;flex-wrap:wrap}
+.site-footer .bwf-base a{text-decoration:none;position:relative;transition:color .2s}
+.site-footer .bwf-base a::after{content:'';position:absolute;left:0;right:100%;bottom:-3px;height:1px;background:var(--accent);transition:right .3s ease}
+.site-footer .bwf-base a:hover{color:var(--accent);opacity:1}
+.site-footer .bwf-base a:hover::after{right:0}
+
+@media(min-width:901px){html:not([data-bw-theme="dark"]) .site-footer .bwf-map{opacity:.7}}
+@media(max-width:1600px){
+    .site-footer .bwf-base{flex-direction:column;align-items:flex-start;gap:1.25rem;padding-right:clamp(1.5rem,4vw,4rem)}
+    .site-footer .bwf-base nav{padding-right:7.5rem}
+  }
+@media(max-width:900px){
+    .site-footer .bwf-inner,.site-footer .bwf-base{padding-left:clamp(1.5rem,4vw,4rem);padding-right:clamp(1.5rem,4vw,4rem)}
+    .site-footer .bwf-map{opacity:.4;
+      -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 42%);mask-image:linear-gradient(to bottom,transparent 0,#000 42%)}
+    .site-footer{padding:4rem 0 2rem}
+    .site-footer .bwf-base{margin-top:4rem}
+  }
+@media(prefers-reduced-motion:reduce){
+    .site-footer *{animation:none!important;transition:none!important}
+    .site-footer .bwf-arc{stroke-dashoffset:0}
+    .site-footer .bwf-spark,.site-footer .bwf-spark-glow{display:none}
+  }
+
+/* Dot field is inlined (not an <img>) so its colour comes from CSS and a theme
+   flip is instant — no JS read of the theme, no server/client mismatch. */
+.bw-dotfield { color: var(--dot); }
+.bw-dotfield svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
