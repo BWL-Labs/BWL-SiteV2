@@ -11,6 +11,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   return (
     <NextThemesProvider
       attribute="data-bw-theme"
+      storageKey="bw-theme"
       defaultTheme="light"
       enableSystem={false}
       disableTransitionOnChange

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Inter, JetBrains_Mono, Anton } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggleBridge } from "@/components/theme-toggle-bridge";
 import "./globals.css";
 
 /* self-hosted at build time by next/font — the brand kit asks production not to
@@ -42,7 +43,10 @@ export default function RootLayout({
       className={`${display.variable} ${body.variable} ${mono.variable} ${anton.variable}`}
     >
       <body className="font-[family-name:var(--font-body)]">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ThemeToggleBridge />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
