@@ -261,10 +261,14 @@ class Conv(HTMLParser):
             elif v == "":
                 props.append(f'{name}=""')
             else:
-                props.append(f"{name}={json.dumps(v)}")
+                # ensure_ascii would emit … for an ellipsis. that is a valid
+                # JS string escape but this lands in a JSX attribute, where
+                # escapes are not processed — the page then shows the six
+                # characters "…" instead of the character.
+                props.append(f"{name}={json.dumps(v, ensure_ascii=False)}")
 
         if classes:
-            props.insert(0, f"className={json.dumps(' '.join(classes))}")
+            props.insert(0, f"className={json.dumps(' '.join(classes), ensure_ascii=False)}")
 
         s = " ".join(props)
         if self_closing:
