@@ -115,7 +115,7 @@ export default function Home() {
 </button>
 </div>
 <section id="top" style={{position:"relative",padding:"172px 0 0",minHeight:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",overflow:"hidden"}}>
-<video data-bw-hero-video="" src="/assets/hero-reel.mp4" autoPlay={true} muted={true} loop={true} playsInline={true} preload="auto" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",zIndex:"-1",display:"block",filter:"contrast(1.25) saturate(1.1)"}}></video>
+<video data-bw-hero-video="" src="/assets/hero-reel.mp4" autoPlay={true} muted={true} loop={true} playsInline={true} preload="auto" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 65%",zIndex:"-1",display:"block",filter:"contrast(1.25) saturate(1.1)"}}></video>
 <div style={{position:"absolute",inset:"0",background:"rgba(8,7,5,.35)",zIndex:"-1",pointerEvents:"none"}}></div>
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",width:"100%"}}>
 <h1 style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",margin:"clamp(60px,14vh,150px) 0 0",maxWidth:"900px",display:"flex",flexWrap:"wrap",alignItems:"baseline",columnGap:".14em",rowGap:"0",fontWeight:"900",fontSize:"clamp(34px,7.4vw,148px)",lineHeight:".92",letterSpacing:"-.04em",textTransform:"uppercase",color:"#FFFFFA",mixBlendMode:"normal"}}>
