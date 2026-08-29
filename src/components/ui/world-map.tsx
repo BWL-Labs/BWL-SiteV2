@@ -121,7 +121,7 @@ function Marker({ p, color }: { p: MapPoint; color: string }) {
 export function WorldMap({
   dots = [],
   markers = [],
-  lineColor = "var(--accent)",
+  lineColor = "var(--bw-accent)",
   className = "",
 }: WorldMapProps) {
   /* The dot field is generated once with `currentColor`, then inlined rather

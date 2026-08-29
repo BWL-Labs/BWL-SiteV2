@@ -4,7 +4,7 @@ import "@/styles/pages/interactive.css";
 import { useInteractivePageLogic } from "@/generated/interactive.logic";
 export default function InteractivePage() {
   const v = useInteractivePageLogic();
-  const { enter0, enter1, enter2, enter3, go0, go1, go2, go3, leave0, leave1, leave2, leave3, next, pause, prev, resume, showPricing } = v;
+  const { dot0, dot1, dot2, dot3, dotop0, dotop1, dotop2, dotop3, dotw0, dotw1, dotw2, dotw3, enter0, enter1, enter2, enter3, go0, go1, go2, go3, leave0, leave1, leave2, leave3, next, pause, ph0, ph1, ph2, ph3, pho0, pho1, pho2, pho3, phz0, phz1, phz2, phz3, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, prev, resume, showPricing, tilt0, tilt1, tilt2, tilt3 } = v;
   return (<>
 <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /><link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <div style={{background:"var(--bw-bg)",color:"var(--bw-fg)",minHeight:"100vh",position:"relative"}}>
@@ -14,12 +14,12 @@ export default function InteractivePage() {
 <span style={{position:"absolute",bottom:"-16vh",left:"22vw",width:"54vw",height:"54vw",borderRadius:"50%",background:"radial-gradient(circle,oklch(0.91 0.06 26 / .6) 0%,oklch(0.91 0.06 26 / 0) 68%)",filter:"blur(32px)",animation:"bwDriftC 38s ease-in-out infinite",display:"block"}}></span>
 </div>
 <div style={{position:"relative",zIndex:"1"}}>
-<header style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
+<header data-bw-nav="" style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px"}}>
 <a className="interactive-p1 interactive-p2" href="/" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
 <img data-bw-logo="" src="/assets/blackware-logo.svg" alt="Blackware Labs" style={{height:"38px",width:"auto",display:"block",flexShrink:"0"}} />
 </a>
-<div style={{display:"flex",alignItems:"center",gap:"14px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
+<div data-bw-crumb="" style={{display:"flex",alignItems:"center",gap:"14px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
 <span style={{width:"22px",height:"1px",background:"var(--bw-fg)",display:"block"}}></span>Service 03 — Interactive assets</div>
 <button className="interactive-p3 interactive-p4 interactive-p5" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"40px",height:"40px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"border-color .16s cubic-bezier(.2,.7,.2,1),color .16s cubic-bezier(.2,.7,.2,1),transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
 <svg data-bw-icon="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
@@ -51,12 +51,12 @@ export default function InteractivePage() {
 <h2 style={{margin:"0",maxWidth:"24ch",fontWeight:"800",fontSize:"clamp(34px,4.6vw,72px)",lineHeight:".94",letterSpacing:"-.04em"}}>What you get.</h2>
 <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(272px,1fr))",gap:"clamp(18px,2vw,30px)"}}>
 <div onMouseEnter={enter0} onMouseLeave={leave0} style={{perspective:"1000px",padding:"20px 0 6px",display:"flex",justifyContent:"center"}}>
-<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:"{{ tilt0 }}"}}>
-<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:"{{ pinO0 }}",transform:"{{ pinT0 }}",transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
+<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:tilt0}}>
+<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:pinO0,transform:pinT0,transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
 <span style={{background:"#080705",color:"#E6AF2E",border:"1px solid rgba(230,175,46,.55)",borderRadius:"999px",padding:"7px 14px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".18em",textTransform:"uppercase",whiteSpace:"nowrap"}}>// roi model</span>
 <span style={{width:"1px",height:"54px",background:"linear-gradient(180deg,#E6AF2E,rgba(230,175,46,0))",display:"block"}}></span>
 </div>
-<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:"{{ pinO0 }}",transition:"opacity .5s ease",display:"block"}}>
+<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:pinO0,transition:"opacity .5s ease",display:"block"}}>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.55)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.4)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) .9s infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.28)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) 1.8s infinite",display:"block"}}></span>
@@ -69,12 +69,12 @@ export default function InteractivePage() {
 </div>
 </div>
 <div onMouseEnter={enter1} onMouseLeave={leave1} style={{perspective:"1000px",padding:"20px 0 6px",display:"flex",justifyContent:"center"}}>
-<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:"{{ tilt1 }}"}}>
-<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:"{{ pinO1 }}",transform:"{{ pinT1 }}",transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
+<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:tilt1}}>
+<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:pinO1,transform:pinT1,transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
 <span style={{background:"#080705",color:"#E6AF2E",border:"1px solid rgba(230,175,46,.55)",borderRadius:"999px",padding:"7px 14px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".18em",textTransform:"uppercase",whiteSpace:"nowrap"}}>// configurator</span>
 <span style={{width:"1px",height:"54px",background:"linear-gradient(180deg,#E6AF2E,rgba(230,175,46,0))",display:"block"}}></span>
 </div>
-<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:"{{ pinO1 }}",transition:"opacity .5s ease",display:"block"}}>
+<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:pinO1,transition:"opacity .5s ease",display:"block"}}>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.55)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.4)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) .9s infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.28)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) 1.8s infinite",display:"block"}}></span>
@@ -87,12 +87,12 @@ export default function InteractivePage() {
 </div>
 </div>
 <div onMouseEnter={enter2} onMouseLeave={leave2} style={{perspective:"1000px",padding:"20px 0 6px",display:"flex",justifyContent:"center"}}>
-<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:"{{ tilt2 }}"}}>
-<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:"{{ pinO2 }}",transform:"{{ pinT2 }}",transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
+<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:tilt2}}>
+<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:pinO2,transform:pinT2,transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
 <span style={{background:"#080705",color:"#E6AF2E",border:"1px solid rgba(230,175,46,.55)",borderRadius:"999px",padding:"7px 14px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".18em",textTransform:"uppercase",whiteSpace:"nowrap"}}>// product tour</span>
 <span style={{width:"1px",height:"54px",background:"linear-gradient(180deg,#E6AF2E,rgba(230,175,46,0))",display:"block"}}></span>
 </div>
-<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:"{{ pinO2 }}",transition:"opacity .5s ease",display:"block"}}>
+<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:pinO2,transition:"opacity .5s ease",display:"block"}}>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.55)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.4)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) .9s infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.28)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) 1.8s infinite",display:"block"}}></span>
@@ -105,12 +105,12 @@ export default function InteractivePage() {
 </div>
 </div>
 <div onMouseEnter={enter3} onMouseLeave={leave3} style={{perspective:"1000px",padding:"20px 0 6px",display:"flex",justifyContent:"center"}}>
-<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:"{{ tilt3 }}"}}>
-<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:"{{ pinO3 }}",transform:"{{ pinT3 }}",transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
+<div style={{position:"relative",width:"100%",transformStyle:"preserve-3d",transition:"transform .7s cubic-bezier(.16,1,.3,1)",transform:tilt3}}>
+<div style={{position:"absolute",left:"50%",bottom:"calc(100% - 4px)",translate:"-50% 0",display:"flex",flexDirection:"column",alignItems:"center",pointerEvents:"none",opacity:pinO3,transform:pinT3,transition:"opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)"}}>
 <span style={{background:"#080705",color:"#E6AF2E",border:"1px solid rgba(230,175,46,.55)",borderRadius:"999px",padding:"7px 14px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".18em",textTransform:"uppercase",whiteSpace:"nowrap"}}>// benchmark</span>
 <span style={{width:"1px",height:"54px",background:"linear-gradient(180deg,#E6AF2E,rgba(230,175,46,0))",display:"block"}}></span>
 </div>
-<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:"{{ pinO3 }}",transition:"opacity .5s ease",display:"block"}}>
+<span aria-hidden="true" style={{position:"absolute",left:"50%",top:"100%",width:"0",height:"0",transform:"rotateX(70deg)",pointerEvents:"none",opacity:pinO3,transition:"opacity .5s ease",display:"block"}}>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.55)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.4)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) .9s infinite",display:"block"}}></span>
 <span style={{position:"absolute",left:"0",top:"0",width:"78px",height:"78px",translate:"-50% -50%",border:"1px solid rgba(230,175,46,.28)",borderRadius:"50%",animation:"bwPing 2.8s cubic-bezier(.2,.7,.2,1) 1.8s infinite",display:"block"}}></span>
@@ -130,7 +130,7 @@ export default function InteractivePage() {
 <div onMouseEnter={pause} onMouseLeave={resume} style={{position:"relative",border:"1px solid var(--bw-rule)",borderRadius:"16px",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E'),radial-gradient(at 18% 8%,oklch(0.6 0.13 84 / .42) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 88% 96%,oklch(0.48 0.14 34 / .38) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto",backgroundBlendMode:"overlay,normal,normal",color:"#FFFFFA",overflow:"hidden",padding:"64px 24px 30px"}}>
 <span style={{position:"absolute",top:"22px",left:"26px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#E6AF2E"}}>// live builds</span>
 <div style={{position:"relative",height:"clamp(400px,52vh,470px)",perspective:"1400px",display:"grid",placeItems:"center"}}>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:"{{ ph0 }}",opacity:"{{ pho0 }}",zIndex:"{{ phz0 }}"}}>
+<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph0,opacity:pho0,zIndex:phz0}}>
 <div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
 <div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
 <span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
@@ -138,7 +138,7 @@ export default function InteractivePage() {
 </div>
 </div>
 </div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:"{{ ph1 }}",opacity:"{{ pho1 }}",zIndex:"{{ phz1 }}"}}>
+<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph1,opacity:pho1,zIndex:phz1}}>
 <div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
 <div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
 <span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
@@ -146,7 +146,7 @@ export default function InteractivePage() {
 </div>
 </div>
 </div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:"{{ ph2 }}",opacity:"{{ pho2 }}",zIndex:"{{ phz2 }}"}}>
+<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph2,opacity:pho2,zIndex:phz2}}>
 <div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
 <div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
 <span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
@@ -154,7 +154,7 @@ export default function InteractivePage() {
 </div>
 </div>
 </div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:"{{ ph3 }}",opacity:"{{ pho3 }}",zIndex:"{{ phz3 }}"}}>
+<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph3,opacity:pho3,zIndex:phz3}}>
 <div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
 <div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
 <span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
@@ -166,10 +166,10 @@ export default function InteractivePage() {
 <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",paddingTop:"30px"}}>
 <button className="interactive-p15 interactive-p16 interactive-p17" type="button" onClick={prev} aria-label="Previous screen" style={{width:"38px",height:"38px",borderRadius:"999px",border:"1px solid rgba(255,255,250,.24)",background:"transparent",color:"#FFFFFA",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",fontSize:"14px",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>←</button>
 <div style={{display:"flex",alignItems:"center",gap:"8px"}}>
-<button className="interactive-p18 interactive-p19" type="button" onClick={go0} aria-label="ROI calculator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:"{{ dotw0 }}",opacity:"{{ dotop0 }}",background:"{{ dot0 }}",color:"#FFFFFA"}}></button>
-<button className="interactive-p20 interactive-p21" type="button" onClick={go1} aria-label="Configurator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:"{{ dotw1 }}",opacity:"{{ dotop1 }}",background:"{{ dot1 }}",color:"#FFFFFA"}}></button>
-<button className="interactive-p22 interactive-p23" type="button" onClick={go2} aria-label="Product tour" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:"{{ dotw2 }}",opacity:"{{ dotop2 }}",background:"{{ dot2 }}",color:"#FFFFFA"}}></button>
-<button className="interactive-p24 interactive-p25" type="button" onClick={go3} aria-label="Benchmark" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:"{{ dotw3 }}",opacity:"{{ dotop3 }}",background:"{{ dot3 }}",color:"#FFFFFA"}}></button>
+<button className="interactive-p18 interactive-p19" type="button" onClick={go0} aria-label="ROI calculator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:dotw0,opacity:dotop0,background:dot0,color:"#FFFFFA"}}></button>
+<button className="interactive-p20 interactive-p21" type="button" onClick={go1} aria-label="Configurator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:dotw1,opacity:dotop1,background:dot1,color:"#FFFFFA"}}></button>
+<button className="interactive-p22 interactive-p23" type="button" onClick={go2} aria-label="Product tour" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:dotw2,opacity:dotop2,background:dot2,color:"#FFFFFA"}}></button>
+<button className="interactive-p24 interactive-p25" type="button" onClick={go3} aria-label="Benchmark" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1)",width:dotw3,opacity:dotop3,background:dot3,color:"#FFFFFA"}}></button>
 </div>
 <button className="interactive-p26 interactive-p27 interactive-p28" type="button" onClick={next} aria-label="Next screen" style={{width:"38px",height:"38px",borderRadius:"999px",border:"1px solid rgba(255,255,250,.24)",background:"transparent",color:"#FFFFFA",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",fontSize:"14px",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>→</button>
 </div>
@@ -212,7 +212,7 @@ export default function InteractivePage() {
 </div>
 <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"24px"}}>
 <div style={{display:"flex",flexDirection:"column",gap:"20px",padding:"32px 28px",borderRadius:"16px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#C84A1F"}}>/ 01</span>
+<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 01</span>
 <div style={{display:"flex",flexDirection:"column",gap:"6px"}}>
 <span style={{fontWeight:"800",fontSize:"22px",letterSpacing:"-.02em"}}>Interactive reports</span>
 <span style={{fontWeight:"800",fontSize:"34px",letterSpacing:"-.03em",lineHeight:"1"}}>From $700</span>
@@ -248,7 +248,7 @@ export default function InteractivePage() {
 </div>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"20px",padding:"32px 28px",borderRadius:"16px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#C84A1F"}}>/ 03</span>
+<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 03</span>
 <div style={{display:"flex",flexDirection:"column",gap:"6px"}}>
 <span style={{fontWeight:"800",fontSize:"22px",letterSpacing:"-.02em"}}>Custom interactive asset</span>
 <span style={{fontWeight:"800",fontSize:"34px",letterSpacing:"-.03em",lineHeight:"1"}}>Contact for pricing</span>

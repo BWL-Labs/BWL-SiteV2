@@ -93,6 +93,26 @@ def camel_css(p):
         return p            # custom properties keep their literal name
     return re.sub(r"-([a-z])", lambda m: m.group(1).upper(), p)
 
+def css_value(v):
+    """a style value, honouring {{ expr }} the way ATTR/text nodes already do.
+       without this every interpolated value ships as the literal string
+       "{{ pinO0 }}", which is not valid CSS — the browser drops the
+       declaration and the bound state (opacity, transform) never applies. """
+    m = re.fullmatch(r"\s*\{\{(.+?)\}\}\s*", v, flags=re.S)
+    if m:
+        return m.group(1).strip()
+    if "{{" not in v:
+        return json.dumps(v)
+    # mixed literal + expression -> template literal
+    buf = []
+    for p in re.split(r"(\{\{.+?\}\})", v, flags=re.S):
+        mm = re.fullmatch(r"\{\{(.+?)\}\}", p, flags=re.S)
+        if mm:
+            buf.append("${" + mm.group(1).strip() + "}")
+        else:
+            buf.append(p.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${"))
+    return "`" + "".join(buf) + "`"
+
 def css_to_obj(css):
     """inline style string -> JSX style object literal"""
     out = []
@@ -108,7 +128,7 @@ def css_to_obj(css):
             key = f'"{key}"'
         elif not re.fullmatch(r"[A-Za-z][A-Za-z0-9]*", key):
             key = f'"{key}"'
-        out.append(f"{key}:{json.dumps(v)}")
+        out.append(f"{key}:{css_value(v)}")
     return "{" + ",".join(out) + "}"
 
 def split_decls(css):

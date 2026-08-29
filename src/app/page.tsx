@@ -165,28 +165,28 @@ export default function Home() {
 <video data-bw-hero-video="" data-bw-bot-video="a" src="/assets/bw01-video.mp4" muted={true} playsInline={true} preload="auto" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 22%",display:"block",filter:"url(#bw-key)"}}></video>
 </div>
 <div data-bw-reveal="" style={{display:"flex",flexDirection:"column",gap:"24px",maxWidth:"600px",paddingRight:"60px"}}>
-<div style={{display:"flex",alignItems:"center",gap:"10px",font:"600 11px/1 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",color:"#080705"}}>
+<div style={{display:"flex",alignItems:"center",gap:"10px",font:"600 11px/1 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",color:"var(--fg)"}}>
 <span style={{position:"relative",width:"7px",height:"7px",flexShrink:"0",display:"block"}}>
 <span style={{position:"absolute",inset:"-4px",borderRadius:"50%",background:"rgba(230,175,46,.4)",animation:"bwCorePulse 1.8s ease-in-out infinite",display:"block"}}></span>
 <span style={{position:"absolute",inset:"0",borderRadius:"50%",background:"#E6AF2E",display:"block"}}></span>
 </span>
           // BW-01 — ONLINE
         </div>
-<h2 style={{margin:"0",fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(28px,3.4vw,46px)",lineHeight:"1.02",letterSpacing:"-.02em",textTransform:"uppercase",color:"#080705"}}>
+<h2 style={{margin:"0",fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(28px,3.4vw,46px)",lineHeight:"1.02",letterSpacing:"-.02em",textTransform:"uppercase",color:"var(--fg)"}}>
 <span style={{display:"block"}}>Meet BW-01</span>
 <span style={{display:"block"}}>Trained on worlds, not ads</span>
 </h2>
-<p style={{margin:"0",fontFamily:"Inter,Archivo,sans-serif",fontSize:"16px",lineHeight:"1.6",fontWeight:"500",color:"#4A4640",maxWidth:"52ch"}}>Tell it about your brand. It'll come back with a concept, a format, and where it would live.</p>
+<p style={{margin:"0",fontFamily:"Inter,Archivo,sans-serif",fontSize:"16px",lineHeight:"1.6",fontWeight:"500",color:"var(--fg-mute)",maxWidth:"52ch"}}>Tell it about your brand. It'll come back with a concept, a format, and where it would live.</p>
 <form className="home-p59" data-bw-prompt="" style={{background:"#FFFFFA",border:"1px solid #080705",borderRadius:"0",padding:"8px 8px 8px 22px",display:"flex",alignItems:"center",gap:"12px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)"}}>
 <span style={{width:"2px",height:"18px",background:"#E6AF2E",flexShrink:"0",animation:"bwBlink 1.4s steps(1,end) infinite"}}></span>
 <textarea data-bw-prompt-input="" rows={1} placeholder="Tell me about your brand\u2026" style={{flex:"1",border:"0",outline:"none",resize:"none",background:"none",color:"#080705",fontFamily:"'JetBrains Mono',monospace",fontWeight:"500",fontSize:"15px",lineHeight:"1.3",letterSpacing:"0",padding:"10px 0",maxHeight:"4em"}}></textarea>
 <button className="home-p60 home-p61 home-p62" type="submit" data-bw-prompt-send="" style={{background:"#E6AF2E",color:"#080705",border:"0",borderRadius:"50%",width:"40px",height:"40px",fontSize:"14px",fontWeight:"600",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",transition:"opacity .16s cubic-bezier(.2,.7,.2,1),transform 140ms cubic-bezier(.2,.7,.2,1)"}} aria-label="Send"><span data-bw-prompt-send-label="" style={{display:"none"}}></span><span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:"16px"}}>→</span></button>
 </form>
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"10px"}}>
-<button className="home-p63 home-p64 home-p65" type="button" data-bw-chip="What's an advergame?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"#7A766C",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>What's an advergame?</button>
-<button className="home-p66 home-p67 home-p68" type="button" data-bw-chip="Show me your work" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"#7A766C",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>Show me your work</button>
-<button className="home-p69 home-p70 home-p71" type="button" data-bw-chip="What would you build for me?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"#7A766C",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>What would you build for me?</button>
-<button className="home-p72 home-p73 home-p74" type="button" data-bw-chip="How much is a pilot?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"#7A766C",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>How much is a pilot?</button>
+<button className="home-p63 home-p64 home-p65" type="button" data-bw-chip="What's an advergame?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"var(--fg-mute)",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>What's an advergame?</button>
+<button className="home-p66 home-p67 home-p68" type="button" data-bw-chip="Show me your work" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"var(--fg-mute)",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>Show me your work</button>
+<button className="home-p69 home-p70 home-p71" type="button" data-bw-chip="What would you build for me?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"var(--fg-mute)",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>What would you build for me?</button>
+<button className="home-p72 home-p73 home-p74" type="button" data-bw-chip="How much is a pilot?" style={{background:"none",border:"1px solid rgba(122,118,108,.25)",borderRadius:"0",color:"var(--fg-mute)",padding:"9px 16px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".04em",cursor:"pointer",textAlign:"left",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>How much is a pilot?</button>
 </div>
 <div data-bw-prompt-reply="" style={{display:"none",background:"#FFFFFA",border:"1px solid #080705",borderRadius:"0",color:"#080705",padding:"24px 26px",gap:"16px",alignItems:"flex-start",opacity:"0",transform:"translateY(8px)",transition:"opacity .24s cubic-bezier(.2,.7,.2,1),transform .24s cubic-bezier(.2,.7,.2,1)"}}>
 <span style={{width:"26px",height:"26px",background:"#080705",flexShrink:"0",marginTop:"2px",display:"grid",placeItems:"center"}}><span style={{width:"8px",height:"8px",borderRadius:"50%",background:"#E6AF2E",display:"block"}}></span></span>
@@ -216,9 +216,6 @@ export default function Home() {
 </div>
 <div data-bw-reveal="" style={{position:"relative",width:"100%",height:"min(62vh,560px)",overflow:"hidden"}}>
 <video preload="none" src="/assets/studio-reel.mp4" muted={true} loop={true} playsInline={true} style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",display:"block"}}></video>
-<span style={{position:"absolute",left:"26px",bottom:"24px",display:"flex",alignItems:"center",gap:"10px",color:"#FFFFFA",font:"600 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase"}}>
-<span style={{width:"7px",height:"7px",borderRadius:"50%",background:"#E6AF2E",display:"block"}}></span>Studio reel
-        </span>
 </div>
 </section>
 <section id="work" style={{padding:"130px 0 0"}}>
@@ -574,7 +571,7 @@ export default function Home() {
 <span style={{position:"absolute",bottom:"-1px",right:"-1px",width:"12px",height:"12px",borderBottom:"1.5px solid #E6AF2E",borderRight:"1.5px solid #E6AF2E",pointerEvents:"none",display:"block"}}></span>
 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
 <span style={{font:"600 7.5px/1.15 'JetBrains Mono',monospace",letterSpacing:".18em",color:"#E6AF2E"}}>// SELF-SERVE</span>
-<span style={{font:"500 6.5px/1.15 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#C84A1F"}}>DEMO</span>
+<span style={{font:"500 6.5px/1.15 'JetBrains Mono',monospace",letterSpacing:".16em",color:"var(--bw-accent)"}}>DEMO</span>
 </div>
 <div style={{height:"1px",background:"rgba(255,255,250,.1)"}}></div>
 <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"6px"}}>
@@ -655,15 +652,15 @@ export default function Home() {
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"26px"}}>
 <div style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:"12px",borderTop:"1px solid rgba(8,7,5,.22)",paddingTop:"26px"}}>
 <span style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(56px,8vw,124px)",lineHeight:".82",letterSpacing:"-.05em",color:"#E6AF2E"}}>20+</span>
-<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(8,7,5,.6)"}}>Projects delivered</span>
+<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"var(--fg-mute)"}}>Projects delivered</span>
 </div>
 <div style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:"12px",borderTop:"1px solid rgba(8,7,5,.22)",paddingTop:"26px"}}>
 <span style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(56px,8vw,124px)",lineHeight:".82",letterSpacing:"-.05em",color:"#C84A1F"}}>100%</span>
-<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(8,7,5,.6)"}}>Clients who re-engage</span>
+<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"var(--fg-mute)"}}>Clients who re-engage</span>
 </div>
 <div style={{display:"flex",flexDirection:"column",alignItems:"center",textAlign:"center",gap:"12px",borderTop:"1px solid rgba(8,7,5,.22)",paddingTop:"26px"}}>
-<span style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(56px,8vw,124px)",lineHeight:".82",letterSpacing:"-.05em",color:"#912F40"}}>2+</span>
-<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(8,7,5,.6)"}}>Years in market</span>
+<span style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"clamp(56px,8vw,124px)",lineHeight:".82",letterSpacing:"-.05em",color:"var(--stat-accent)"}}>2+</span>
+<span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"var(--fg-mute)"}}>Years in market</span>
 </div>
 </div>
 </section>
@@ -832,42 +829,42 @@ export default function Home() {
 </div>
 <div style={{display:"flex",flexDirection:"column"}}>
 <div style={{background:"var(--bw-glass)",border:"1px solid rgba(255,255,250,.66)",borderRadius:"24px",backdropFilter:"blur(26px) saturate(180%)",WebkitBackdropFilter:"blur(26px) saturate(180%)",boxShadow:"0 28px 64px -34px rgba(8,7,5,.42),0 1px 0 rgba(255,255,250,.9) inset,0 -18px 34px -26px rgba(8,7,5,.22) inset",padding:"0 24px",marginBottom:"12px"}}>
-<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"#080705",fontFamily:"Inter,sans-serif"}}>
+<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"var(--fg)",fontFamily:"Inter,sans-serif"}}>
 <span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",opacity:".5",flexShrink:"0"}}>01</span>
 <span style={{fontWeight:"700",fontSize:"clamp(19px,1.7vw,26px)",letterSpacing:"-.025em",flex:"1"}}>What exactly does Blackware Labs do?</span>
-<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"#080705",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"#080705",display:"block"}}></span></span>
+<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"var(--fg)",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"var(--fg)",display:"block"}}></span></span>
 </button>
 <div data-bw-faq-panel="" style={{overflow:"hidden"}}><p style={{margin:"0",padding:"0 0 28px 52px",maxWidth:"60ch",fontSize:"16px",lineHeight:"1.55",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>We're a marketing studio in four parts: brand design, websites and portfolios, interactive marketing assets, and B2B sales activation. Most clients start with one and end up using all four.</p></div>
 </div>
 <div style={{background:"var(--bw-glass)",border:"1px solid rgba(255,255,250,.66)",borderRadius:"24px",backdropFilter:"blur(26px) saturate(180%)",WebkitBackdropFilter:"blur(26px) saturate(180%)",boxShadow:"0 28px 64px -34px rgba(8,7,5,.42),0 1px 0 rgba(255,255,250,.9) inset,0 -18px 34px -26px rgba(8,7,5,.22) inset",padding:"0 24px",marginBottom:"12px"}}>
-<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"#080705",fontFamily:"Inter,sans-serif"}}>
+<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"var(--fg)",fontFamily:"Inter,sans-serif"}}>
 <span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",opacity:".5",flexShrink:"0"}}>02</span>
 <span style={{fontWeight:"700",fontSize:"clamp(19px,1.7vw,26px)",letterSpacing:"-.025em",flex:"1"}}>How long does a project take?</span>
-<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"#080705",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"#080705",display:"block"}}></span></span>
+<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"var(--fg)",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"var(--fg)",display:"block"}}></span></span>
 </button>
 <div data-bw-faq-panel="" style={{overflow:"hidden"}}><p style={{margin:"0",padding:"0 0 28px 52px",maxWidth:"60ch",fontSize:"16px",lineHeight:"1.55",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>A brand and site together runs eight to twelve weeks. Single interactive assets ship in three to five. Partner engagements run monthly with a rolling backlog.</p></div>
 </div>
 <div style={{background:"var(--bw-glass)",border:"1px solid rgba(255,255,250,.66)",borderRadius:"24px",backdropFilter:"blur(26px) saturate(180%)",WebkitBackdropFilter:"blur(26px) saturate(180%)",boxShadow:"0 28px 64px -34px rgba(8,7,5,.42),0 1px 0 rgba(255,255,250,.9) inset,0 -18px 34px -26px rgba(8,7,5,.22) inset",padding:"0 24px",marginBottom:"12px"}}>
-<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"#080705",fontFamily:"Inter,sans-serif"}}>
+<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"var(--fg)",fontFamily:"Inter,sans-serif"}}>
 <span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",opacity:".5",flexShrink:"0"}}>03</span>
 <span style={{fontWeight:"700",fontSize:"clamp(19px,1.7vw,26px)",letterSpacing:"-.025em",flex:"1"}}>Do you work with startups or enterprises?</span>
-<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"#080705",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"#080705",display:"block"}}></span></span>
+<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"var(--fg)",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"var(--fg)",display:"block"}}></span></span>
 </button>
 <div data-bw-faq-panel="" style={{overflow:"hidden"}}><p style={{margin:"0",padding:"0 0 28px 52px",maxWidth:"60ch",fontSize:"16px",lineHeight:"1.55",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Both, as long as there's a named decision maker in the room. Our best work happens with teams of ten to five hundred selling something considered.</p></div>
 </div>
 <div style={{background:"var(--bw-glass)",border:"1px solid rgba(255,255,250,.66)",borderRadius:"24px",backdropFilter:"blur(26px) saturate(180%)",WebkitBackdropFilter:"blur(26px) saturate(180%)",boxShadow:"0 28px 64px -34px rgba(8,7,5,.42),0 1px 0 rgba(255,255,250,.9) inset,0 -18px 34px -26px rgba(8,7,5,.22) inset",padding:"0 24px",marginBottom:"12px"}}>
-<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"#080705",fontFamily:"Inter,sans-serif"}}>
+<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"var(--fg)",fontFamily:"Inter,sans-serif"}}>
 <span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",opacity:".5",flexShrink:"0"}}>04</span>
 <span style={{fontWeight:"700",fontSize:"clamp(19px,1.7vw,26px)",letterSpacing:"-.025em",flex:"1"}}>Who builds the interactive assets?</span>
-<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"#080705",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"#080705",display:"block"}}></span></span>
+<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"var(--fg)",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"var(--fg)",display:"block"}}></span></span>
 </button>
 <div data-bw-faq-panel="" style={{overflow:"hidden"}}><p style={{margin:"0",padding:"0 0 28px 52px",maxWidth:"60ch",fontSize:"16px",lineHeight:"1.55",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>We do — design and engineering sit in the same studio, so calculators, configurators, and product tours get built by the people who designed them.</p></div>
 </div>
 <div style={{background:"var(--bw-glass)",border:"1px solid rgba(255,255,250,.66)",borderRadius:"24px",backdropFilter:"blur(26px) saturate(180%)",WebkitBackdropFilter:"blur(26px) saturate(180%)",boxShadow:"0 28px 64px -34px rgba(8,7,5,.42),0 1px 0 rgba(255,255,250,.9) inset,0 -18px 34px -26px rgba(8,7,5,.22) inset",padding:"0 24px"}}>
-<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"#080705",fontFamily:"Inter,sans-serif"}}>
+<button data-bw-faq="" style={{width:"100%",background:"none",border:"0",padding:"28px 0",display:"flex",alignItems:"center",gap:"22px",cursor:"pointer",textAlign:"left",color:"var(--fg)",fontFamily:"Inter,sans-serif"}}>
 <span style={{font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",opacity:".5",flexShrink:"0"}}>05</span>
 <span style={{fontWeight:"700",fontSize:"clamp(19px,1.7vw,26px)",letterSpacing:"-.025em",flex:"1"}}>What happens after launch?</span>
-<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"#080705",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"#080705",display:"block"}}></span></span>
+<span data-bw-faq-icon="" style={{width:"15px",height:"15px",flexShrink:"0",position:"relative",transition:"transform .4s cubic-bezier(.22,1,.36,1)"}}><span style={{position:"absolute",top:"7px",left:"0",width:"15px",height:"1.5px",background:"var(--fg)",display:"block"}}></span><span style={{position:"absolute",left:"7px",top:"0",width:"1.5px",height:"15px",background:"var(--fg)",display:"block"}}></span></span>
 </button>
 <div data-bw-faq-panel="" style={{overflow:"hidden"}}><p style={{margin:"0",padding:"0 0 28px 52px",maxWidth:"60ch",fontSize:"16px",lineHeight:"1.55",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Ninety days of measurement and tuning is included in every project. After that you either run it yourselves with the system we hand over, or we stay on as partner.</p></div>
 </div>

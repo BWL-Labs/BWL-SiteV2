@@ -1062,7 +1062,7 @@ class Component extends DCLogic {
       }
       if (num) {
         num.style.opacity = active ? "1" : "0.4";
-        num.style.color = active ? "var(--accent)" : "var(--fg-mute)";
+        num.style.color = active ? "var(--bw-accent)" : "var(--fg-mute)";
       }
     });
     document.querySelectorAll("[data-bw-panel]").forEach((p) => {

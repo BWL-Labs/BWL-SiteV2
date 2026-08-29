@@ -101,6 +101,10 @@ def emit(fname, slug, route, comp):
         used |= set(re.findall(r"\$\{([A-Za-z_$][\w$]*)\}", jsx))
         used |= set(re.findall(r"\{([A-Za-z_$][\w$]*) \?", jsx))     # sc-if conditions
         used |= set(re.findall(r"\{\(\(([A-Za-z_$][\w$]*)\) \?\? \[\]\)", jsx))  # sc-for lists
+        # style-object values: `opacity:pinO0` — an unquoted value is always one
+        # of ours, since css_to_obj quotes every literal it emits
+        used |= set(re.findall(
+            r"[{,]\s*(?:[A-Za-z][\w]*|\"[^\"]*\")\s*:\s*([A-Za-z_$][\w$]*)\s*(?=[,}])", jsx))
         reserved = {"true","false","null","undefined"}
         reserved |= set(re.findall(r"\.map\(\(([A-Za-z_$][\w$]*): any", jsx))
         names = sorted(n for n in used if n not in reserved)

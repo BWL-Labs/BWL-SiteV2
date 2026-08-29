@@ -17,9 +17,15 @@
   --bg: var(--bw-bg);
   --fg: var(--bw-fg);
   --hair: var(--bw-rule);
-  --accent: var(--bw-rust);
+  /* namespaced on purpose: shadcn's own `--accent` (a near-white neutral for
+     hover fills) is declared on :root in globals.css *after* this file's
+     @import, so a bare `--accent` here loses the cascade in light mode and
+     every brand accent renders near-white. Dark mode hid it, because
+     html[data-bw-theme="dark"] outranks :root. Do not rename back. */
+  --bw-accent: var(--bw-rust);
   --fg-mute: rgba(8, 7, 5, .70);   /* .5 failed AA even on bare paper */
   --hair-hi: rgba(8, 7, 5, .30);
+  --stat-accent: #912F40;   /* garnet -- fine on paper, fails AA on ink at this size */
   --btn-bg: #080705;
   --btn-fg: #FFFFFA;
 
@@ -55,9 +61,10 @@ html[data-bw-theme="dark"] {
   --bw-fg: #FFFFFA;
   --bw-rule: rgba(255, 255, 250, .16);
 
-  --accent: var(--bw-gold);
+  --bw-accent: var(--bw-gold);
   --fg-mute: rgba(255, 255, 250, .80);
   --hair-hi: rgba(255, 255, 250, .28);
+  --stat-accent: rgb(162,78,92);   /* garnet lightened toward paper: 2.57:1 -> 3.62:1 on ink */
   --btn-bg: #FFFFFA;
   --btn-fg: #080705;
 
@@ -120,4 +127,15 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .bw-press, .bw-hover-lift { transition: none; }
+}
+
+/* the header row (logo · breadcrumb · theme · CTA) was authored at desktop only:
+   40px side padding plus 32px gaps needs 428px, so below ~440px the "Book a call"
+   CTA was clipped off the right edge and unreachable. The breadcrumb is the one
+   expendable item — it restates the page's own H1 — so it goes first.
+   !important because the layout it overrides is authored as inline style
+   attributes, same reason [data-bw-nav]'s own chrome rules use it. */
+@media (max-width: 720px) {
+  [data-bw-nav] > div { padding: 0 18px !important; gap: 14px !important; }
+  [data-bw-crumb] { display: none !important; }
 }

@@ -12,12 +12,12 @@ export default function SelfServePage() {
 <span style={{position:"absolute",bottom:"-16vh",left:"22vw",width:"54vw",height:"54vw",borderRadius:"50%",background:"radial-gradient(circle,oklch(0.91 0.06 26 / .6) 0%,oklch(0.91 0.06 26 / 0) 68%)",filter:"blur(32px)",animation:"bwDriftC 38s ease-in-out infinite",display:"block"}}></span>
 </div>
 <div style={{position:"relative",zIndex:"1"}}>
-<header style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
+<header data-bw-nav="" style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px"}}>
 <a className="selfserve-p1 selfserve-p2" href="/" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
 <img data-bw-logo="" src="/assets/blackware-logo.svg" alt="Blackware Labs" style={{height:"38px",width:"auto",display:"block",flexShrink:"0"}} />
 </a>
-<div style={{display:"flex",alignItems:"center",gap:"14px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
+<div data-bw-crumb="" style={{display:"flex",alignItems:"center",gap:"14px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
 <span style={{width:"22px",height:"1px",background:"var(--bw-fg)",display:"block"}}></span>Service 08 — Self-serve buying experience</div>
 <button className="selfserve-p3 selfserve-p4 selfserve-p5" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"40px",height:"40px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"border-color .16s cubic-bezier(.2,.7,.2,1),color .16s cubic-bezier(.2,.7,.2,1),transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
 <svg data-bw-icon="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
@@ -65,7 +65,7 @@ export default function SelfServePage() {
 <a className="selfserve-p15 selfserve-p16 selfserve-p17" href="/#contact" style={{marginTop:"8px",alignSelf:"flex-start",display:"inline-flex",alignItems:"center",justifyContent:"center",gap:"10px",padding:"14px 22px",borderRadius:"999px",color:"#FFFFFA",fontSize:"14px",fontWeight:"600",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.45%27/%3E%3C/svg%3E'),radial-gradient(at 14% 18%,oklch(0.8 0.15 84 / .95) 0%,rgba(8,7,5,0) 56%),radial-gradient(at 86% 24%,oklch(0.6 0.19 34 / .92) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 60% 94%,oklch(0.45 0.13 286 / .9) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto,auto",backgroundBlendMode:"overlay,normal,normal,normal",boxShadow:"0 14px 30px -18px rgba(8,7,5,.9),0 1px 0 rgba(255,255,255,.26) inset",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>Start the sprint</a>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"18px",padding:"32px 28px",borderRadius:"16px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#C84A1F"}}>/ 02 — Ongoing</span>
+<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 02 — Ongoing</span>
 <span style={{fontWeight:"800",fontSize:"26px",letterSpacing:"-.03em"}}>Optimization retainer</span>
 <span style={{fontWeight:"700",fontSize:"22px",letterSpacing:"-.02em"}}>$2,500<span style={{fontSize:"14px",fontWeight:"500",opacity:".55"}}>/mo</span></span>
 <div style={{height:"1px",background:"var(--bw-rule)"}}></div>
