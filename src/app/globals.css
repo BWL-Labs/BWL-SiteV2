@@ -110,7 +110,10 @@
   --chart-5: oklch(0.269 0 0);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  /* shadcn ships this as a blue; there is no blue in the Blackware palette,
+     so it is set to brand gold. Currently unreferenced (no sidebar component),
+     kept only so an added sidebar inherits the brand rather than shadcn's default. */
+  --sidebar-primary: oklch(0.785 0.149 83);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
