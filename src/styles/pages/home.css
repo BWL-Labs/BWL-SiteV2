@@ -173,24 +173,7 @@
   @keyframes bwBoxScale6 { 30% { transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0); } 38%,100% { transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1); } }
   @keyframes bwBoxMove7 { 40% { transform: translate(-240px,200px); } 52%,53% { transform: translate(0,0); } 80% { transform: translate(0,-32px); } 90%,100% { transform: translate(0,188px); } }
   @keyframes bwBoxScale7 { 34% { transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0); } 42%,100% { transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1); } }
-  /* floating chrome: scroll-edge fade instead of a hard rule, and a material that
-     thickens as content slides under it (bigger surface reads as thicker glass) */
-  [data-bw-nav] { border-bottom: 0 !important; box-shadow: var(--bw-head-sh); }
-  [data-bw-nav]::after {
-    content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 22px;
-    pointer-events: none; opacity: 0; transition: opacity .3s ease;
-    background: linear-gradient(180deg, var(--bw-head-edge), transparent);
-  }
-  [data-bw-nav][data-bw-scrolled="1"] {
-    background: var(--bw-head-on) !important;
-    box-shadow: var(--bw-head-sh-on);
-    backdrop-filter: blur(32px) saturate(200%) !important;
-    -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
-  }
-  [data-bw-nav][data-bw-scrolled="1"]::after { opacity: 1; }
-  @media (prefers-reduced-transparency: reduce) {
-    [data-bw-nav] { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: var(--bw-bg) !important; }
-  }
+  /* header chrome now lives in brand.css so all 13 pages get it */
   [data-bw-logo] { filter: brightness(0) saturate(100%); transition: filter .3s ease; }
   html[data-bw-theme="dark"] [data-bw-logo] { filter: none; }
   [data-bw-insight-card]:hover [data-bw-insight-img] { transform: scale(1.04); }

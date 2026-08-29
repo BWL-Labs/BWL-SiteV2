@@ -50,6 +50,10 @@
   --tint: .12;
   --tint-home: .62;
 
+  /* the header's own height, published so the hero, anchor offsets and the
+     small-screen rule all read one number instead of assuming 74px each */
+  --bw-head-h: 74px;
+
   /* motion — snap-out, no bounce unless momentum preceded it */
   --ease-out: cubic-bezier(.2, .7, .2, 1);
   --ease-glide: cubic-bezier(.16, 1, .3, 1);
@@ -129,6 +133,62 @@ body {
   .bw-press, .bw-hover-lift { transition: none; }
 }
 
+/* ── header chrome ──────────────────────────────────────────────────────────
+   These lived in the homepage's own style block, so twelve of thirteen pages
+   had a flat translucent bar that never reacted to scroll. Global now, which
+   is what "the header" should have meant all along. */
+[data-bw-nav] {
+  border-bottom: 0 !important;
+  box-shadow: var(--bw-head-sh);
+  /* background and shadow only — the bar's padding also changes on scroll, but
+     transitioning that would animate layout on every threshold crossing */
+  transition: background .3s ease, box-shadow .3s ease;
+}
+[data-bw-nav]::after {
+  content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 22px;
+  pointer-events: none; opacity: 0; transition: opacity .3s ease;
+  background: linear-gradient(180deg, var(--bw-head-edge), transparent);
+}
+[data-bw-nav][data-bw-scrolled="1"] {
+  background: var(--bw-head-on) !important;
+  box-shadow: var(--bw-head-sh-on);
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+}
+[data-bw-nav][data-bw-scrolled="1"]::after { opacity: 1; }
+@media (prefers-reduced-transparency: reduce) {
+  [data-bw-nav] {
+    backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+    background: var(--bw-bg) !important;
+  }
+}
+
+/* the row itself: logo holds the left, the service name centres on the page
+   rather than floating between the logo and the controls, and the two
+   controls travel together on the right. */
+[data-bw-nav] > div { position: relative; }
+[data-bw-crumb] {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  white-space: nowrap;
+}
+[data-bw-head-controls] {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+[data-bw-crumb] a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 140ms var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  [data-bw-crumb] a:hover { opacity: .62; }
+}
+
 /* keyboard users had no way past the header into content on any page. visible
    only once focused, so it costs the visual design nothing. */
 .bw-skip {
@@ -155,4 +215,5 @@ body {
 @media (max-width: 720px) {
   [data-bw-nav] > div { padding: 0 18px !important; gap: 14px !important; }
   [data-bw-crumb] { display: none !important; }
+  [data-bw-head-controls] { gap: 10px; }
 }

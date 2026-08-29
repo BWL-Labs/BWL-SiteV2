@@ -65,7 +65,7 @@ export default function Home() {
 <a href="#top" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0"}}>
 <img data-bw-logo="" src="/assets/blackware-logo.svg" alt="Blackware Labs" style={{height:"38px",width:"auto",display:"block",flexShrink:"0"}} />
 </a>
-<button className="home-p21 home-p22 home-p23" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"40px",height:"40px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"border-color .16s cubic-bezier(.2,.7,.2,1),color .16s cubic-bezier(.2,.7,.2,1),transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
+<div data-bw-head-controls=""><button className="home-p21 home-p22 home-p23" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"40px",height:"40px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"border-color .16s cubic-bezier(.2,.7,.2,1),color .16s cubic-bezier(.2,.7,.2,1),transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
 <svg data-bw-icon="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
 <svg data-bw-icon="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"></path></svg>
 </button>
@@ -73,7 +73,7 @@ export default function Home() {
 <span aria-hidden="true" style={{position:"relative",width:"8px",height:"8px",flexShrink:"0",display:"block"}}>
 <span style={{position:"absolute",inset:"-5px",borderRadius:"50%",background:"radial-gradient(circle,rgba(230,175,46,.55) 0%,rgba(230,175,46,0) 70%)",animation:"bwCorePulse 2s ease-in-out infinite"}}></span>
 <span style={{position:"absolute",inset:"0",borderRadius:"50%",background:"#E6AF2E",boxShadow:"0 0 6px 1px rgba(230,175,46,.8)"}}></span>
-</span>Book a call</a>
+</span>Book a call</a></div>
 </div>
 </header>
 <div style={{position:"fixed",top:"0",left:"0",right:"0",height:"2px",zIndex:"130",background:"rgba(8,7,5,.07)",pointerEvents:"none"}}>

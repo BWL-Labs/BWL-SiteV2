@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow_Condensed, Inter, JetBrains_Mono, Anton } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggleBridge } from "@/components/theme-toggle-bridge";
+import { HeaderScrollBridge } from "@/components/header-scroll-bridge";
 import { SITE } from "@/lib/seo";
 import { OrganizationJsonLd } from "@/lib/org-jsonld";
 import "./globals.css";
@@ -66,6 +67,7 @@ export default function RootLayout({
         <a href="#main" className="bw-skip">Skip to content</a>
         <ThemeProvider>
           <ThemeToggleBridge />
+          <HeaderScrollBridge />
           <main id="main">{children}</main>
         </ThemeProvider>
       </body>
