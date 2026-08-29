@@ -115,38 +115,38 @@ export default function Home() {
 </button>
 </div>
 <section id="top" style={{position:"relative",padding:"172px 0 0",minHeight:"100vh",display:"flex",flexDirection:"column",justifyContent:"space-between",overflow:"hidden"}}>
-<video data-bw-hero-video="" src="/assets/hero-reel.mp4" autoPlay={true} muted={true} loop={true} playsInline={true} preload="auto" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 65%",zIndex:"-1",display:"block",filter:"contrast(1.25) saturate(1.1)"}}></video>
+<video data-bw-hero-video="" src="/assets/hero-reel.mp4" autoPlay={true} muted={true} loop={true} playsInline={true} preload="metadata" poster="/assets/hero-reel-poster.webp" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 65%",zIndex:"-1",display:"block",filter:"contrast(1.25) saturate(1.1)"}}></video>
 <div style={{position:"absolute",inset:"0",background:"rgba(8,7,5,.35)",zIndex:"-1",pointerEvents:"none"}}></div>
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",width:"100%"}}>
-<h1 style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",margin:"clamp(60px,14vh,150px) 0 0",maxWidth:"900px",display:"flex",flexWrap:"wrap",alignItems:"baseline",columnGap:".14em",rowGap:"0",fontWeight:"900",fontSize:"clamp(34px,7.4vw,148px)",lineHeight:".92",letterSpacing:"-.04em",textTransform:"uppercase",color:"#FFFFFA",mixBlendMode:"normal"}}>
+<h1 aria-label="Ads get skipped. Games get played." style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",margin:"clamp(60px,14vh,150px) 0 0",maxWidth:"900px",display:"flex",flexWrap:"wrap",alignItems:"baseline",columnGap:".14em",rowGap:"0",fontWeight:"900",fontSize:"clamp(34px,7.4vw,148px)",lineHeight:".92",letterSpacing:"-.04em",textTransform:"uppercase",color:"#FFFFFA",mixBlendMode:"normal"}}>
 <span style={{display:"inline-flex"}}>
-<span className="home-p46" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:"0s"}}>A<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.6s"}}>A</span></span>
+<span className="home-p46" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:"0s"}}>A<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.6s"}} aria-hidden="true" data-bw-sweep="A"></span></span>
 <span className="home-p47" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".08s"}}>D</span>
-<span className="home-p48" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".16s"}}>S<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.7s"}}>S</span></span>
+<span className="home-p48" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".16s"}}>S<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.7s"}} aria-hidden="true" data-bw-sweep="S"></span></span>
 </span>
 <span style={{display:"inline-flex"}}>
-<span className="home-p49" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".24s"}}>G<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.75s"}}>G</span></span>
+<span className="home-p49" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".24s"}}>G<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.75s"}} aria-hidden="true" data-bw-sweep="G"></span></span>
 <span className="home-p50" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".32s"}}>E</span>
-<span className="home-p51" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".4s"}}>T<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.85s"}}>T</span></span>
+<span className="home-p51" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".4s"}}>T<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.85s"}} aria-hidden="true" data-bw-sweep="T"></span></span>
 </span>
 <span style={{display:"inline-flex"}}>
-<span className="home-p52" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".48s"}}>S<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.9s"}}>S</span></span>
+<span className="home-p52" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".48s"}}>S<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"1.9s"}} aria-hidden="true" data-bw-sweep="S"></span></span>
 <span className="home-p53" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".56s"}}>K</span>
-<span className="home-p54" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".64s"}}>I<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2s"}}>I</span></span>
-<span className="home-p55" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".72s"}}>P<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.05s"}}>P</span></span>
-<span className="home-p56" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".8s"}}>P<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.1s"}}>P</span></span>
-<span className="home-p57" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".88s"}}>E<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.15s"}}>E</span></span>
-<span className="home-p58" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".96s"}}>D<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.2s"}}>D</span></span>
+<span className="home-p54" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".64s"}}>I<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2s"}} aria-hidden="true" data-bw-sweep="I"></span></span>
+<span className="home-p55" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".72s"}}>P<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.05s"}} aria-hidden="true" data-bw-sweep="P"></span></span>
+<span className="home-p56" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".8s"}}>P<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.1s"}} aria-hidden="true" data-bw-sweep="P"></span></span>
+<span className="home-p57" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".88s"}}>E<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.15s"}} aria-hidden="true" data-bw-sweep="E"></span></span>
+<span className="home-p58" style={{position:"relative",display:"inline-block",animation:"bwPop .6s cubic-bezier(.2,.7,.2,1) both",animationDelay:".96s"}}>D<span style={{position:"absolute",left:"0",top:"0",color:"#C84A1F",pointerEvents:"none",animation:"bwSweep .42s ease-in-out both",animationDelay:"2.2s"}} aria-hidden="true" data-bw-sweep="D"></span></span>
 </span>
 </h1>
-<h1 style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",margin:".08em 0 0",maxWidth:"900px",display:"flex",flexWrap:"wrap",alignItems:"baseline",columnGap:".14em",rowGap:"0",fontWeight:"900",fontSize:"clamp(34px,7.4vw,148px)",lineHeight:".92",letterSpacing:"-.04em",textTransform:"uppercase",color:"#FFFFFA"}}>
+<div style={{fontFamily:"'Barlow Condensed',Archivo,sans-serif",margin:".08em 0 0",maxWidth:"900px",display:"flex",flexWrap:"wrap",alignItems:"baseline",columnGap:".14em",rowGap:"0",fontWeight:"900",fontSize:"clamp(34px,7.4vw,148px)",lineHeight:".92",letterSpacing:"-.04em",textTransform:"uppercase",color:"#FFFFFA"}}>
 <span style={{display:"inline-grid",overflow:"visible",paddingRight:".5ch",verticalAlign:"baseline",lineHeight:"1.2"}}>
 <span style={{gridArea:"1/1",whiteSpace:"nowrap",color:"#E6AF2E",opacity:"0",animation:"bwCycle1 6s cubic-bezier(.2,.7,.2,1) infinite"}}>Games</span>
 <span style={{gridArea:"1/1",whiteSpace:"nowrap",color:"#C84A1F",opacity:"0",animation:"bwCycle2 6s cubic-bezier(.2,.7,.2,1) infinite"}}>Worlds</span>
 <span style={{gridArea:"1/1",whiteSpace:"nowrap",color:"#912F40",opacity:"0",animation:"bwCycle3 6s cubic-bezier(.2,.7,.2,1) infinite"}}>Stories</span>
 </span>
 <span style={{whiteSpace:"nowrap"}}>Get Played</span>
-</h1>
+</div>
 </div>
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"56px 40px 40px",width:"100%",display:"flex",justifyContent:"flex-end",alignItems:"flex-end",gap:"40px",flexWrap:"wrap"}}>
 <div style={{display:"flex",flexDirection:"column",alignItems:"flex-start",gap:"10px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
@@ -162,7 +162,7 @@ export default function Home() {
 <div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",position:"relative",zIndex:"1",display:"grid",gridTemplateColumns:"40% 60%",gap:"40px",alignItems:"center"}}>
 <div data-bw-bot-wrap="" style={{position:"relative",aspectRatio:"4/5",width:"100%"}}>
 <svg width="0" height="0" style={{position:"absolute",overflow:"hidden"}}><defs><filter id="bw-key" x="-10%" y="-10%" width="120%" height="120%" colorInterpolationFilters="sRGB"><feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -2.99 -5.87 -1.14 0 4.9" result="mask"></feColorMatrix><feComponentTransfer in="mask" result="maskSoft"><feFuncA type="gamma" amplitude="1" exponent="1.4" offset="0"></feFuncA></feComponentTransfer><feComposite in="SourceGraphic" in2="maskSoft" operator="in"></feComposite></filter></defs></svg>
-<video data-bw-hero-video="" data-bw-bot-video="a" src="/assets/bw01-video.mp4" muted={true} playsInline={true} preload="auto" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 22%",display:"block",filter:"url(#bw-key)"}}></video>
+<video data-bw-hero-video="" data-bw-bot-video="a" src="/assets/bw01-video.mp4" muted={true} playsInline={true} preload="none" style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",objectPosition:"50% 22%",display:"block",filter:"url(#bw-key)"}}></video>
 </div>
 <div data-bw-reveal="" style={{display:"flex",flexDirection:"column",gap:"24px",maxWidth:"600px",paddingRight:"60px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"600 11px/1 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",color:"var(--fg)"}}>
@@ -215,7 +215,7 @@ export default function Home() {
 </div>
 </div>
 <div data-bw-reveal="" style={{position:"relative",width:"100%",height:"min(62vh,560px)",overflow:"hidden"}}>
-<video preload="none" src="/assets/studio-reel.mp4" muted={true} loop={true} playsInline={true} style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",display:"block"}}></video>
+<video preload="none" poster="/assets/studio-reel-poster.webp" src="/assets/studio-reel.mp4" muted={true} loop={true} playsInline={true} style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",display:"block"}}></video>
 </div>
 </section>
 <section id="work" style={{padding:"130px 0 0"}}>

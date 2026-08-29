@@ -73,9 +73,8 @@ export default function ResearchifyPage() {
 <polygon fill="#292929" points="81.31 386.82 51.23 386.82 49.9 385.39 82.93 385.39 81.31 386.82"></polygon>
 <path fill="#8f9091" d="M278.11,362.6h94.05c0,3.63-2.95,6.58-6.58,6.58h-80.89c-3.63,0-6.58-2.95-6.58-6.58h0Z"></path>
 </svg>
-<video style={{position:"absolute",left:"11.47%",top:"5.33%",width:"77.11%",height:"80.96%",objectFit:"cover",borderRadius:"4px",background:"#080705"}} controls={true} muted={true} loop={true} playsInline={true}></video>
+<video style={{position:"absolute",left:"11.47%",top:"5.33%",width:"77.11%",height:"80.96%",objectFit:"cover",borderRadius:"4px",background:"#080705"}} muted={true} loop={true} playsInline={true}></video>
 </div>
-<span style={{font:"500 10px/1.6 'JetBrains Mono',monospace",letterSpacing:".1em",textTransform:"uppercase",opacity:".4"}}>Drop your product demo video in above.</span>
 </div>
 </section>
 <section id="included" style={{padding:"80px 0 0"}}>

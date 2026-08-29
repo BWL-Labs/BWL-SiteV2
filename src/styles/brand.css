@@ -129,6 +129,23 @@ body {
   .bw-press, .bw-hover-lift { transition: none; }
 }
 
+/* keyboard users had no way past the header into content on any page. visible
+   only once focused, so it costs the visual design nothing. */
+.bw-skip {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  translate: -50% -120%;
+  z-index: 200;
+  background: var(--bw-fg);
+  color: var(--bw-bg);
+  padding: 12px 20px;
+  border-radius: 0 0 4px 4px;
+  font: 600 13px/1 var(--font-body, system-ui), sans-serif;
+  transition: translate 160ms var(--ease-out);
+}
+.bw-skip:focus-visible { translate: -50% 0; outline-offset: 2px; }
+
 /* the header row (logo · breadcrumb · theme · CTA) was authored at desktop only:
    40px side padding plus 32px gaps needs 428px, so below ~440px the "Book a call"
    CTA was clipped off the right edge and unreachable. The breadcrumb is the one

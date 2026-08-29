@@ -24,6 +24,7 @@
   @keyframes bwSignal { 0%,100% { opacity: .18; } 45% { opacity: .8; } }
   @keyframes bwBlink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.15; } }
   @keyframes bwPop { 0% { opacity: 0; transform: scale(.86); } 62% { opacity: 1; transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
+  [data-bw-sweep]::before { content: attr(data-bw-sweep); }
   @keyframes bwSweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
   @keyframes bwCycle1 { 0%,3% { opacity:0; transform:translateY(28px); } 8%,28% { opacity:1; transform:translateY(0); } 33%,100% { opacity:0; transform:translateY(-28px); } }
   @keyframes bwCycle2 { 0%,33% { opacity:0; transform:translateY(28px); } 38%,58% { opacity:1; transform:translateY(0); } 63%,100% { opacity:0; transform:translateY(-28px); } }

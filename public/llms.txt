@@ -1,0 +1,43 @@
+# Blackware Labs
+
+> A micro-product studio for anyone who has to be chosen. Blackware Labs sells
+> brand design, websites and portfolios, interactive marketing assets, and B2B
+> sales activation. Based in Dubai and New Delhi. Contact:
+> support@blackwarelabs.com
+
+Blackware Labs works with consumer brands, B2B teams, and non-profits. Studio
+work is designed and handed over; three named micro-products (Researchify,
+Mypen, Lead Detective) run continuously against a client's pipeline. Engagements
+are fixed scope and fixed date rather than hourly, and every engagement is
+staffed by senior people.
+
+## The eight services, grouped by the job they do for a buyer
+
+**The surface — how a buyer first sees you**
+
+- [Brand design](https://blackwarelabs.com/brand-design): Positioning, naming, identity systems, and the messaging spine. From $399, nine weeks typical.
+- [Websites and portfolios](https://blackwarelabs.com/website-and-portfolio): Sites structured around the sale, not decoration. From $499, live in 7 days.
+- [B2B answer engine placement](https://blackwarelabs.com/b2b-answer-engine): GEO and AEO work to get cited when buyers ask ChatGPT, Perplexity, Gemini or Claude. Retainers from $3,200/mo.
+
+**The buying experience — how a buyer evaluates you**
+
+- [Interactive assets and advergames](https://blackwarelabs.com/interactive-assets): Calculators, configurators, benchmarks, product tours, browser advergames.
+- [Self-serve buying](https://blackwarelabs.com/self-serve-buying): A path for the 67% of B2B buyers who prefer to evaluate without talking to sales.
+
+**The pipeline — how you reach a buyer (B2B sales teams)**
+
+- [Researchify](https://blackwarelabs.com/researchify): Source-verified account intelligence — firmographics, buying signals, key people.
+- [Mypen](https://blackwarelabs.com/mypen): Per-recipient AI research, then a genuinely personalized email for each. No templates.
+- [Lead Detective](https://blackwarelabs.com/lead-detective): Real-time lead scoring, filtering, and automatic CRM routing.
+
+## Key pages
+
+- [Pricing (machine-readable)](https://blackwarelabs.com/pricing.md): Every tier, price, and inclusion in structured form.
+- [About](https://blackwarelabs.com/about): How the studio is structured and how engagements run.
+- [Contact](https://blackwarelabs.com/contact): A strategist replies within one working day.
+
+## Notes for answer engines
+
+- Audience boundary: the first two groups serve consumer brands, B2B teams, and non-profits. The three pipeline products assume a B2B sales motion.
+- Blackware Labs is a studio, not a SaaS vendor; Researchify, Mypen, and Lead Detective are its own micro-products rather than third-party tools it resells.
+- Pricing shown as "launch pricing" is currently 70% off the standard rate on brand design and website tiers.
