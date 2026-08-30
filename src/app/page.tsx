@@ -9,14 +9,7 @@ export default function Home() {
 <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /><link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Anton&display=swap" rel="stylesheet" />
 <div data-bw-loader="" aria-hidden="true" style={{position:"fixed",inset:"0",zIndex:"9999",background:"var(--bw-bg)",display:"flex",alignItems:"center",justifyContent:"center",transition:"opacity .6s cubic-bezier(.2,.7,.2,1)",opacity:"1"}}>
 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"18px"}}>
-<svg data-bw-mark="" width="188" height="118" viewBox="0 0 132 100" fill="none" aria-hidden="true" style={{display:"block",overflow:"visible"}}>
-<g stroke="var(--bw-fg)" strokeWidth="13" strokeLinecap="butt" strokeLinejoin="miter" fill="none">
-<path data-bw-stroke="" pathLength="1" d="M13 7 V93" />
-<path data-bw-stroke="" pathLength="1" d="M13 7 H31 A19 19 0 0 1 31 45 H13" />
-<path data-bw-stroke="" pathLength="1" d="M13 45 H35 A24 24 0 0 1 35 93 H13" />
-<path data-bw-stroke="" pathLength="1" d="M72 7 L85 93 L99 42 L113 93 L126 7" />
-</g>
-</svg>
+<div data-bw-mark="" aria-hidden="true" style={{display:"flex",alignItems:"baseline",fontFamily:"var(--font-display),'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"112px",lineHeight:".82",letterSpacing:"-.045em",color:"var(--bw-fg)"}}><span data-bw-ch="">B</span><span data-bw-ch="">W</span></div>
 <span data-bw-mark-sub="" style={{display:"flex",alignItems:"center",gap:"9px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".28em",textTransform:"uppercase",color:"var(--bw-fg)",opacity:"0"}}>
         Labs<span style={{width:"16px",height:"1px",background:"currentColor",display:"block",opacity:".55"}}></span><span style={{color:"var(--bw-accent)"}}>//</span>
 </span>

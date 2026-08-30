@@ -43,6 +43,16 @@ class Component extends DCLogic {
       if (p) p.style.display = "none";
     }
 
+    /* The loader used to dismiss on window.load, and immediately if the document
+       was already complete — so on a warm cache the mark never animated at all.
+       It now runs to a floor: the reveal starts when webfonts resolve, and the
+       screen holds until both that sequence has finished and the assets the
+       first screens need are in cache. MAX is the escape hatch so a stalled
+       request can never trap someone behind the splash. */
+    const LOADER_MIN_MS = 1500;   /* letter .58s + .14s stagger + sub .5s @ .62s */
+    const LOADER_MAX_MS = 6000;
+    const loaderStart = performance.now();
+
     const dismissLoader = () => {
       const l = document.querySelector("[data-bw-loader]");
       if (!l || l.dataset.dismissed) return;
@@ -51,9 +61,37 @@ class Component extends DCLogic {
       l.style.pointerEvents = "none";
       setTimeout(() => { l.style.display = "none"; }, 450);
     };
-    this.hideLoader = setTimeout(dismissLoader, 1100);
-    if (document.readyState === "complete") dismissLoader();
-    else window.addEventListener("load", dismissLoader, { once: true });
+
+    /* hold for whatever is left of the floor, so the animation always completes */
+    const settleLoader = () => {
+      const left = LOADER_MIN_MS - (performance.now() - loaderStart);
+      this.hideLoader = setTimeout(dismissLoader, Math.max(0, left));
+    };
+
+    /* what the first screens actually need: the display face, the hero's poster
+       so the video does not paint black, and the two clips that autoplay or sit
+       just below the fold. Video waits on metadata, not on the whole file. */
+    const preloadImg = (src) => new Promise((res) => {
+      const i = new Image();
+      i.onload = i.onerror = () => res();
+      i.src = src;
+    });
+    const preloadVidMeta = (sel) => new Promise((res) => {
+      const v = document.querySelector(sel);
+      if (!v) return res();
+      if (v.readyState >= 1) return res();
+      v.addEventListener("loadedmetadata", () => res(), { once: true });
+      v.addEventListener("error", () => res(), { once: true });
+    });
+
+    const warm = [
+      document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve(),
+      preloadImg("/assets/hero-reel-poster.webp"),
+      preloadVidMeta('video[data-bw-hero-video]:not([data-bw-bot-video])'),
+      preloadVidMeta("[data-bw-bot-video]"),
+    ];
+    const capped = new Promise((res) => setTimeout(res, LOADER_MAX_MS));
+    Promise.race([Promise.all(warm.map((p) => p.catch(() => {}))), capped]).then(settleLoader);
 
     this.initPrompt();
     this.initVisitors();

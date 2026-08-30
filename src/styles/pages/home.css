@@ -25,20 +25,26 @@
   @keyframes bwBlink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.15; } }
   @keyframes bwPop { 0% { opacity: 0; transform: scale(.86); } 62% { opacity: 1; transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
   [data-bw-sweep]::before { content: attr(data-bw-sweep); }
-  /* the mark draws itself: each stroke is dashed to its own length and the
-     offset runs to zero, so the letterforms build rather than fade in */
-  [data-bw-stroke] { stroke-dasharray: 1; stroke-dashoffset: 1;
-    animation: bwMarkDraw .62s cubic-bezier(.65,0,.35,1) forwards; }
-  [data-bw-stroke]:nth-child(1) { animation-delay: 0s; }
-  [data-bw-stroke]:nth-child(2) { animation-delay: .13s; }
-  [data-bw-stroke]:nth-child(3) { animation-delay: .26s; }
-  [data-bw-stroke]:nth-child(4) { animation-delay: .42s; }
-  @keyframes bwMarkDraw { to { stroke-dashoffset: 0; } }
-  [data-bw-mark-sub] { animation: bwMarkSub .5s cubic-bezier(.16,1,.3,1) 1.02s forwards; }
+  /* the mark inks in: each letter is clipped to nothing and the clip opens
+     upward, so the letterform fills rather than fades. clip-path is the one
+     non-transform property that stays off the layout path.
+     The reveal is pure CSS and starts on the first frame. Gating it on a JS
+     signal cost ~800ms of blank screen, because the wait was really for the
+     bundle to hydrate, not for fonts. next/font ships a metric-matched
+     fallback, so a swap mid-reveal is not perceptible — and a CSS animation
+     keeps running while the main thread is busy booting. */
+  [data-bw-ch] { display: inline-block; clip-path: inset(0 0 100% 0); }
+  [data-bw-ch] {
+    animation: bwInk .58s var(--ease-glide) forwards; }
+  [data-bw-ch]:nth-child(2) { animation-delay: .14s; }
+  @keyframes bwInk { to { clip-path: inset(0 0 0 0); } }
+  [data-bw-mark-sub] {
+    animation: bwMarkSub .5s var(--ease-glide) .62s forwards; }
   @keyframes bwMarkSub { from { opacity: 0; transform: translateY(6px); }
                          to   { opacity: .62; transform: translateY(0); } }
   @media (prefers-reduced-motion: reduce) {
-    [data-bw-stroke] { animation: none; stroke-dashoffset: 0; }
+    [data-bw-ch] { clip-path: none; }
+    [data-bw-ch] { animation: none; }
     [data-bw-mark-sub] { animation: none; opacity: .62; }
   }
   @keyframes bwSweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
