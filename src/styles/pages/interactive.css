@@ -31,7 +31,7 @@
 
 .interactive-p1:active { transform:scale(.97) !important }
 .interactive-p2:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.interactive-p3:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.interactive-p3:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .interactive-p4:active { transform:scale(.93) !important }
 .interactive-p5:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .interactive-p6:hover { color:#FFFFFA !important; opacity:1 !important; transform:translateY(-1px) !important }
@@ -43,7 +43,7 @@
 .interactive-p12:hover { background:var(--bw-fg) !important; color:var(--bw-bg) !important; opacity:1 !important }
 .interactive-p13:active { transform:scale(.97) !important }
 .interactive-p14:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.interactive-p15:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.interactive-p15:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .interactive-p16:active { transform:scale(.97) !important }
 .interactive-p17:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .interactive-p18:active { transform:scale(.97) !important }
@@ -54,7 +54,7 @@
 .interactive-p23:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .interactive-p24:active { transform:scale(.97) !important }
 .interactive-p25:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.interactive-p26:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.interactive-p26:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .interactive-p27:active { transform:scale(.97) !important }
 .interactive-p28:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .interactive-p29:hover { background:var(--bw-fg) !important; color:var(--bw-bg) !important; opacity:1 !important }

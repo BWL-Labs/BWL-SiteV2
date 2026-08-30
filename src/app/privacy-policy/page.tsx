@@ -8,10 +8,10 @@ export default function PrivacyPage() {
 <div style={{background:"var(--bw-bg)",color:"var(--bw-fg)",minHeight:"100vh"}}>
 <header data-bw-nav="" style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
 <div style={{maxWidth:"900px",margin:"0 auto",padding:"0 40px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px"}}>
-<a className="privacy-p1 privacy-p2" href="/" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0",textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
+<a className="privacy-p1 privacy-p2" href="/" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0",textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>
 <img data-bw-logo="" src="/assets/blackware-logo.svg" alt="Blackware Labs" style={{height:"32px",width:"auto",display:"block",flexShrink:"0"}} />
 </a>
-<div data-bw-head-controls=""><button className="privacy-p3 privacy-p4" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"36px",height:"36px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>
+<div data-bw-head-controls=""><button className="privacy-p3 privacy-p4" data-bw-theme-toggle="" type="button" aria-label="Switch between day and night" style={{width:"36px",height:"36px",borderRadius:"999px",border:"1px solid var(--bw-toggle-bd)",background:"transparent",color:"var(--bw-fg)",cursor:"pointer",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>
 <svg data-bw-icon="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
 <svg data-bw-icon="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"></path></svg>
 </button></div>
@@ -71,8 +71,8 @@ export default function PrivacyPage() {
 <div style={{maxWidth:"900px",margin:"0 auto",padding:"24px 40px",display:"flex",justifyContent:"space-between",gap:"24px",flexWrap:"wrap",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
 <span>© 2026 Blackware Labs</span>
 <div style={{display:"flex",gap:"20px"}}>
-<a className="privacy-p7 privacy-p8" href="/terms-and-conditions" style={{textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>Terms &amp; Conditions</a>
-<a className="privacy-p9 privacy-p10" href="/" style={{textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1)"}}>← Back to homepage</a>
+<a className="privacy-p7 privacy-p8" href="/terms-and-conditions" style={{textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Terms &amp; Conditions</a>
+<a className="privacy-p9 privacy-p10" href="/" style={{textDecoration:"none",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>← Back to homepage</a>
 </div>
 </div>
 </footer>

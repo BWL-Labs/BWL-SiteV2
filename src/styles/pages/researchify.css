@@ -25,7 +25,7 @@
 
 .researchify-p1:active { transform:scale(.97) !important }
 .researchify-p2:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.researchify-p3:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.researchify-p3:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .researchify-p4:active { transform:scale(.93) !important }
 .researchify-p5:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .researchify-p6:hover { color:#FFFFFA !important; opacity:1 !important; transform:translateY(-1px) !important }

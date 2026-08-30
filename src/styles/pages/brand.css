@@ -31,7 +31,7 @@
 
 .brand-p1:active { transform:scale(.97) !important }
 .brand-p2:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.brand-p3:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.brand-p3:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .brand-p4:active { transform:scale(.93) !important }
 .brand-p5:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .brand-p6:hover { color:#FFFFFA !important; opacity:1 !important; transform:translateY(-1px) !important }
@@ -44,15 +44,15 @@
 .brand-p13:active { transform:scale(.97) !important }
 .brand-p14:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .brand-p15:active { cursor:grabbing !important }
-.brand-p16:hover { border-color:#E6AF2E !important }
-.brand-p17:hover { border-color:#E6AF2E !important }
-.brand-p18:hover { border-color:#E6AF2E !important }
-.brand-p19:hover { border-color:#E6AF2E !important }
-.brand-p20:hover { border-color:#E6AF2E !important }
-.brand-p21:hover { border-color:#E6AF2E !important }
-.brand-p22:hover { border-color:#E6AF2E !important }
-.brand-p23:hover { border-color:#E6AF2E !important }
-.brand-p24:hover { border-color:#E6AF2E !important; color:#E6AF2E !important }
+.brand-p16:hover { border-color:var(--bw-accent) !important }
+.brand-p17:hover { border-color:var(--bw-accent) !important }
+.brand-p18:hover { border-color:var(--bw-accent) !important }
+.brand-p19:hover { border-color:var(--bw-accent) !important }
+.brand-p20:hover { border-color:var(--bw-accent) !important }
+.brand-p21:hover { border-color:var(--bw-accent) !important }
+.brand-p22:hover { border-color:var(--bw-accent) !important }
+.brand-p23:hover { border-color:var(--bw-accent) !important }
+.brand-p24:hover { border-color:var(--bw-accent) !important; color:var(--bw-accent) !important }
 .brand-p25:active { transform:scale(.97) !important }
 .brand-p26:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .brand-p27:hover { background:var(--bw-fg) !important; color:var(--bw-bg) !important; opacity:1 !important }

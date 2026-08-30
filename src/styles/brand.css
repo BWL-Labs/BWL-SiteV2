@@ -133,6 +133,40 @@ body {
   .bw-press, .bw-hover-lift { transition: none; }
 }
 
+/* ── interactive surfaces ───────────────────────────────────────────────────
+   The markup carried fourteen different hover treatments and most of them
+   snapped, because the transition was declared per element or not at all. One
+   timing for every control, so the site feels like a single object under the
+   cursor.
+
+   Colour and depth only. Several controls — the service-wheel nodes above all —
+   carry a layout transform inline, and transitioning transform globally would
+   animate those the moment anything touched them. Press feedback stays with
+   .bw-press, which owns its own scale. */
+:where(a, button, [role="button"], summary, label) {
+  transition:
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out),
+    color 200ms var(--ease-out),
+    opacity 200ms var(--ease-out),
+    box-shadow 240ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(a, button, [role="button"], summary, label) { transition: none; }
+}
+
+/* the prompt field draws its own blinking caret, so a focused textarea showed
+   two — the decorative one and the browser's. Retire ours while the real one
+   is present. !important because the blink is an inline animation, and a
+   running animation outranks a stylesheet opacity however specific the
+   selector. */
+[data-bw-prompt]:focus-within [data-bw-caret] {
+  animation: none !important;
+  opacity: 0;
+}
+[data-bw-caret] { transition: opacity 160ms var(--ease-out); }
+
 /* ── header chrome ──────────────────────────────────────────────────────────
    These lived in the homepage's own style block, so twelve of thirteen pages
    had a flat translucent bar that never reacted to scroll. Global now, which
