@@ -20,9 +20,8 @@ const REACH = [
 ];
 
 const NAV = [
-  { href: "#contact", label: "LinkedIn" },
-  { href: "#contact", label: "X" },
-  { href: "#contact", label: "Dribbble" },
+  { href: "https://www.linkedin.com/company/blackware-labs", label: "LinkedIn", external: true },
+  { href: "https://www.instagram.com/blackwarelabs/", label: "Instagram", external: true },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
   { href: "/contact", label: "Contact" },
@@ -76,11 +75,19 @@ export function SiteFooter() {
       <div className="bwf-base">
         <span>© 2026 Blackware Labs</span>
         <nav>
-          {NAV.map((n) => (
-            <Link key={n.label} href={n.href}>
-              {n.label}
-            </Link>
-          ))}
+          {NAV.map((n) =>
+            /* the social profiles leave the site, so they get a real anchor with
+               noopener rather than the client-side router */
+            n.external ? (
+              <a key={n.label} href={n.href} target="_blank" rel="noopener noreferrer">
+                {n.label}
+              </a>
+            ) : (
+              <Link key={n.label} href={n.href}>
+                {n.label}
+              </Link>
+            )
+          )}
         </nav>
       </div>
     </footer>

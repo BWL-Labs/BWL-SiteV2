@@ -25,35 +25,51 @@
   @keyframes bwBlink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.15; } }
   @keyframes bwPop { 0% { opacity: 0; transform: scale(.86); } 62% { opacity: 1; transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
   [data-bw-sweep]::before { content: attr(data-bw-sweep); }
-  /* Loader — struck, written, signed.
-     A rule is struck as a baseline, the mark is written onto it, the signature
-     lands last. One idea carried through four beats rather than four effects.
+  /* Loader — the wordmark assembling into the header logo.
+     The bar is struck full-width under BW, the letters are written onto it,
+     then the bar itself travels down and contracts into the dash of
+     "Labs — //", so the loader resolves into the exact lockup in the header
+     rather than a separate composition that merely resembles it.
 
-     All CSS: this runs while the bundle is hydrating, and a CSS animation keeps
-     going off the main thread where requestAnimationFrame would drop frames.
-     Only transform, opacity and clip-path move — nothing that triggers layout.
-     Easing is the sheet's own --ease-glide, the strong ease-out already used
-     for confident arrivals here. */
+     The bar IS the dash: it sits in the sub-line in normal flow, and the
+     animation runs backwards from there — scaled and lifted at 0%, resting at
+     100%. So the finished state needs no transform and cannot drift.
 
-  /* 1. the baseline is struck, left to right */
-  [data-bw-rule] { transform: scaleX(0); transform-origin: 0 50%;
-    animation: bwRule .52s var(--ease-glide) forwards; }
-  @keyframes bwRule { to { transform: scaleX(1); } }
+     Geometry is measured from the resting lockup: mark 142px wide, dash 26px
+     at x=49, mid-line 10px below the struck position. scaleX 5.46 = 142/26.
+     These hold as long as the mark stays 124px Barlow Condensed; a font
+     fallback only makes the struck bar slightly wide, which is harmless.
 
-  /* 2. the letters are written onto it, inking up from that baseline */
+     All CSS — this plays while the bundle hydrates, where rAF drops frames.
+     transform and opacity only. */
+  [data-bw-rule] { transform-origin: 0 50%;
+    animation: bwRuleMorph 1.76s both; }
+  @keyframes bwRuleMorph {
+    0%   { transform: translate(-49px,-10px) scaleX(0);
+           animation-timing-function: var(--ease-glide); }
+    30%  { transform: translate(-49px,-10px) scaleX(5.46);
+           animation-timing-function: linear; }
+    67%  { transform: translate(-49px,-10px) scaleX(5.46);
+           animation-timing-function: cubic-bezier(.77,0,.175,1); }
+    100% { transform: translate(0,0) scaleX(1); }
+  }
+
+  /* the letters are written onto the struck bar. only the bottom edge of the
+     clip travels; the other three sides sit outside the glyph so the reveal
+     never shaves the B's bowls or the W's vertices. */
   [data-bw-ch] { display: inline-block; clip-path: inset(-28% -12% 100% -12%);
     animation: bwInk .72s var(--ease-glide) .30s forwards; }
   [data-bw-ch]:nth-child(2) { animation-delay: .44s; }
   @keyframes bwInk { to { clip-path: inset(-28% -12% -28% -12%); } }
 
-  /* 3. the signature, and the // lands last as the final beat */
-  [data-bw-sub-word] { opacity: 0; transform: translateY(6px);
-    animation: bwSign .5s var(--ease-glide) 1.24s forwards; }
-  [data-bw-sub-slash] { opacity: 0; transform: translateY(6px);
-    animation: bwSign .5s var(--ease-glide) 1.46s forwards; }
-  @keyframes bwSign { to { opacity: .68; transform: translateY(0); } }
+  /* the wordmark's own text arrives around the dash once it has landed */
+  [data-bw-sub-word], [data-bw-sub-slash] { opacity: 0;
+    animation: bwSign .46s var(--ease-glide) forwards; }
+  [data-bw-sub-word] { animation-delay: 1.58s; }
+  [data-bw-sub-slash] { animation-delay: 1.72s; }
+  @keyframes bwSign { to { opacity: .74; } }
 
-  /* 4. the whole lockup lifts away rather than the panel simply blinking off */
+  /* the whole lockup lifts away rather than the panel blinking off */
   [data-bw-loader][data-dismissed] [data-bw-lockup] {
     animation: bwLockupOut .42s var(--ease-glide) forwards; }
   @keyframes bwLockupOut { to { opacity: 0; transform: translateY(-10px); } }
@@ -61,7 +77,7 @@
   @media (prefers-reduced-motion: reduce) {
     [data-bw-rule] { transform: none; animation: none; }
     [data-bw-ch] { clip-path: none; animation: none; }
-    [data-bw-sub-word], [data-bw-sub-slash] { opacity: .68; transform: none; animation: none; }
+    [data-bw-sub-word], [data-bw-sub-slash] { opacity: .74; animation: none; }
     [data-bw-loader][data-dismissed] [data-bw-lockup] { animation: none; }
   }
   @keyframes bwSweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }

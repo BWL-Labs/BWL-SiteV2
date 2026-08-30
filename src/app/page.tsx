@@ -10,9 +10,8 @@ export default function Home() {
 <div data-bw-loader="" aria-hidden="true" style={{position:"fixed",inset:"0",zIndex:"9999",background:"var(--bw-bg)",display:"flex",alignItems:"center",justifyContent:"center",transition:"opacity .44s cubic-bezier(.2,.7,.2,1)",opacity:"1"}}>
 <div data-bw-lockup="" style={{display:"flex",flexDirection:"column",alignItems:"flex-start"}}>
 <div data-bw-mark="" style={{display:"flex",alignItems:"baseline",fontFamily:"var(--font-display),'Barlow Condensed',Archivo,sans-serif",fontWeight:"900",fontSize:"124px",lineHeight:".8",letterSpacing:"-.03em",color:"var(--bw-fg)"}}><span data-bw-ch="">B</span><span data-bw-ch="">W</span></div>
-<span data-bw-rule="" style={{display:"block",width:"100%",height:"2px",background:"var(--bw-fg)",marginTop:"14px"}}></span>
-<span data-bw-sub="" style={{display:"flex",alignItems:"center",gap:"10px",marginTop:"12px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".3em",textTransform:"uppercase",color:"var(--bw-fg)"}}>
-<span data-bw-sub-word="">Labs</span><span data-bw-sub-slash="" style={{color:"var(--bw-accent)"}}>//</span>
+<span data-bw-sub="" style={{display:"flex",alignItems:"center",gap:"9px",marginTop:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".24em",textTransform:"uppercase",color:"var(--bw-fg)"}}>
+<span data-bw-sub-word="">Labs</span><span data-bw-rule="" style={{display:"block",width:"26px",height:"2px",background:"currentColor",flexShrink:"0"}}></span><span data-bw-sub-slash="" style={{color:"var(--bw-accent)"}}>//</span>
 </span>
 </div>
 </div>

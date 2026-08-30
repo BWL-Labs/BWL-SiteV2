@@ -49,7 +49,7 @@ class Component extends DCLogic {
        screen holds until both that sequence has finished and the assets the
        first screens need are in cache. MAX is the escape hatch so a stalled
        request can never trap someone behind the splash. */
-    const LOADER_MIN_MS = 2700;   /* sequence ends 1.96s, then a beat of hold */
+    const LOADER_MIN_MS = 2900;   /* sequence ends 2.18s, then a beat of hold */
     const LOADER_MAX_MS = 6000;
     const loaderStart = performance.now();
 
