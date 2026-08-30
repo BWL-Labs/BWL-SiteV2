@@ -133,6 +133,44 @@ body {
   .bw-press, .bw-hover-lift { transition: none; }
 }
 
+/* ── the primary CTA ────────────────────────────────────────────────────────
+   One treatment for every pill CTA: the service-page buttons, the featured
+   pricing tiers, and Book a call in the header.
+
+   The old gradient ran a bright gold (oklch L .8 C .15) straight under paper
+   text — 2.09:1, unreadable where it bloomed. These stops are eased down and
+   pulled toward gold-over-black, so the darkest text contrast on the lit
+   corner is 7.87:1.
+
+   The gradient lives on a pseudo-element rather than the background, because
+   background-image cannot be transitioned. At rest it sits back; on hover it
+   fills in. Opacity only, so it composites rather than repaints. */
+[data-bw-cta] {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+[data-bw-cta]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(at 16% 14%, oklch(0.60 0.105 84 / .62) 0%, transparent 58%),
+    radial-gradient(at 88% 30%, oklch(0.46 0.075 70 / .50) 0%, transparent 60%),
+    radial-gradient(at 58% 96%, oklch(0.36 0.06 40 / .42) 0%, transparent 64%);
+  opacity: .5;
+  transition: opacity 320ms var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  [data-bw-cta]:hover::before { opacity: 1; }
+}
+[data-bw-cta]:focus-visible::before { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  [data-bw-cta]::before { transition: none; }
+}
+
 /* ── interactive surfaces ───────────────────────────────────────────────────
    The markup carried fourteen different hover treatments and most of them
    snapped, because the transition was declared per element or not at all. One

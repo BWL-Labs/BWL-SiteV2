@@ -1,20 +1,30 @@
 /* Shared site footer, lifted out of the homepage sheet.
    Only the homepage carries this footer; the service pages have their own strip. */
 
-/* ── site footer (approved build) — classes namespaced bwf-, scoped to .site-footer ── */
-  :root {
-    --bg: var(--bw-bg); --fg: var(--bw-fg); --hair: var(--bw-rule);
-    --fg-mute:rgba(8,7,5,.70); --hair-hi:rgba(8,7,5,.30);
-    --bw-accent:#C84A1F; --map-line:rgba(8,7,5,.30); --tint:.12; --tint-home:.62; --land:rgba(8,7,5,.05); --dot:rgba(8,7,5,.26); --dot-home:rgba(8,7,5,.52);
-    --grat:rgba(8,7,5,.05); --btn-bg:#080705; --btn-fg:#FFFFFA;
-  }
-.site-footer{position:relative;width:100%;min-height:860px;padding:10rem 0 2.5rem;overflow:hidden;isolation:isolate;color:var(--fg)}
-.site-footer .bwf-map{position:absolute;inset:0;z-index:-2;opacity:.85;
-    -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 82%,transparent 100%);
-    mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 82%,transparent 100%)}
-.site-footer .bwf-map-h{position:absolute;inset:0;
-    -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.14) 12%,#000 26%,#000 88%,transparent 100%);
-    mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.14) 12%,#000 26%,#000 88%,transparent 100%)}
+/* ── site footer (approved build) — classes namespaced bwf-, scoped to .site-footer ──
+   The local :root that used to sit here redefined --bg, --fg, --bw-accent and
+   friends with light-only values. Every one is already defined for both themes
+   in brand.css, so it was dead weight sitting on a known trap. Removed. */
+.site-footer{position:relative;width:100%;min-height:min(760px,86vh);padding:10rem 0 3rem;overflow:hidden;isolation:isolate;color:var(--fg)}
+
+/* The map was a full-bleed rectangle behind everything: arcs crossed the
+   headline, dots showed through the legal row, and the reach lines ran off the
+   bottom-right corner into "Contact". A horizontal mask was written for exactly
+   this (.bwf-map-h) and never applied to anything.
+
+   Both masks now compose on the map itself, so it occupies the right of the
+   composition and clears the type on the left, and it stops above the legal
+   row instead of running under it. Type left, world right, footer on clean
+   ground. */
+.site-footer .bwf-map{position:absolute;top:0;left:0;right:0;bottom:13rem;z-index:-2;opacity:.85;
+    -webkit-mask-image:
+      linear-gradient(to bottom,transparent 0%,#000 16%,#000 76%,transparent 100%),
+      linear-gradient(to right,transparent 0%,rgba(0,0,0,.10) 24%,#000 46%,#000 90%,transparent 100%);
+    mask-image:
+      linear-gradient(to bottom,transparent 0%,#000 16%,#000 76%,transparent 100%),
+      linear-gradient(to right,transparent 0%,rgba(0,0,0,.10) 24%,#000 46%,#000 90%,transparent 100%);
+    -webkit-mask-composite:source-in;
+    mask-composite:intersect}
 .site-footer .bwf-map svg{background:none}
 .site-footer .bwf-map svg{width:100%;height:100%;display:block}
 .site-footer .bwf-pins{position:absolute;inset:0;z-index:0;pointer-events:none}
@@ -81,8 +91,12 @@
   }
 @media(max-width:900px){
     .site-footer .bwf-inner,.site-footer .bwf-base{padding-left:clamp(1.5rem,4vw,4rem);padding-right:clamp(1.5rem,4vw,4rem)}
-    .site-footer .bwf-map{opacity:.4;
-      -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 42%);mask-image:linear-gradient(to bottom,transparent 0,#000 42%)}
+    /* narrow layouts stack, so the legal row sits much higher and the map has
+       to stop much sooner to stay off it */
+    .site-footer .bwf-map{opacity:.32;bottom:auto;height:58%;
+      -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 42%,#000 88%,transparent 100%);
+      mask-image:linear-gradient(to bottom,transparent 0,#000 42%,#000 88%,transparent 100%);
+      -webkit-mask-composite:source-over;mask-composite:add}
     .site-footer{padding:4rem 0 2rem}
     .site-footer .bwf-base{margin-top:4rem}
   }
