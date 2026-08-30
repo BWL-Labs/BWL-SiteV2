@@ -25,27 +25,44 @@
   @keyframes bwBlink { 0%, 60% { opacity: 1; } 61%, 100% { opacity: 0.15; } }
   @keyframes bwPop { 0% { opacity: 0; transform: scale(.86); } 62% { opacity: 1; transform: scale(1.06); } 100% { opacity: 1; transform: scale(1); } }
   [data-bw-sweep]::before { content: attr(data-bw-sweep); }
-  /* the mark inks in: each letter is clipped to nothing and the clip opens
-     upward, so the letterform fills rather than fades. clip-path is the one
-     non-transform property that stays off the layout path.
-     The reveal is pure CSS and starts on the first frame. Gating it on a JS
-     signal cost ~800ms of blank screen, because the wait was really for the
-     bundle to hydrate, not for fonts. next/font ships a metric-matched
-     fallback, so a swap mid-reveal is not perceptible — and a CSS animation
-     keeps running while the main thread is busy booting. */
-  [data-bw-ch] { display: inline-block; clip-path: inset(0 0 100% 0); }
-  [data-bw-ch] {
-    animation: bwInk .58s var(--ease-glide) forwards; }
-  [data-bw-ch]:nth-child(2) { animation-delay: .14s; }
+  /* Loader — struck, written, signed.
+     A rule is struck as a baseline, the mark is written onto it, the signature
+     lands last. One idea carried through four beats rather than four effects.
+
+     All CSS: this runs while the bundle is hydrating, and a CSS animation keeps
+     going off the main thread where requestAnimationFrame would drop frames.
+     Only transform, opacity and clip-path move — nothing that triggers layout.
+     Easing is the sheet's own --ease-glide, the strong ease-out already used
+     for confident arrivals here. */
+
+  /* 1. the baseline is struck, left to right */
+  [data-bw-rule] { transform: scaleX(0); transform-origin: 0 50%;
+    animation: bwRule .52s var(--ease-glide) forwards; }
+  @keyframes bwRule { to { transform: scaleX(1); } }
+
+  /* 2. the letters are written onto it, inking up from that baseline */
+  [data-bw-ch] { display: inline-block; clip-path: inset(0 0 100% 0);
+    animation: bwInk .72s var(--ease-glide) .30s forwards; }
+  [data-bw-ch]:nth-child(2) { animation-delay: .44s; }
   @keyframes bwInk { to { clip-path: inset(0 0 0 0); } }
-  [data-bw-mark-sub] {
-    animation: bwMarkSub .5s var(--ease-glide) .62s forwards; }
-  @keyframes bwMarkSub { from { opacity: 0; transform: translateY(6px); }
-                         to   { opacity: .62; transform: translateY(0); } }
+
+  /* 3. the signature, and the // lands last as the final beat */
+  [data-bw-sub-word] { opacity: 0; transform: translateY(6px);
+    animation: bwSign .5s var(--ease-glide) 1.24s forwards; }
+  [data-bw-sub-slash] { opacity: 0; transform: translateY(6px);
+    animation: bwSign .5s var(--ease-glide) 1.46s forwards; }
+  @keyframes bwSign { to { opacity: .68; transform: translateY(0); } }
+
+  /* 4. the whole lockup lifts away rather than the panel simply blinking off */
+  [data-bw-loader][data-dismissed] [data-bw-lockup] {
+    animation: bwLockupOut .42s var(--ease-glide) forwards; }
+  @keyframes bwLockupOut { to { opacity: 0; transform: translateY(-10px); } }
+
   @media (prefers-reduced-motion: reduce) {
-    [data-bw-ch] { clip-path: none; }
-    [data-bw-ch] { animation: none; }
-    [data-bw-mark-sub] { animation: none; opacity: .62; }
+    [data-bw-rule] { transform: none; animation: none; }
+    [data-bw-ch] { clip-path: none; animation: none; }
+    [data-bw-sub-word], [data-bw-sub-slash] { opacity: .68; transform: none; animation: none; }
+    [data-bw-loader][data-dismissed] [data-bw-lockup] { animation: none; }
   }
   @keyframes bwSweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
   @keyframes bwCycle1 { 0%,3% { opacity:0; transform:translateY(28px); } 8%,28% { opacity:1; transform:translateY(0); } 33%,100% { opacity:0; transform:translateY(-28px); } }
