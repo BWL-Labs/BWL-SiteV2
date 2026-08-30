@@ -41,10 +41,10 @@
   @keyframes bwRule { to { transform: scaleX(1); } }
 
   /* 2. the letters are written onto it, inking up from that baseline */
-  [data-bw-ch] { display: inline-block; clip-path: inset(0 0 100% 0);
+  [data-bw-ch] { display: inline-block; clip-path: inset(-28% -12% 100% -12%);
     animation: bwInk .72s var(--ease-glide) .30s forwards; }
   [data-bw-ch]:nth-child(2) { animation-delay: .44s; }
-  @keyframes bwInk { to { clip-path: inset(0 0 0 0); } }
+  @keyframes bwInk { to { clip-path: inset(-28% -12% -28% -12%); } }
 
   /* 3. the signature, and the // lands last as the final beat */
   [data-bw-sub-word] { opacity: 0; transform: translateY(6px);
