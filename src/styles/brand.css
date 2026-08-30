@@ -289,3 +289,20 @@ body {
   [data-bw-crumb] { display: none !important; }
   [data-bw-head-controls] { gap: 10px; }
 }
+
+/* ── mobile layout ───────────────────────────────────────────────────────────
+   The pages were authored desktop-only. Below ~760px every explicit-column
+   grid (repeat(N,1fr), 1.05fr .95fr, the wheel's three tracks) floors at its
+   cells' min-content and forces the page wrapper to ~690px — which is also
+   what pushed the fixed header and MENU button off the visible viewport,
+   since a transformed ancestor makes them size against that wrapper.
+   Sources tag the culprits: data-bw-stack on explicit grids, data-bw-pad on
+   the 1440px/40px containers. !important because the layout it overrides is
+   inline. */
+@media (max-width: 760px) {
+  [data-bw-stack] { grid-template-columns: 1fr !important; }
+  [data-bw-pad] { padding-left: 20px !important; padding-right: 20px !important; }
+  /* the blog carousel fans its slides sideways with absolute positioning;
+     on a phone the spread clips at the section edge instead of widening the page */
+  [data-bw-m-clip] { overflow-x: clip; }
+}

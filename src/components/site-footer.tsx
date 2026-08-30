@@ -59,7 +59,9 @@ export function SiteFooter() {
         <div className="bwf-eyebrow">Idea → Pipeline</div>
         <h2>Build it with BW Labs.</h2>
         <div className="bwf-acts">
-          <a className="bwf-btn bwf-btn--p bw-press" href="#contact">
+          {/* was href="#contact" — the id this footer itself carries, so the
+              funnel's last click went nowhere. The contact page has the form. */}
+          <a className="bwf-btn bwf-btn--p bw-press" href="/contact">
             Book a call
           </a>
           <button className="bwf-btn bwf-btn--g bw-press" type="button" onClick={copyMail}>

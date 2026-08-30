@@ -8,7 +8,7 @@ export default function ContactPage() {
 <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /><link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <div style={{background:"var(--bw-bg)",color:"var(--bw-fg)",minHeight:"100vh"}}>
 <header data-bw-nav="" style={{position:"fixed",top:"0",left:"0",right:"0",zIndex:"100",padding:"14px 0",background:"var(--bw-head)",borderBottom:"1px solid var(--bw-head-bd)",backdropFilter:"blur(24px) saturate(180%)",WebkitBackdropFilter:"blur(24px) saturate(180%)"}}>
-<div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px"}}>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px"}}>
 <a className="contact-p1 contact-p2" href="/" style={{display:"flex",alignItems:"center",gap:"10px",flexShrink:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>
 <img data-bw-logo="" src="/assets/blackware-logo.svg" alt="Blackware Labs" style={{height:"38px",width:"auto",display:"block",flexShrink:"0"}} />
 </a>
@@ -23,7 +23,7 @@ export default function ContactPage() {
 </div>
 </header>
 <section style={{padding:"170px 0 0"}}>
-<div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"28px"}}>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"28px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// Contact</div>
 <h1 style={{margin:"0",maxWidth:"18ch",fontWeight:"900",letterSpacing:"-.05em",lineHeight:".9",fontSize:"clamp(46px,7.6vw,108px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Tell us what you're selling.</h1>
@@ -31,7 +31,7 @@ export default function ContactPage() {
 </div>
 </section>
 <section style={{padding:"72px 0 120px"}}>
-<div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"grid",gridTemplateColumns:"1.1fr 1fr",gap:"80px"}}>
+<div data-bw-stack="" data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"grid",gridTemplateColumns:"1.1fr 1fr",gap:"80px"}}>
 <form data-bw-contact-form="" style={{display:"flex",flexDirection:"column",gap:"20px",borderTop:"1px solid var(--bw-rule)",paddingTop:"36px"}}>
 <div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
 <label style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".12em",textTransform:"uppercase",opacity:".55"}}>Name</label>
@@ -61,7 +61,7 @@ export default function ContactPage() {
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
 <span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>Book directly</span>
-<a className="contact-p15 contact-p16 contact-p17" href="/#contact" style={{fontSize:"20px",fontWeight:"700",letterSpacing:"-.02em",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Book a call →</a>
+<a className="contact-p15 contact-p16 contact-p17" href="mailto:hello@blackwarelabs.com" style={{fontSize:"20px",fontWeight:"700",letterSpacing:"-.02em",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Book a call →</a>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
 <span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>Studio</span>
@@ -75,7 +75,7 @@ export default function ContactPage() {
 </div>
 </section>
 <section style={{padding:"0 0 80px"}}>
-<div style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"24px"}}>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"24px"}}>
 <div style={{display:"flex",justifyContent:"space-between",gap:"24px",flexWrap:"wrap",borderTop:"1px solid var(--bw-rule)",paddingTop:"24px",font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>
 <span>© 2026 Blackware Labs</span>
 <div style={{display:"flex",gap:"20px"}}>
