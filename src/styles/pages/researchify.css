@@ -75,3 +75,7 @@
 .researchify-p50:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .researchify-p51:active { transform:scale(.97) !important }
 .researchify-p52:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Researchify walkthrough: stack the rail and canvas in narrow containers. */
+  @container (max-width: 899px) { [data-bw-rf-grid] { grid-template-columns: 1fr !important; } [data-bw-rf-canvas] { grid-template-columns: 1fr 1fr !important; } [data-bw-rf-wire] { display: none !important; } }
+  @container (max-width: 559px) { [data-bw-rf-canvas] { grid-template-columns: 1fr !important; } }
+  @container (max-width: 899px) { [data-bw-rf-grid] > aside { border-right: 0 !important; border-bottom: 1px solid rgba(255,255,250,.14); } }
