@@ -43,3 +43,9 @@
 .contact-p23:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .contact-p24:active { transform:scale(.97) !important }
 .contact-p25:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Contact journey: rail and transcript fold around the card in narrow containers. */
+  @container (max-width: 1023px) { [data-bw-cj] { grid-template-columns: 1fr !important; } [data-bw-cj-rail] { position: static !important; flex-direction: row !important; flex-wrap: wrap; gap: 14px 22px !important; } [data-bw-cj-rail] li[aria-hidden] { flex-basis: 100%; } [data-bw-cj-transcript] { position: static !important; } }
+  @container (max-width: 639px) { [data-bw-cj-fields] { grid-template-columns: 1fr !important; } [data-bw-cj-rail] li:not([aria-current]) button span:last-child { display: none; } }
+  [data-bw-cj] input::placeholder { color: var(--bw-fg); opacity: .35; }
+  [data-bw-cj] input:focus-visible { border-bottom-color: #E6AF2E !important; }
+  [data-bw-cj] button:focus-visible, [data-bw-cj] a:focus-visible { outline: 2px solid #E6AF2E; outline-offset: 3px; }
