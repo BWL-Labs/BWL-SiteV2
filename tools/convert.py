@@ -165,6 +165,7 @@ class Conv(HTMLParser):
         self._raw_tag = None
         self.needs_fragment = False
         self.uses_footer = False
+        self.uses_reel_quote = False
 
     # ---- pseudo-state hoisting -------------------------------------------
     def pseudo_class(self, pseudo, css):
@@ -196,6 +197,13 @@ class Conv(HTMLParser):
             # the footer was copy-pasted into all 13 pages; it is one component now
             self.out.append("<SiteFooter />")
             self.uses_footer = True
+            self.skip_depth = 1
+            return
+        if any(k == "data-bw-reel-quote" for k, v in attrs):
+            # the quote over the studio reel needs per-character motion and a
+            # reduced-motion branch, which inline .dc.html styles cannot express
+            self.out.append("<ReelQuote />")
+            self.uses_reel_quote = True
             self.skip_depth = 1
             return
         if tag in ("script", "style") and self.in_helmet:
@@ -363,7 +371,7 @@ def convert(path, slug):
 
     logic, props = extract_logic(src)
     page_css = "\n".join(c.helmet_style) + "\n\n" + "\n".join(c.rules)
-    return jsx, page_css, logic, props, c.needs_fragment, c.uses_footer
+    return jsx, page_css, logic, props, c.needs_fragment, c.uses_footer, c.uses_reel_quote
 
 
 if __name__ == "__main__":

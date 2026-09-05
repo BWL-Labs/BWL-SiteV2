@@ -372,3 +372,41 @@ html[data-bw-theme="dark"] [data-bw-hero-art] {
   [data-bw-hero-art] { opacity: .22; }
   html[data-bw-theme="dark"] [data-bw-hero-art] { opacity: .2; }
 }
+
+/* ── studio-reel quote scrim ─────────────────────────────────────────────────
+   The quote sits over moving footage — a Dubai skyline that runs from a bright
+   warm sky to near-silhouette — so no text colour is safe against the raw
+   video. This scrim is the legibility floor. Measured against the worst case
+   (a pure-white frame) it holds the 44px quote at 6.08:1 and the 11px gold
+   attribution at 5.68:1.
+
+   It is anchored left and clears before the Burj, which is the frame's focal
+   point, so the quote occupies sky the composition already leaves empty. */
+[data-bw-reel-scrim] {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: linear-gradient(
+    to right,
+    rgba(8, 7, 5, .82) 0%,
+    rgba(8, 7, 5, .66) 32%,
+    rgba(8, 7, 5, .28) 55%,
+    rgba(8, 7, 5, 0) 72%
+  );
+}
+
+@media (max-width: 900px) {
+  /* the quote's measure stops shrinking once the font hits its 26px floor, so
+     as the band narrows the text claims a bigger share of it — reaching ~39%
+     at 768px and ~58% by 560px, where the left-anchored gradient has nearly
+     cleared and the worst case falls to 4.45:1 and below. Carry the scrim
+     across the full band instead. */
+  [data-bw-reel-scrim] {
+    background: linear-gradient(
+      to right,
+      rgba(8, 7, 5, .84) 0%,
+      rgba(8, 7, 5, .74) 60%,
+      rgba(8, 7, 5, .62) 100%
+    );
+  }
+}

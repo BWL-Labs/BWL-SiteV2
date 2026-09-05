@@ -1,6 +1,7 @@
 "use client";
 
 import { SiteFooter } from "@/components/site-footer";
+import { ReelQuote } from "@/components/reel-quote";
 import "@/styles/pages/home.css";
 import { useHomeLogic } from "@/generated/home.logic";
 export default function Home() {
@@ -179,6 +180,7 @@ export default function Home() {
 </div>
 <div data-bw-reveal="" style={{position:"relative",width:"100%",height:"min(62vh,560px)",overflow:"hidden"}}>
 <video preload="none" poster="/assets/studio-reel-poster.webp" src="/assets/studio-reel.mp4" muted={true} loop={true} playsInline={true} style={{position:"absolute",inset:"0",width:"100%",height:"100%",objectFit:"cover",display:"block"}}></video>
+<ReelQuote />
 </div>
 </section>
 <section id="work" style={{padding:"130px 0 0"}}>
