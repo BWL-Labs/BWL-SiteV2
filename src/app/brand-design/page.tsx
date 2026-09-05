@@ -44,9 +44,6 @@ export default function BrandDesignPage() {
 <a className="brand-p12 brand-p13 brand-p14" href="#included" style={{border:"1px solid rgba(255,255,250,.55)",color:"#FFFFFA",borderRadius:"999px",padding:"18px 28px",fontSize:"15px",fontWeight:"600",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>What's included</a>
 </div>
 </div>
-<div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid rgba(255,255,250,.28)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",opacity:".82"}}>
-<span>9 weeks typical</span><span>From $18k</span><span>Senior team only</span><span>Two Q4 2026 slots</span>
-</div>
 </div>
 </div>
 </section>
