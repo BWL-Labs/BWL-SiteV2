@@ -128,61 +128,59 @@ export default function WebsitePage() {
 </section>
 <section style={{padding:"96px 0 0"}}>
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"14px"}}>
-<div style={{position:"relative",overflow:"hidden",border:"1px solid var(--bw-rule)",borderRadius:"16px",color:"#FFFFFA",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E'),radial-gradient(at 16% 6%,oklch(0.6 0.13 84 / .4) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 92% 94%,oklch(0.48 0.14 34 / .36) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto",backgroundBlendMode:"overlay,normal,normal",padding:"34px",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:"22px",alignItems:"start"}}>
-<div style={{display:"flex",flexDirection:"column",gap:"16px",minHeight:"340px"}}>
+<div style={{position:"relative",overflow:"hidden",border:"1px solid var(--bw-rule)",borderRadius:"16px",color:"#FFFFFA",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E'),radial-gradient(at 16% 6%,oklch(0.6 0.13 84 / .4) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 92% 94%,oklch(0.48 0.14 34 / .36) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto",backgroundBlendMode:"overlay,normal,normal",padding:"32px",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(320px,1fr))",gap:"24px",alignItems:"stretch"}}>
+<div style={{display:"flex",flexDirection:"column",gap:"16px",minHeight:"360px"}}>
 <span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#E6AF2E"}}>// the build</span>
-<div data-bw-preview="" role="img" aria-label="Preview of a homepage template Blackware ships: an oversized cropped wordmark over a moving ticker" style={{flex:"1",minHeight:"280px",display:"flex",flexDirection:"column",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",overflow:"hidden",background:"#0b0806"}}>
-<div aria-hidden="true" style={{flexShrink:"0",display:"flex",alignItems:"center",gap:"7px",padding:"9px 12px",background:"rgba(255,255,250,.03)",borderBottom:"1px solid rgba(255,255,250,.1)"}}>
+<div data-bw-preview="" role="img" aria-label="Preview of a homepage template Blackware ships: a red-framed editorial layout with an oversized cropped wordmark, black-and-white photography and a moving ticker" style={{flex:"1",minHeight:"300px",display:"flex",flexDirection:"column",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",overflow:"hidden",background:"#141110"}}>
+<div aria-hidden="true" style={{flexShrink:"0",display:"flex",alignItems:"center",gap:"7px",padding:"10px 12px",background:"rgba(255,255,250,.03)",borderBottom:"1px solid rgba(255,255,250,.1)"}}>
 <span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
 <span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
 <span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
 <span style={{marginLeft:"6px",flex:"1",background:"rgba(255,255,250,.05)",borderRadius:"999px",padding:"3px 10px",font:"500 8.5px/1.3 'JetBrains Mono',monospace",letterSpacing:".06em",color:"rgba(255,255,250,.4)",textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>yourbrand.com</span>
 </div>
-<div aria-hidden="true" style={{position:"relative",flex:"1",containerType:"inline-size",overflow:"hidden"}}>
-<div style={{position:"absolute",inset:"0",display:"flex",flexDirection:"column"}}>
-<div style={{flex:"0 0 17%",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"2cqw",padding:"0 5cqw",overflow:"hidden"}}>
-<span style={{font:"700 4.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".04em",color:"rgba(255,255,250,.85)",whiteSpace:"nowrap"}}>STUDIO <span style={{opacity:".4"}}>— 2026</span></span>
-<div style={{display:"flex",alignItems:"center",gap:"2.8cqw",flexShrink:"0"}}>
-<span style={{font:"500 3.6cqw/1 Archivo,sans-serif",color:"rgba(255,255,250,.5)",whiteSpace:"nowrap"}}>Work</span>
-<span style={{display:"inline-flex",alignItems:"center",gap:"1.2cqw",border:"1px solid rgba(255,255,250,.18)",borderRadius:"999px",padding:".8cqw 2.4cqw",font:"500 3cqw/1 'JetBrains Mono',monospace",letterSpacing:".05em",textTransform:"uppercase",color:"rgba(255,255,250,.68)",whiteSpace:"nowrap"}}>
-<span style={{width:"1.6cqw",height:"1.6cqw",minWidth:"4px",minHeight:"4px",borderRadius:"50%",background:"#E6AF2E",animation:"bwBlink 1.6s steps(1,end) infinite",flexShrink:"0"}}></span>Q1 2027
-                      </span>
+<div aria-hidden="true" style={{position:"relative",flex:"1",minHeight:"0",containerType:"size",overflow:"hidden",background:"#D3131B"}}>
+<div style={{position:"absolute",top:"4.5cqh",left:"3cqw",right:"3cqw",bottom:"0",background:"#F4F4F1",color:"#141110",overflow:"hidden"}}>
+<div style={{position:"absolute",top:"4.5cqh",left:"3cqw",right:"3cqw",display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:"2cqw",font:"500 clamp(5px,1.45cqw,10px)/1.35 Archivo,sans-serif",letterSpacing:".03em",textTransform:"uppercase"}}>
+<span style={{display:"flex",flexDirection:"column",whiteSpace:"nowrap"}}><span>Creative agency</span><span>— Est. 2020</span></span>
+<svg viewBox="0 0 24 24" style={{width:"4.2cqw",height:"4.2cqw",flexShrink:"0",marginTop:"-.4cqw"}} fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="#D3131B" strokeWidth="5" strokeDasharray="2.4 1.8"></circle></svg>
+<span style={{display:"flex",flexDirection:"column",whiteSpace:"nowrap"}}><span>Home</span><span style={{color:"rgba(20,17,16,.42)"}}>About us</span><span style={{color:"rgba(20,17,16,.42)"}}>Portfolio</span><span style={{color:"rgba(20,17,16,.42)"}}>Contact</span></span>
+<span style={{display:"flex",flexDirection:"column",whiteSpace:"nowrap"}}><span>11:33 AM</span><span style={{color:"rgba(20,17,16,.42)"}}>(GMT+7)</span></span>
+<span style={{display:"flex",flexDirection:"column",whiteSpace:"nowrap",textAlign:"right"}}><span>Available for project</span><span style={{color:"rgba(20,17,16,.42)"}}>Early Nov 2026</span></span>
 </div>
+<p style={{position:"absolute",left:"3cqw",top:"30cqh",width:"20cqw",margin:"0",font:"500 clamp(5px,1.45cqw,10px)/1.35 Archivo,sans-serif",letterSpacing:".03em",textTransform:"uppercase",lineHeight:"1.45"}}>We are a creative agency helping modern brands grow through strategy, identity, and digital experiences.</p>
+<span style={{position:"absolute",left:"0",right:"0",top:"52cqh",height:"1px",background:"rgba(20,17,16,.14)",display:"block"}}></span>
+<span style={{position:"absolute",left:"8cqw",bottom:"-2cqw",font:"900 min(24cqw,56cqh)/1 Archivo,sans-serif",letterSpacing:"-.04em",color:"#D3131B",whiteSpace:"nowrap"}}>MODO</span>
+<div style={{position:"absolute",right:"3cqw",top:"24cqh",width:"22cqw",display:"flex",flexDirection:"column",gap:".8cqw"}}>
+<span style={{display:"flex",justifyContent:"space-between",font:"500 clamp(4px,1.2cqw,8px)/1.35 Archivo,sans-serif",letterSpacing:".03em",textTransform:"uppercase"}}><span>Creative agency</span><span>(Est 2020)</span></span>
+<img src="/uploads/pasted-1787345588263-0.png" alt="" decoding="async" loading="lazy" style={{width:"100%",height:"min(22cqw,34cqh)",objectFit:"cover",objectPosition:"50% 42%",filter:"grayscale(1) contrast(1.15) brightness(.82)",display:"block"}} />
 </div>
-<div style={{flex:"0 0 56%",display:"flex",alignItems:"center",padding:"0 2.5cqw",overflow:"hidden"}}>
-<span style={{font:"900 24cqw/.86 Archivo,sans-serif",letterSpacing:"-.04em",color:"#C84A1F",whiteSpace:"nowrap"}}>STUDIO</span>
+<div style={{position:"absolute",left:"27cqw",top:"46cqh",bottom:"0",width:"21cqw",display:"flex",flexDirection:"column",gap:".7cqw"}}>
+<span style={{display:"flex",justifyContent:"space-between",font:"500 clamp(4px,1.2cqw,8px)/1.35 Archivo,sans-serif",letterSpacing:".03em"}}><span>{"/**"}</span><span>(/021)</span></span>
+<img src="/uploads/pasted-1787345297037-0.png" alt="" decoding="async" loading="lazy" style={{width:"100%",flex:"1",minHeight:"0",objectFit:"cover",objectPosition:"88% 18%",filter:"grayscale(1) contrast(1.2) brightness(.9)",display:"block"}} />
 </div>
-<div data-bw-mini-ticker="" style={{flex:"0 0 15%",overflow:"hidden",background:"#C84A1F",display:"flex",alignItems:"center"}}>
-<div style={{display:"flex",alignItems:"center",gap:"3.4cqw",whiteSpace:"nowrap",width:"max-content",paddingRight:"3.4cqw",animation:"bwMarquee 18s linear infinite"}}>
-<span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span>
+<div data-bw-mini-ticker="" style={{position:"absolute",left:"0",right:"0",bottom:"0",height:"max(12px,7cqh)",overflow:"hidden",background:"#D3131B",display:"flex",alignItems:"center"}}>
+<div style={{display:"flex",alignItems:"center",gap:"6cqw",whiteSpace:"nowrap",width:"max-content",paddingRight:"6cqw",font:"500 clamp(5px,1.45cqw,10px)/1 Archivo,sans-serif",letterSpacing:".03em",textTransform:"uppercase",color:"#F4F4F1",animation:"bwMarquee 22s linear infinite"}}>
+<span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span><span style={{flexShrink:"0"}}>LET&apos;S BUILD SOMETHING GREAT.</span>
 </div>
-</div>
-<div style={{flex:"0 0 12%",display:"flex",alignItems:"center",justifyContent:"center",gap:"2.4cqw",borderTop:"1px solid rgba(255,255,250,.08)"}}>
-<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Brand</span>
-<span style={{color:"rgba(255,255,250,.2)",fontSize:"2.6cqw"}}>·</span>
-<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Web &amp; portfolio</span>
-<span style={{color:"rgba(255,255,250,.2)",fontSize:"2.6cqw"}}>·</span>
-<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Growth</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"16px"}}>
-<div style={{position:"relative",overflow:"hidden",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",background:"linear-gradient(150deg,rgba(255,255,250,.09),rgba(255,255,250,.03))",backdropFilter:"blur(18px) saturate(150%)",WebkitBackdropFilter:"blur(18px) saturate(150%)",padding:"26px",display:"flex",flexDirection:"column",gap:"24px"}}>
-<span aria-hidden="true" style={{position:"absolute",top:"-70px",right:"-70px",width:"220px",height:"220px",borderRadius:"50%",background:"oklch(0.7 0.14 84 / .16)",filter:"blur(46px)",pointerEvents:"none",display:"block"}}></span>
-<div style={{display:"flex",alignItems:"center",gap:"16px"}}>
-<span style={{width:"48px",height:"48px",borderRadius:"12px",border:"1px solid rgba(255,255,250,.2)",background:"rgba(255,255,250,.08)",display:"grid",placeItems:"center",flexShrink:"0"}}>
+<div style={{border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",background:"linear-gradient(150deg,rgba(255,255,250,.08),rgba(255,255,250,.03))",padding:"24px",display:"flex",flexDirection:"column",gap:"22px",flex:"1"}}>
+<div style={{display:"flex",alignItems:"center",gap:"14px"}}>
+<span style={{width:"44px",height:"44px",borderRadius:"12px",border:"1px solid rgba(255,255,250,.16)",background:"rgba(255,255,250,.06)",display:"grid",placeItems:"center",flexShrink:"0"}}>
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E6AF2E" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="3.5"></circle><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3"></path></svg>
 </span>
-<span style={{display:"flex",flexDirection:"column",gap:"2px"}}>
-<span style={{fontWeight:"800",fontSize:"30px",letterSpacing:"-.04em",lineHeight:"1"}}>38 sites</span>
-<span style={{fontSize:"14px",fontWeight:"500",opacity:".6"}}>Shipped since 2017</span>
+<span style={{display:"flex",flexDirection:"column",gap:"4px"}}>
+<span style={{fontWeight:"800",fontSize:"32px",letterSpacing:"-.03em",lineHeight:"1",fontVariantNumeric:"tabular-nums"}}>38 sites</span>
+<span style={{fontSize:"13px",fontWeight:"500",color:"rgba(255,255,250,.6)"}}>Shipped since 2017</span>
 </span>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
-<div style={{display:"flex",justifyContent:"space-between",fontSize:"13px",fontWeight:"500"}}>
-<span style={{opacity:".6"}}>Launched on the first date given</span><span>94%</span>
+<div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"12px",fontSize:"13px",fontWeight:"500"}}>
+<span style={{color:"rgba(255,255,250,.6)"}}>Launched on the first date given</span><span style={{fontVariantNumeric:"tabular-nums"}}>94%</span>
 </div>
 <div style={{height:"6px",borderRadius:"999px",background:"rgba(255,255,250,.12)",overflow:"hidden"}}>
 <span style={{display:"block",height:"100%",borderRadius:"999px",background:"linear-gradient(90deg,#E6AF2E,#C84A1F)",transformOrigin:"left",transition:"transform 1.4s cubic-bezier(.2,.7,.2,1)",transform:`scaleX(${barScale})`}}></span>
@@ -190,43 +188,33 @@ export default function WebsitePage() {
 </div>
 <div style={{height:"1px",background:"rgba(255,255,250,.14)"}}></div>
 <div data-bw-stack="" style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"12px",textAlign:"center"}}>
-<span style={{display:"flex",flexDirection:"column",gap:"5px"}}>
-<span style={{fontWeight:"800",fontSize:"20px",letterSpacing:"-.03em"}}>{shipCount}</span>
-<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>Median build</span>
+<span style={{display:"flex",flexDirection:"column",gap:"7px"}}>
+<span style={{fontWeight:"800",fontSize:"22px",lineHeight:"1",letterSpacing:"-.03em",fontVariantNumeric:"tabular-nums"}}>{shipCount}</span>
+<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.55)"}}>Median build</span>
 </span>
-<span style={{display:"flex",flexDirection:"column",gap:"5px",borderLeft:"1px solid rgba(255,255,250,.14)",borderRight:"1px solid rgba(255,255,250,.14)"}}>
-<span style={{fontWeight:"800",fontSize:"20px",letterSpacing:"-.03em"}}>0.9s</span>
-<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>Median LCP</span>
+<span style={{display:"flex",flexDirection:"column",gap:"7px",borderLeft:"1px solid rgba(255,255,250,.14)",borderRight:"1px solid rgba(255,255,250,.14)"}}>
+<span style={{fontWeight:"800",fontSize:"22px",lineHeight:"1",letterSpacing:"-.03em",fontVariantNumeric:"tabular-nums"}}>0.9s</span>
+<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.55)"}}>Median LCP</span>
 </span>
-<span style={{display:"flex",flexDirection:"column",gap:"5px"}}>
-<span style={{fontWeight:"800",fontSize:"20px",letterSpacing:"-.03em"}}>100</span>
-<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>A11y score</span>
+<span style={{display:"flex",flexDirection:"column",gap:"7px"}}>
+<span style={{fontWeight:"800",fontSize:"22px",lineHeight:"1",letterSpacing:"-.03em",fontVariantNumeric:"tabular-nums"}}>100</span>
+<span style={{font:"500 10px/1.4 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.55)"}}>A11y score</span>
 </span>
 </div>
-<div style={{display:"flex",flexWrap:"wrap",gap:"8px"}}>
-<span style={{display:"inline-flex",alignItems:"center",gap:"8px",border:"1px solid rgba(255,255,250,.16)",borderRadius:"999px",padding:"6px 12px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".85"}}>
+<div style={{display:"flex",flexWrap:"wrap",gap:"8px",marginTop:"auto"}}>
+<span style={{display:"inline-flex",alignItems:"center",gap:"8px",border:"1px solid rgba(255,255,250,.16)",borderRadius:"999px",padding:"7px 12px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.85)"}}>
 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#E6AF2E",animation:"bwBlink 1.4s steps(1,end) infinite",display:"block"}}></span>Two Q4 slots open</span>
-<span style={{display:"inline-flex",alignItems:"center",gap:"8px",border:"1px solid rgba(255,255,250,.16)",borderRadius:"999px",padding:"6px 12px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".85"}}>Senior team only</span>
+<span style={{display:"inline-flex",alignItems:"center",gap:"8px",border:"1px solid rgba(255,255,250,.16)",borderRadius:"999px",padding:"7px 12px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.85)"}}>Senior team only</span>
 </div>
 </div>
-<div style={{overflow:"hidden",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",background:"linear-gradient(150deg,rgba(255,255,250,.09),rgba(255,255,250,.03))",backdropFilter:"blur(18px) saturate(150%)",WebkitBackdropFilter:"blur(18px) saturate(150%)",padding:"22px 0"}}>
-<span style={{display:"block",padding:"0 22px 16px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",opacity:".5"}}>// Built for</span>
+<div style={{border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",background:"linear-gradient(150deg,rgba(255,255,250,.08),rgba(255,255,250,.03))",overflow:"hidden",padding:"24px 0 22px"}}>
+<span style={{display:"block",padding:"0 24px 18px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#E6AF2E"}}>// Built for</span>
 <div style={{display:"flex",overflow:"hidden",maskImage:"linear-gradient(to right,transparent,#000 16%,#000 84%,transparent)",WebkitMaskImage:"linear-gradient(to right,transparent,#000 16%,#000 84%,transparent)"}}>
-<div style={{display:"flex",gap:"34px",whiteSpace:"nowrap",paddingRight:"34px",animation:"bwMarquee 32s linear infinite"}}>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Northbeam</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Halcyon Health</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Vector Freight</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Kestrel Data</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Orbit Payments</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Fielding Labs</span><span style={{opacity:".3"}}>·</span>
+<div style={{display:"flex",alignItems:"center",gap:"34px",whiteSpace:"nowrap",paddingRight:"34px",animation:"bwMarquee 32s linear infinite"}}>
+<span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Northbeam</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Halcyon Health</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Vector Freight</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Kestrel Data</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Orbit Payments</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Fielding Labs</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span>
 </div>
-<div style={{display:"flex",gap:"34px",whiteSpace:"nowrap",paddingRight:"34px",animation:"bwMarquee 32s linear infinite"}} aria-hidden="true">
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Northbeam</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Halcyon Health</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Vector Freight</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Kestrel Data</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Orbit Payments</span><span style={{opacity:".3"}}>·</span>
-<span style={{fontWeight:"800",fontSize:"19px",letterSpacing:"-.03em",opacity:".62"}}>Fielding Labs</span><span style={{opacity:".3"}}>·</span>
+<div style={{display:"flex",alignItems:"center",gap:"34px",whiteSpace:"nowrap",paddingRight:"34px",animation:"bwMarquee 32s linear infinite"}} aria-hidden="true">
+<span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Northbeam</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Halcyon Health</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Vector Freight</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Kestrel Data</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Orbit Payments</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span><span style={{fontWeight:"800",fontSize:"18px",letterSpacing:"-.03em",color:"rgba(255,255,250,.62)"}}>Fielding Labs</span><span style={{color:"rgba(255,255,250,.3)"}}>·</span>
 </div>
 </div>
 </div>
