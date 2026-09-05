@@ -181,7 +181,7 @@ export function ResearchifyDemo() {
 
   return (
     <div data-bw-rf="" style={{ containerType: "inline-size", width: "100%", display: "flex", flexDirection: "column", gap: 14, textAlign: "left" }}>
-      <div onPointerDownCapture={engage} onKeyDownCapture={engage} style={{ position: "relative", border: `1px solid ${LINE}`, borderRadius: 16, background: SCREEN, color: PAPER, fontFamily: "Archivo, sans-serif", overflow: "hidden", boxShadow: "0 40px 80px -50px rgba(8,7,5,.8)" }}>
+      <div onPointerDownCapture={engage} onKeyDownCapture={engage} style={{ position: "relative", border: `1px solid ${LINE}`, borderRadius: 16, background: SCREEN, color: PAPER, fontFamily: "Inter, sans-serif", overflow: "hidden", boxShadow: "0 40px 80px -50px rgba(8,7,5,.8)" }}>
         {/* App bar */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 14, padding: "16px 22px", borderBottom: `1px solid ${LINE}`, flexWrap: "wrap" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, minWidth: 0, flexWrap: "wrap" }}>
@@ -192,7 +192,7 @@ export function ResearchifyDemo() {
           </div>
           <div style={{ display: "flex", gap: 8 }}>
             <span style={{ display: "inline-flex", alignItems: "center", gap: 8, border: `1px solid ${LINE}`, borderRadius: 999, padding: "8px 12px", ...mono(9, ".12em"), color: INK_2 }}><Upload size={12} strokeWidth={1.75} aria-hidden="true" />Upload CSV</span>
-            <button type="button" onClick={() => { engage(); startRun(); }} disabled={runState === "running"} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, border: 0, borderRadius: 999, padding: "8px 14px", background: runState === "running" ? "rgba(230,175,46,.35)" : GOLD, color: "#080705", cursor: runState === "running" ? "default" : "pointer", fontFamily: "Archivo, sans-serif", fontWeight: 700, fontSize: 12.5 }}>
+            <button type="button" onClick={() => { engage(); startRun(); }} disabled={runState === "running"} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, border: 0, borderRadius: 999, padding: "8px 14px", background: runState === "running" ? "rgba(230,175,46,.35)" : GOLD, color: "#080705", cursor: runState === "running" ? "default" : "pointer", fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: 12.5 }}>
               <Play size={12} strokeWidth={2.4} aria-hidden="true" />{runState === "running" ? "Running…" : "Run pipeline"}
             </button>
           </div>

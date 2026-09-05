@@ -87,7 +87,7 @@ type Answer = { optionId: string | null; text: string };
 type Details = { name: string; email: string; company: string; note: string };
 
 const mono: React.CSSProperties = { fontFamily: "'JetBrains Mono', monospace", fontWeight: 500, fontSize: 10.5, letterSpacing: ".14em", textTransform: "uppercase" };
-const field: React.CSSProperties = { border: 0, borderBottom: "1px solid var(--bw-rule)", background: "none", color: "var(--bw-fg)", fontSize: 18, fontWeight: 500, padding: "10px 0", outline: "none", width: "100%", fontFamily: "Archivo, sans-serif" };
+const field: React.CSSProperties = { border: 0, borderBottom: "1px solid var(--bw-rule)", background: "none", color: "var(--bw-fg)", fontSize: 18, fontWeight: 500, padding: "10px 0", outline: "none", width: "100%", fontFamily: "Inter, sans-serif" };
 const label: React.CSSProperties = { ...mono, opacity: 0.55 };
 
 function answerText(step: Step, a: Answer) {
@@ -187,7 +187,7 @@ export function ContactJourney() {
                     {step.options.map((o) => {
                       const on = a.optionId === o.id;
                       return (
-                        <motion.button key={o.id} type="button" aria-pressed={on} onClick={() => pick(stage, o.id)} whileTap={reduce ? undefined : { scale: 0.98 }} style={{ appearance: "none", textAlign: "left", display: "flex", alignItems: "center", gap: 14, padding: "16px 18px", borderRadius: 14, border: `1px solid ${on ? GOLD : "var(--bw-glass-bd)"}`, background: on ? "rgba(230,175,46,.12)" : "var(--bw-glass)", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Archivo, sans-serif", fontSize: 15, fontWeight: 600, letterSpacing: "-.01em", lineHeight: 1.3, transition: "border-color .2s, background-color .2s" }}>
+                        <motion.button key={o.id} type="button" aria-pressed={on} onClick={() => pick(stage, o.id)} whileTap={reduce ? undefined : { scale: 0.98 }} style={{ appearance: "none", textAlign: "left", display: "flex", alignItems: "center", gap: 14, padding: "16px 18px", borderRadius: 14, border: `1px solid ${on ? GOLD : "var(--bw-glass-bd)"}`, background: on ? "rgba(230,175,46,.12)" : "var(--bw-glass)", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Inter, sans-serif", fontSize: 15, fontWeight: 600, letterSpacing: "-.01em", lineHeight: 1.3, transition: "border-color .2s, background-color .2s" }}>
                           <span aria-hidden="true" style={{ width: 38, height: 38, borderRadius: 10, display: "grid", placeItems: "center", flexShrink: 0, background: on ? GOLD : "var(--bw-fg)", color: on ? "#080705" : "var(--bw-bg)", transition: "background-color .2s" }}>
                             <o.Icon size={17} strokeWidth={1.8} />
                           </span>
@@ -195,7 +195,7 @@ export function ContactJourney() {
                         </motion.button>
                       );
                     })}
-                    <button type="button" aria-expanded={otherOpen} onClick={() => { setOtherOpen(true); setAnswers((arr) => arr.map((x, i) => (i === stage ? { ...x, optionId: null } : x))); }} style={{ appearance: "none", textAlign: "left", display: "flex", alignItems: "center", gap: 14, padding: "16px 18px", borderRadius: 14, border: `1px dashed ${otherOpen || (!a.optionId && a.text) ? GOLD : "var(--bw-rule)"}`, background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Archivo, sans-serif", fontSize: 15, fontWeight: 600, letterSpacing: "-.01em" }}>
+                    <button type="button" aria-expanded={otherOpen} onClick={() => { setOtherOpen(true); setAnswers((arr) => arr.map((x, i) => (i === stage ? { ...x, optionId: null } : x))); }} style={{ appearance: "none", textAlign: "left", display: "flex", alignItems: "center", gap: 14, padding: "16px 18px", borderRadius: 14, border: `1px dashed ${otherOpen || (!a.optionId && a.text) ? GOLD : "var(--bw-rule)"}`, background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Inter, sans-serif", fontSize: 15, fontWeight: 600, letterSpacing: "-.01em" }}>
                       <span aria-hidden="true" style={{ width: 38, height: 38, borderRadius: 10, display: "grid", placeItems: "center", flexShrink: 0, border: "1px dashed var(--bw-fg)", opacity: 0.7 }}><PenLine size={17} strokeWidth={1.8} /></span>
                       {step.other}
                     </button>
@@ -207,7 +207,7 @@ export function ContactJourney() {
                           <span style={label}>In your words</span>
                           <input ref={otherRef} value={a.text} onChange={(e) => setAnswers((arr) => arr.map((x, i) => (i === stage ? { optionId: null, text: e.target.value } : x)))} placeholder="One line is plenty" style={field} />
                         </label>
-                        <button type="submit" disabled={!a.text.trim()} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 18px", borderRadius: 999, border: 0, background: "var(--bw-fg)", color: "var(--bw-bg)", cursor: a.text.trim() ? "pointer" : "default", opacity: a.text.trim() ? 1 : 0.4, fontFamily: "Archivo, sans-serif", fontWeight: 600, fontSize: 14 }}>
+                        <button type="submit" disabled={!a.text.trim()} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 18px", borderRadius: 999, border: 0, background: "var(--bw-fg)", color: "var(--bw-bg)", cursor: a.text.trim() ? "pointer" : "default", opacity: a.text.trim() ? 1 : 0.4, fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 14 }}>
                           Next <ArrowRight size={14} strokeWidth={2.2} aria-hidden="true" />
                         </button>
                       </motion.form>
@@ -236,7 +236,7 @@ export function ContactJourney() {
                 </div>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, marginTop: 6, flexWrap: "wrap" }}>
                   <button type="button" onClick={() => go(2)} style={{ appearance: "none", background: "transparent", border: 0, padding: 0, display: "inline-flex", alignItems: "center", gap: 6, cursor: "pointer", opacity: 0.7, color: "var(--bw-fg)", ...mono }}><ArrowLeft size={12} strokeWidth={2.2} aria-hidden="true" /> Back</button>
-                  <button type="submit" disabled={!detailsValid} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 10, padding: "16px 24px", borderRadius: 999, border: 0, background: "var(--bw-fg)", color: "var(--bw-bg)", cursor: detailsValid ? "pointer" : "default", opacity: detailsValid ? 1 : 0.4, fontFamily: "Archivo, sans-serif", fontWeight: 600, fontSize: 15 }}>
+                  <button type="submit" disabled={!detailsValid} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 10, padding: "16px 24px", borderRadius: 999, border: 0, background: "var(--bw-fg)", color: "var(--bw-bg)", cursor: detailsValid ? "pointer" : "default", opacity: detailsValid ? 1 : 0.4, fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 15 }}>
                     Review <ArrowRight size={15} strokeWidth={2.2} aria-hidden="true" />
                   </button>
                 </div>
@@ -252,10 +252,10 @@ export function ContactJourney() {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
                   <button type="button" onClick={() => go(3)} style={{ appearance: "none", background: "transparent", border: 0, padding: 0, display: "inline-flex", alignItems: "center", gap: 6, cursor: "pointer", opacity: 0.7, color: "var(--bw-fg)", ...mono }}><ArrowLeft size={12} strokeWidth={2.2} aria-hidden="true" /> Edit</button>
                   <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-                    <button type="button" onClick={copy} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 999, border: "1px solid var(--bw-fg)", background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Archivo, sans-serif", fontWeight: 600, fontSize: 14 }}>
+                    <button type="button" onClick={copy} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 999, border: "1px solid var(--bw-fg)", background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 14 }}>
                       {copied ? <Check size={14} strokeWidth={2.4} aria-hidden="true" /> : <Copy size={14} strokeWidth={2} aria-hidden="true" />}{copied ? "Copied" : "Copy summary"}
                     </button>
-                    <a href={mailHref} onClick={() => setTimeout(() => go(5), 300)} style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "16px 24px", borderRadius: 999, background: "var(--bw-fg)", color: "var(--bw-bg)", fontFamily: "Archivo, sans-serif", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>
+                    <a href={mailHref} onClick={() => setTimeout(() => go(5), 300)} style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "16px 24px", borderRadius: 999, background: "var(--bw-fg)", color: "var(--bw-bg)", fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>
                       <Mail size={15} strokeWidth={2} aria-hidden="true" /> Send to {INQUIRIES.split("@")[0]}
                     </a>
                   </div>
@@ -270,7 +270,7 @@ export function ContactJourney() {
                 <h2 style={{ margin: 0, fontWeight: 800, fontSize: "clamp(28px, 3.2vw, 44px)", lineHeight: 1.02, letterSpacing: "-.04em", maxWidth: "18ch" }}>Got it. A strategist writes back within one working day.</h2>
                 <p style={{ margin: 0, fontSize: 16, lineHeight: 1.55, opacity: 0.7, maxWidth: "52ch" }}>If your mail app did not open, copy the summary and send it to {INQUIRIES}, or call us on the numbers to the right.</p>
                 <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-                  <button type="button" onClick={copy} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 999, border: "1px solid var(--bw-fg)", background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Archivo, sans-serif", fontWeight: 600, fontSize: 14 }}>
+                  <button type="button" onClick={copy} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 999, border: "1px solid var(--bw-fg)", background: "transparent", color: "var(--bw-fg)", cursor: "pointer", fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 14 }}>
                     {copied ? <Check size={14} strokeWidth={2.4} aria-hidden="true" /> : <Copy size={14} strokeWidth={2} aria-hidden="true" />}{copied ? "Copied" : "Copy summary"}
                   </button>
                   <button type="button" onClick={() => { setAnswers(STEPS.map(() => ({ optionId: null, text: "" }))); setDetails({ name: "", email: "", company: "", note: "" }); go(0); }} style={{ appearance: "none", background: "transparent", border: 0, padding: "14px 6px", cursor: "pointer", opacity: 0.6, color: "var(--bw-fg)", ...mono }}>Start over</button>

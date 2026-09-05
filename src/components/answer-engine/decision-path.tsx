@@ -51,7 +51,7 @@ const pill: React.CSSProperties = {
   background: "var(--bw-bg)",
   border: "1px solid var(--bw-rule)",
   color: "var(--bw-fg)",
-  font: "700 13px/1 Archivo, sans-serif",
+  font: "700 13px/1 Inter, sans-serif",
   letterSpacing: "-.02em",
   whiteSpace: "nowrap",
   boxShadow: "0 10px 24px -18px rgba(8,7,5,.5)",
@@ -127,7 +127,7 @@ export function DecisionPath() {
           <MessageSquareText size={16} strokeWidth={1.75} aria-hidden="true" />
           <span style={{ display: "flex", flexDirection: "column", gap: 3, textAlign: "left" }}>
             Buyer
-            <span style={{ font: "500 10.5px/1 Archivo, sans-serif", letterSpacing: 0, opacity: 0.6 }}>“Which tool should we use?”</span>
+            <span style={{ font: "500 10.5px/1 Inter, sans-serif", letterSpacing: 0, opacity: 0.6 }}>“Which tool should we use?”</span>
           </span>
         </div>
 
@@ -142,7 +142,7 @@ export function DecisionPath() {
           <BadgeCheck size={16} strokeWidth={1.75} color={GOLD} aria-hidden="true" />
           <span style={{ display: "flex", flexDirection: "column", gap: 3, textAlign: "left" }}>
             Your brand
-            <span style={{ font: "500 10.5px/1 Archivo, sans-serif", letterSpacing: 0, opacity: 0.6 }}>named in the answer</span>
+            <span style={{ font: "500 10.5px/1 Inter, sans-serif", letterSpacing: 0, opacity: 0.6 }}>named in the answer</span>
           </span>
         </div>
 
@@ -150,7 +150,7 @@ export function DecisionPath() {
           <EyeOff size={16} strokeWidth={1.75} aria-hidden="true" />
           <span style={{ display: "flex", flexDirection: "column", gap: 3, textAlign: "left" }}>
             Everyone else
-            <span style={{ font: "500 10.5px/1 Archivo, sans-serif", letterSpacing: 0, opacity: 0.7 }}>never mentioned</span>
+            <span style={{ font: "500 10.5px/1 Inter, sans-serif", letterSpacing: 0, opacity: 0.7 }}>never mentioned</span>
           </span>
         </div>
 

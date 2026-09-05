@@ -185,7 +185,7 @@ export function BuyingJourney() {
           {STAGES.map((name, i) => (
             <g key={name}>
               <polygon points={chevron(i)} fill={RAMP[i]} />
-              <text x={cx(i)} y={(BAR.top + BAR.bottom) / 2 + 5} textAnchor="middle" fill={onRamp(i)} style={{ font: "800 15px Archivo, sans-serif", letterSpacing: "-.02em" }}>{name}</text>
+              <text x={cx(i)} y={(BAR.top + BAR.bottom) / 2 + 5} textAnchor="middle" fill={onRamp(i)} style={{ font: "800 15px Inter, sans-serif", letterSpacing: "-.02em" }}>{name}</text>
             </g>
           ))}
 
@@ -242,7 +242,7 @@ export function BuyingJourney() {
                 borderRadius: 999,
                 background: on ? "var(--bw-fg)" : "var(--bw-glass)",
                 color: on ? "var(--bw-bg)" : "var(--bw-fg)",
-                font: "600 11.5px/1.2 Archivo, sans-serif",
+                font: "600 11.5px/1.2 Inter, sans-serif",
                 letterSpacing: "-.01em",
                 whiteSpace: "nowrap",
                 boxShadow: on ? "none" : "0 1px 0 rgba(255,255,255,.4) inset",
@@ -261,7 +261,7 @@ export function BuyingJourney() {
           const here = cur.dots.filter((d) => d.stage === s);
           return (
             <div key={name} style={{ display: "grid", gridTemplateColumns: "84px 1fr", gap: 12, alignItems: "start", padding: "12px 0", borderTop: "1px solid var(--bw-rule)" }}>
-              <span style={{ display: "inline-flex", alignSelf: "start", padding: "5px 9px", borderRadius: 6, background: RAMP[s], color: onRamp(s), font: "800 12px Archivo, sans-serif" }}>{name}</span>
+              <span style={{ display: "inline-flex", alignSelf: "start", padding: "5px 9px", borderRadius: 6, background: RAMP[s], color: onRamp(s), font: "800 12px Inter, sans-serif" }}>{name}</span>
               <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 {(["self", "assisted"] as Mode[]).map((m) => {
                   const list = here.filter((d) => d.mode === m);
@@ -271,7 +271,7 @@ export function BuyingJourney() {
                       <span style={{ ...mono, fontSize: 8.5, opacity: 0.5 }}>{m === "self" ? "Alone" : "Needs a human"}</span>
                       <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                         {list.map((d) => (
-                          <button key={d.id} type="button" onClick={() => { engage(); setPicked(picked === d.id ? null : d.id); }} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 6, border: "1px solid var(--bw-rule)", background: picked === d.id ? "var(--bw-fg)" : "transparent", color: picked === d.id ? "var(--bw-bg)" : "var(--bw-fg)", borderRadius: 999, padding: "5px 9px", font: "600 11.5px Archivo, sans-serif", cursor: "pointer" }}>
+                          <button key={d.id} type="button" onClick={() => { engage(); setPicked(picked === d.id ? null : d.id); }} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 6, border: "1px solid var(--bw-rule)", background: picked === d.id ? "var(--bw-fg)" : "transparent", color: picked === d.id ? "var(--bw-bg)" : "var(--bw-fg)", borderRadius: 999, padding: "5px 9px", font: "600 11.5px Inter, sans-serif", cursor: "pointer" }}>
                             <span aria-hidden="true" style={{ width: 8, height: 8, borderRadius: "50%", background: d.managed ? RAMP[s] : "transparent", border: `1.5px solid ${RAMP[s]}`, display: "block" }} />
                             {d.label}
                           </button>
@@ -295,7 +295,7 @@ export function BuyingJourney() {
         ].map(([k, v, sub]) => (
           <div key={k as string} style={{ display: "flex", flexDirection: "column", gap: 6, padding: "18px 20px", borderRadius: 14, border: "1px solid var(--bw-glass-bd)", background: "var(--bw-glass)" }}>
             <span style={{ ...mono, fontSize: 9.5, opacity: 0.5 }}>{k as string}</span>
-            <span style={{ fontFamily: "Archivo, sans-serif", fontWeight: 800, fontSize: 30, letterSpacing: "-.03em", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{v as string | number}</span>
+            <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 30, letterSpacing: "-.03em", lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{v as string | number}</span>
             <span style={{ fontSize: 12.5, opacity: 0.6 }}>{sub as string}</span>
           </div>
         ))}
@@ -309,13 +309,13 @@ export function BuyingJourney() {
                     <span style={{ ...mono, fontSize: 9.5, opacity: 0.5 }}>{sel.managed ? "You control it" : "You don't control it"}</span>
                     <span style={{ ...mono, fontSize: 9.5, opacity: 0.5 }}>{sel[state] === "self" ? "Buyer acts alone" : sel[state] === "assisted" ? "Needs a human" : "Doesn't exist yet"}</span>
                   </span>
-                  <span style={{ fontFamily: "Archivo, sans-serif", fontWeight: 800, fontSize: 18, letterSpacing: "-.02em" }}>{sel.label}</span>
+                  <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 18, letterSpacing: "-.02em" }}>{sel.label}</span>
                   <span style={{ fontSize: 14, lineHeight: 1.5, opacity: 0.75, maxWidth: "60ch", textWrap: "pretty" }}>{sel.note[state]}</span>
                 </>
               ) : (
                 <>
                   <span style={{ ...mono, fontSize: 9.5, opacity: 0.5 }}>{engaged ? "Your pace" : "Auto-playing, tap to take over"}</span>
-                  <span style={{ fontFamily: "Archivo, sans-serif", fontWeight: 800, fontSize: 18, letterSpacing: "-.02em" }}>Tap any touchpoint</span>
+                  <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 18, letterSpacing: "-.02em" }}>Tap any touchpoint</span>
                   <span style={{ fontSize: 14, lineHeight: 1.5, opacity: 0.75, maxWidth: "60ch", textWrap: "pretty" }}>
                     {state === "today" ? "On a typical SaaS site the buyer is alone until they want a price or a look at the product. Then everything routes through a calendar." : "With the self-serve layer the buyer stays in control through evaluation, trial and purchase. People step in where they add the most: large deals and procurement."}
                   </span>

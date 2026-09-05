@@ -410,3 +410,28 @@ html[data-bw-theme="dark"] [data-bw-hero-art] {
     );
   }
 }
+
+/* ── one type system across every route ──────────────────────────────────────
+   The homepage always ran Inter for text and Barlow Condensed for headings;
+   the other twelve pages set Archivo for both and declared no heading face at
+   all, so a visitor crossed a change of body AND headline typeface on every
+   hop off the homepage. These two rules make the homepage's pairing the site's
+   pairing.
+
+   All four families are already self-hosted by next/font in layout.tsx, so
+   this costs no extra request — the pages simply were not asking for them.
+
+   `html body` rather than `body`: each generated page stylesheet ships its own
+   unlayered `body { font-family: … }`, and unlayered rules beat Tailwind's
+   layered utility on <body> no matter the specificity. Matching that with one
+   extra element wins on specificity instead of relying on import order.
+
+   The footer keeps Anton — `.site-footer h2` outranks a bare `h1, h2`. */
+html body {
+  font-family: var(--font-body), Inter, Archivo, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: var(--font-display), "Barlow Condensed", Archivo, sans-serif;
+}

@@ -105,7 +105,7 @@ function StatusPill({ status, why }: { status: Status; why?: string }) {
     <span style={{ display: "inline-flex", alignItems: "center", gap: 6, color: s.color, ...mono(9, ".1em"), whiteSpace: "nowrap" }}>
       <s.Icon size={12} strokeWidth={2.2} aria-hidden="true" />
       {s.label}
-      {why && <span style={{ color: INK_3, textTransform: "none", letterSpacing: 0, fontFamily: "Archivo, sans-serif", fontSize: 11 }}>· {why}</span>}
+      {why && <span style={{ color: INK_3, textTransform: "none", letterSpacing: 0, fontFamily: "Inter, sans-serif", fontSize: 11 }}>· {why}</span>}
     </span>
   );
 }
@@ -381,7 +381,7 @@ export function LeadDetectiveDemo() {
       <div
         onPointerDownCapture={engage}
         onKeyDownCapture={engage}
-        style={{ border: `1px solid ${LINE}`, borderRadius: 16, background: SCREEN, color: PAPER, fontFamily: "Archivo, sans-serif", overflow: "hidden", boxShadow: "0 40px 80px -50px rgba(8,7,5,.8)" }}
+        style={{ border: `1px solid ${LINE}`, borderRadius: 16, background: SCREEN, color: PAPER, fontFamily: "Inter, sans-serif", overflow: "hidden", boxShadow: "0 40px 80px -50px rgba(8,7,5,.8)" }}
       >
         {/* App header */}
         <div style={{ padding: "22px 26px 0", display: "flex", flexDirection: "column", gap: 10 }}>
@@ -449,7 +449,7 @@ export function LeadDetectiveDemo() {
             <button type="button" onClick={() => go(step - 1)} disabled={step === 0} aria-label="Previous step" style={{ appearance: "none", width: 36, height: 36, borderRadius: 999, border: `1px solid ${LINE}`, background: "transparent", color: PAPER, cursor: step === 0 ? "default" : "pointer", opacity: step === 0 ? 0.35 : 1, display: "grid", placeItems: "center" }}>
               <ChevronLeft size={16} strokeWidth={2} aria-hidden="true" />
             </button>
-            <button type="button" onClick={() => (step === STEPS.length - 1 ? replay() : go(step + 1))} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, height: 36, padding: "0 16px", borderRadius: 999, border: 0, background: step === STEPS.length - 2 ? GOLD : PAPER, color: "#080705", cursor: "pointer", fontFamily: "Archivo, sans-serif", fontWeight: 700, fontSize: 12.5 }}>
+            <button type="button" onClick={() => (step === STEPS.length - 1 ? replay() : go(step + 1))} style={{ appearance: "none", display: "inline-flex", alignItems: "center", gap: 8, height: 36, padding: "0 16px", borderRadius: 999, border: 0, background: step === STEPS.length - 2 ? GOLD : PAPER, color: "#080705", cursor: "pointer", fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: 12.5 }}>
               {step === STEPS.length - 2 ? "Submit to Salesforce" : step === STEPS.length - 1 ? "Start over" : "Continue"}
               <ChevronRight size={15} strokeWidth={2.2} aria-hidden="true" />
             </button>

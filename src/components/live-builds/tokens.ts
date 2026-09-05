@@ -30,7 +30,7 @@ export function mono(size: number, tracking = ".16em"): React.CSSProperties {
 /** Display numerals: heavy Archivo with tabular figures so values don't jitter. */
 export function display(size: number, weight = 800): React.CSSProperties {
   return {
-    fontFamily: "Archivo, sans-serif",
+    fontFamily: "Inter, sans-serif",
     fontWeight: weight,
     fontSize: size,
     lineHeight: 1,
@@ -46,7 +46,7 @@ export const screenPad: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   color: PAPER,
-  fontFamily: "Archivo, sans-serif",
+  fontFamily: "Inter, sans-serif",
   userSelect: "none",
   WebkitUserSelect: "none",
 };
@@ -70,7 +70,7 @@ export const solidButton: React.CSSProperties = {
   borderRadius: 999,
   padding: "10px 14px",
   cursor: "pointer",
-  fontFamily: "Archivo, sans-serif",
+  fontFamily: "Inter, sans-serif",
   fontWeight: 700,
   fontSize: 12,
   letterSpacing: "-.01em",

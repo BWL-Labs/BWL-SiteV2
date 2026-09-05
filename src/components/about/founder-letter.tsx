@@ -91,7 +91,7 @@ export function FounderLetter() {
         <div data-bw-letter-note="" style={{ paddingTop: 6, ...mono, opacity: 0.5, lineHeight: 1.8 }}>
           Blackware Labs<br />India · Dubai<br />September 2026
         </div>
-        <motion.p {...rise()} style={{ margin: 0, fontFamily: "Archivo, sans-serif", fontSize: "clamp(20px, 1.6vw, 23px)", lineHeight: 1.45, fontWeight: 700, letterSpacing: "-.02em", paddingBottom: 28, borderBottom: "1px solid var(--bw-rule)", marginBottom: 36 }}>
+        <motion.p {...rise()} style={{ margin: 0, fontFamily: "Inter, sans-serif", fontSize: "clamp(20px, 1.6vw, 23px)", lineHeight: 1.45, fontWeight: 700, letterSpacing: "-.02em", paddingBottom: 28, borderBottom: "1px solid var(--bw-rule)", marginBottom: 36 }}>
           To the founder deciding whether to hire us,
         </motion.p>
 
@@ -101,7 +101,7 @@ export function FounderLetter() {
 
         {/* Sign-off */}
         <div data-bw-letter-note="" aria-hidden="true" />
-        <motion.p {...rise()} style={{ margin: "8px 0 0", fontFamily: "Archivo, sans-serif", fontSize: 19, lineHeight: 1.6, fontWeight: 500 }}>
+        <motion.p {...rise()} style={{ margin: "8px 0 0", fontFamily: "Inter, sans-serif", fontSize: 19, lineHeight: 1.6, fontWeight: 500 }}>
           Write back when you are ready. We answer ourselves.
         </motion.p>
 
@@ -115,7 +115,7 @@ export function FounderLetter() {
             <div key={role} style={{ display: "flex", gap: 12, alignItems: "center" }}>
               <span aria-hidden="true" style={{ width: 44, height: 44, borderRadius: "50%", border: "1px dashed var(--bw-fg)", opacity: 0.45, display: "grid", placeItems: "center", ...mono, fontSize: 9, flexShrink: 0 }}>0{i + 1}</span>
               <span style={{ display: "flex", flexDirection: "column", gap: 3, minWidth: 0 }}>
-                <span style={{ fontFamily: "Archivo, sans-serif", fontWeight: 800, fontSize: 15, letterSpacing: "-.02em", opacity: 0.45 }}>Name to add</span>
+                <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 800, fontSize: 15, letterSpacing: "-.02em", opacity: 0.45 }}>Name to add</span>
                 <span style={{ fontSize: 12.5, opacity: 0.7 }}>{role}</span>
                 <span style={{ ...mono, fontSize: 8, color: "#B8871C" }}>placeholder</span>
               </span>
@@ -144,12 +144,12 @@ function Paragraph({ p, index, rise, reduce }: { p: Para; index: number; rise: (
             />
             <motion.div {...rise(0.08)} style={{ display: "flex", flexDirection: "column", gap: 5 }}>
               <span style={{ ...mono, color: "#B8871C" }}>{p.note.label}</span>
-              <span style={{ fontFamily: "Archivo, sans-serif", fontWeight: 700, fontSize: 14.5, letterSpacing: "-.015em", lineHeight: 1.35, textWrap: "pretty" }}>{p.note.value}</span>
+              <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 700, fontSize: 14.5, letterSpacing: "-.015em", lineHeight: 1.35, textWrap: "pretty" }}>{p.note.value}</span>
             </motion.div>
           </>
         )}
       </div>
-      <motion.p {...rise()} style={{ margin: "0 0 30px", fontFamily: "Archivo, sans-serif", fontSize: 19, lineHeight: 1.6, fontWeight: 500, textWrap: "pretty", letterSpacing: "-.005em" }}>
+      <motion.p {...rise()} style={{ margin: "0 0 30px", fontFamily: "Inter, sans-serif", fontSize: 19, lineHeight: 1.6, fontWeight: 500, textWrap: "pretty", letterSpacing: "-.005em" }}>
         {index === 0 && <span style={{ ...mono, fontSize: 9, color: "#B8871C", display: "block", marginBottom: 10 }}>/ 01</span>}
         {p.text}
       </motion.p>
