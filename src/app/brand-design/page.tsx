@@ -137,7 +137,7 @@ export default function BrandDesignPage() {
 <div ref={ringRef} style={{position:"absolute",inset:"0",transformStyle:"preserve-3d",willChange:"transform"}}>
 <div onClick={pick0} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT0}}>
 <div className="brand-p16" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Logotype</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 01</span>
@@ -146,7 +146,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick1} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT1}}>
 <div className="brand-p17" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Color system</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 02</span>
@@ -155,7 +155,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick2} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT2}}>
 <div className="brand-p18" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Type scale</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 03</span>
@@ -164,7 +164,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick3} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT3}}>
 <div className="brand-p19" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Grid & layout</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 04</span>
@@ -173,7 +173,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick4} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT4}}>
 <div className="brand-p20" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Motion rules</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 05</span>
@@ -182,7 +182,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick5} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT5}}>
 <div className="brand-p21" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Slide template</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 06</span>
@@ -191,7 +191,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick6} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT6}}>
 <div className="brand-p22" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Ad units</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 07</span>
@@ -200,7 +200,7 @@ export default function BrandDesignPage() {
 </div>
 <div onClick={pick7} style={{position:"absolute",left:"50%",top:"50%",width:"168px",height:"226px",margin:"-113px 0 0 -84px",cursor:"pointer",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden",transform:cardT7}}>
 <div className="brand-p23" style={{height:"100%",borderRadius:"12px",border:"1px solid rgba(255,255,250,.18)",background:"linear-gradient(160deg,rgba(255,255,250,.1),rgba(255,255,250,.03))",backdropFilter:"blur(10px)",WebkitBackdropFilter:"blur(10px)",boxShadow:"0 26px 50px -30px rgba(0,0,0,.9)",padding:"12px",display:"flex",flexDirection:"column",gap:"10px",transition:"border-color .16s cubic-bezier(.2,.7,.2,1)",backfaceVisibility:"hidden",WebkitBackfaceVisibility:"hidden"}}>
-<div style={{flex:"1",borderRadius:"7px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.09) 0 2px,rgba(255,255,250,0) 2px 11px)",border:"1px solid rgba(255,255,250,.1)"}}></div>
+<div data-bw-artifact="" role="img" aria-label="Premium brand identity system artifact" style={{flex:"1",borderRadius:"7px",backgroundImage:"url('/uploads/brand-system-artifact.webp')",backgroundSize:"cover",backgroundPosition:"center",border:"1px solid rgba(255,255,250,.1)"}}></div>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:"8px"}}>
 <span style={{fontWeight:"700",fontSize:"12px",letterSpacing:"-.01em"}}>Packaging</span>
 <span style={{font:"500 9px/1 'JetBrains Mono',monospace",letterSpacing:".16em",color:"#E6AF2E"}}>/ 08</span>
