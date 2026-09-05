@@ -2,6 +2,7 @@
 
 import "@/styles/pages/researchify.css";
 import { ResearchifyDemo } from "@/components/researchify/researchify-demo";
+import { ReportSectionCards } from "@/components/researchify/report-section-cards";
 export default function ResearchifyPage() {
   const v: any = { showPricing: true };
   const { showPricing } = v;
@@ -67,36 +68,7 @@ export default function ResearchifyPage() {
 <section id="included" style={{padding:"80px 0 0"}}>
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"44px"}}>
 <h2 style={{margin:"0",maxWidth:"26ch",fontWeight:"800",fontSize:"clamp(34px,4.6vw,72px)",lineHeight:".94",letterSpacing:"-.04em"}}>Report sections. Configurable.</h2>
-<div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:"18px"}}>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 01</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Company profile</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 02</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Account snapshot</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 03</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Strategic business priorities</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 04</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Operational imperatives and challenges</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 05</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Commercial partner landscape</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 06</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Executive challenge</span>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px",padding:"22px 20px",borderRadius:"14px",border:"1px solid var(--bw-glass-bd)",background:"var(--bw-glass)"}}>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"var(--bw-accent)"}}>/ 07</span>
-<span style={{fontWeight:"700",fontSize:"17px",letterSpacing:"-.02em"}}>Executive snapshot</span>
-</div>
-</div>
+<ReportSectionCards />
 <span style={{font:"500 10px/1.6 'JetBrains Mono',monospace",letterSpacing:".1em",textTransform:"uppercase",opacity:".4"}}>Each report ships as PDF and Excel, sections configured to your team.</span>
 </div>
 </section>
