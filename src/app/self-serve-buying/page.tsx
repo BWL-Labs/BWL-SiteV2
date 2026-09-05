@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/pages/selfserve.css";
+import { BuyingJourney } from "@/components/self-serve/buying-journey";
 export default function SelfServePage() {
   const v: any = { showPricing: true };
   return (<>
@@ -51,6 +52,14 @@ export default function SelfServePage() {
 <span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>// Who it's for</span>
 <p style={{margin:"0",fontSize:"18px",lineHeight:"1.5",fontWeight:"600",letterSpacing:"-.01em",textWrap:"pretty"}}>B2B SaaS companies with a working product and an existing website that buries the buyer behind a demo request form.</p>
 </div>
+</div>
+</section>
+<section style={{padding:"96px 0 0"}}>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"28px"}}>
+<span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>{"// The buying journey"}</span>
+<h2 style={{margin:"0",maxWidth:"24ch",fontWeight:"800",fontSize:"clamp(32px,4.2vw,64px)",lineHeight:".94",letterSpacing:"-.04em"}}>Where buyers go alone, and where they hit a wall.</h2>
+<p style={{margin:"0",maxWidth:"58ch",fontSize:"17px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Every touchpoint a buyer meets, from the first AI answer to the upgrade screen. Above the bar they act alone. Below it they wait for a person. Flip the switch to see what the self-serve layer moves.</p>
+<BuyingJourney />
 </div>
 </section>
 <section id="included" style={{padding:"80px 0 0"}}>

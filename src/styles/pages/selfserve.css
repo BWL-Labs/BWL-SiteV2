@@ -66,3 +66,5 @@
 .selfserve-p41:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .selfserve-p42:active { transform:scale(.97) !important }
 .selfserve-p43:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Buying-journey map: stack below 720px; the readout collapses to two columns. */
+  @container (max-width: 719px) { [data-bw-journey-map] { display: none !important; } [data-bw-journey-stack] { display: flex !important; } [data-bw-journey-grid] { grid-template-columns: 1fr 1fr !important; } [data-bw-journey-grid] > div:last-child { grid-column: 1 / -1; } }
