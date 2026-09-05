@@ -72,3 +72,5 @@
 .lead-p47:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .lead-p48:active { transform:scale(.97) !important }
 .lead-p49:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Lead Detective walkthrough: collapse step labels and two-column bodies in narrow containers. */
+  @container (max-width: 719px) { [data-bw-ld-label] { display: none !important; } [data-bw-ld-grid] { grid-template-columns: 1fr !important; } }

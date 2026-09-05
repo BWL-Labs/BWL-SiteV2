@@ -90,7 +90,7 @@ export function LiveBuildsCarousel() {
             color: GOLD,
           }}
         >
-          // live builds
+          {"// live builds"}
         </span>
 
         <div style={{ position: "relative", height: "clamp(430px,52vh,470px)", perspective: 1400, display: "grid", placeItems: "center" }}>

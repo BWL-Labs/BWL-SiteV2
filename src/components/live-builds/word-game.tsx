@@ -100,15 +100,17 @@ export function WordGame({ onEngage }: { onEngage?: () => void }) {
         ))}
       </div>
 
-      <AnimatePresence mode="wait" initial={false}>
+      {/* Rounds and the reward share one grid cell so they crossfade in place. */}
+      <div style={{ flex: 1, display: "grid", minHeight: 0 }}>
+      <AnimatePresence initial={false}>
         {done ? (
           <motion.div
             key="reward"
             initial={reduce ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={reduce ? undefined : { opacity: 0, y: -8 }}
+            exit={reduce ? undefined : { opacity: 0, y: -8, transition: { duration: 0.18 } }}
             transition={SPRING}
-            style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: 14, textAlign: "center" }}
+            style={{ gridArea: "1 / 1", display: "flex", flexDirection: "column", justifyContent: "center", gap: 14, textAlign: "center" }}
           >
             <span style={{ ...mono(8), color: GOLD }}>Three for three</span>
             <span style={{ ...display(34, 900), lineHeight: 0.95 }}>15% off<br />unlocked</span>
@@ -137,9 +139,9 @@ export function WordGame({ onEngage }: { onEngage?: () => void }) {
             key={`round-${round}`}
             initial={reduce ? false : { opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={reduce ? undefined : { opacity: 0, x: -24 }}
+            exit={reduce ? undefined : { opacity: 0, x: -24, transition: { duration: 0.18 } }}
             transition={SPRING}
-            style={{ flex: 1, display: "flex", flexDirection: "column" }}
+            style={{ gridArea: "1 / 1", display: "flex", flexDirection: "column" }}
           >
             <span style={{ ...mono(8), color: INK_3, marginTop: 18 }}>
               Round {round + 1} of {ROUNDS.length}
@@ -224,6 +226,7 @@ export function WordGame({ onEngage }: { onEngage?: () => void }) {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }
