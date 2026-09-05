@@ -59,3 +59,5 @@
 .about-p41:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .about-p42:active { transform:scale(.97) !important }
 .about-p43:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Founder's letter: below 820px the annotation margin folds inline above each paragraph. */
+  @container (max-width: 819px) { [data-bw-letter-grid] { grid-template-columns: 1fr !important; } [data-bw-letter-note] { padding-left: 0 !important; margin-bottom: 12px !important; } [data-bw-letter-note] > span[aria-hidden] { display: none !important; } }

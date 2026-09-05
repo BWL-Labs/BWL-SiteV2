@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/pages/about.css";
+import { FounderLetter } from "@/components/about/founder-letter";
 export default function AboutPage() {
   const v: any = { showPricing: true };
   return (<>
@@ -24,50 +25,19 @@ export default function AboutPage() {
 <section style={{padding:"170px 0 0"}}>
 <div style={{maxWidth:"1100px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"30px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
-<span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// About</div>
-<h1 style={{margin:"0",maxWidth:"16ch",fontWeight:"900",letterSpacing:"-.05em",lineHeight:".9",fontSize:"clamp(48px,8vw,120px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>A studio built for pipeline.</h1>
-<p style={{margin:"0",maxWidth:"60ch",fontSize:"19px",lineHeight:"1.55",fontWeight:"500",opacity:".72",textWrap:"pretty",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>We're a marketing studio in four parts: brand design, websites and portfolios, interactive marketing assets, and B2B sales activation. Most clients start with one and end up using all four.</p>
+<span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>{"// About · a letter"}</div>
+<h1 style={{margin:"0",maxWidth:"14ch",fontWeight:"900",letterSpacing:"-.05em",lineHeight:".9",fontSize:"clamp(48px,8vw,120px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Before you book a call, read this.</h1>
 </div>
 </section>
-<section style={{padding:"96px 0 0"}}>
-<div style={{maxWidth:"1100px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"44px"}}>
-<h2 style={{margin:"0",fontWeight:"800",fontSize:"clamp(30px,4vw,52px)",lineHeight:".94",letterSpacing:"-.04em"}}>What we do.</h2>
-<div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(230px,1fr))",gap:"32px",borderTop:"1px solid var(--bw-rule)",paddingTop:"32px"}}>
-<div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
-<span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>01 — Brand design</span>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.55",fontWeight:"500",opacity:".75"}}>Identity systems for companies that need to look like they belong in the room.</p>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
-<span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>02 — Website &amp; portfolio</span>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.55",fontWeight:"500",opacity:".75"}}>Sites built to close, not just to exist.</p>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
-<span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>03 — Interactive assets</span>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.55",fontWeight:"500",opacity:".75"}}>Calculators, configurators, and diagnostics that outperform a slide deck.</p>
-</div>
-<div style={{display:"flex",flexDirection:"column",gap:"8px"}}>
-<span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>04 — B2B sales activation</span>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.55",fontWeight:"500",opacity:".75"}}>Answer engine placement, outbound, lead routing, account intelligence, and self-serve buying — the machinery that turns attention into pipeline.</p>
-</div>
-</div>
-</div>
-</section>
-<section style={{padding:"96px 0 0"}}>
-<div style={{maxWidth:"1100px",margin:"0 auto",padding:"0 40px",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",gap:"44px",borderTop:"1px solid var(--bw-rule)",paddingTop:"44px"}}>
-<div>
-<h2 style={{margin:"0 0 14px",fontWeight:"800",fontSize:"clamp(26px,3.4vw,38px)",lineHeight:"1",letterSpacing:"-.03em"}}>How we work.</h2>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.6",fontWeight:"500",opacity:".75",maxWidth:"44ch"}}>Senior people, no deck-jockeys. We diagnose before we design — most engagements open with a two-week listening phase so the work is built on how your reps actually sell, not a template.</p>
-</div>
-<div>
-<h2 style={{margin:"0 0 14px",fontWeight:"800",fontSize:"clamp(26px,3.4vw,38px)",lineHeight:"1",letterSpacing:"-.03em"}}>Who we work with.</h2>
-<p style={{margin:"0",fontSize:"15px",lineHeight:"1.6",fontWeight:"500",opacity:".75",maxWidth:"44ch"}}>B2B revenue teams — mostly Series A through growth-stage — who are done watching a pipeline built on outbound spray and a website nobody reads.</p>
-</div>
+<section style={{padding:"72px 0 0"}}>
+<div style={{maxWidth:"1100px",margin:"0 auto",padding:"0 40px"}}>
+<FounderLetter />
 </div>
 </section>
 <section style={{padding:"120px 0 96px"}}>
 <div style={{maxWidth:"1100px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"24px"}}>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"24px",flexWrap:"wrap"}}>
-<h2 style={{margin:"0",fontWeight:"900",fontSize:"clamp(38px,6vw,84px)",lineHeight:".9",letterSpacing:"-.045em",textTransform:"uppercase",maxWidth:"14ch"}}>Let's make it sell.</h2>
+<h2 style={{margin:"0",fontWeight:"900",fontSize:"clamp(38px,6vw,84px)",lineHeight:".9",letterSpacing:"-.045em",textTransform:"uppercase",maxWidth:"14ch"}}>Write back.</h2>
 <a className="about-p9 about-p10 about-p11" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#FFFFFA",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",background:"#080705",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a conversation<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
 </div>
 <div style={{display:"flex",gap:"12px",flexWrap:"wrap",borderTop:"1px solid var(--bw-rule)",paddingTop:"28px"}}>
