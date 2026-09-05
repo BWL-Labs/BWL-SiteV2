@@ -35,7 +35,7 @@ ATTR = {
  "gradienttransform":"gradientTransform","spreadmethod":"spreadMethod",
  "basefrequency":"baseFrequency","numoctaves":"numOctaves","stitchtiles":"stitchTiles",
  "color-interpolation-filters":"colorInterpolationFilters","vector-effect":"vectorEffect",
- "pathlength":"pathLength",
+ "pathlength":"pathLength","fetchpriority":"fetchPriority",
  "paint-order":"paintOrder","attributename":"attributeName","repeatcount":"repeatCount",
  "begintime":"beginTime","keysplines":"keySplines","keytimes":"keyTimes",
  "calcmode":"calcMode","transform-origin":"transformOrigin","transform-box":"transformBox",
