@@ -33,7 +33,7 @@ export default function SelfServePage() {
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"34px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 08 — Self-serve buying experience</div>
-<h1 style={{margin:"0",maxWidth:"26ch",fontWeight:"900",letterSpacing:"-.05em",lineHeight:".86",fontSize:"clamp(48px,8.4vw,132px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Most buyers won't book a call</h1>
+<h1 style={{margin:"0",maxWidth:"26ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(34px,5.9vw,92px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Most buyers won't book a call</h1>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"40px",flexWrap:"wrap",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
 <p style={{margin:"0",maxWidth:"56ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>67% of B2B buyers now prefer to evaluate without talking to sales. Most SaaS websites still force them to book a demo call. We build the self-serve layer — so buyers can explore, qualify themselves, and move forward on their own timeline.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>
