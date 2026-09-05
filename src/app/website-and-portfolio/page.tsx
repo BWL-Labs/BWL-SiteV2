@@ -131,8 +131,41 @@ export default function WebsitePage() {
 <div style={{position:"relative",overflow:"hidden",border:"1px solid var(--bw-rule)",borderRadius:"16px",color:"#FFFFFA",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E'),radial-gradient(at 16% 6%,oklch(0.6 0.13 84 / .4) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 92% 94%,oklch(0.48 0.14 34 / .36) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto",backgroundBlendMode:"overlay,normal,normal",padding:"34px",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:"22px",alignItems:"start"}}>
 <div style={{display:"flex",flexDirection:"column",gap:"16px",minHeight:"340px"}}>
 <span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#E6AF2E"}}>// the build</span>
-<div style={{flex:"1",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",minHeight:"280px",padding:"20px",textAlign:"center"}}>
-<span style={{font:"500 10px/1.7 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".55"}}>Drop homepage and case study screens here</span>
+<div data-bw-preview="" role="img" aria-label="Preview of a homepage template Blackware ships: an oversized cropped wordmark over a moving ticker" style={{flex:"1",minHeight:"280px",display:"flex",flexDirection:"column",border:"1px solid rgba(255,255,250,.14)",borderRadius:"14px",overflow:"hidden",background:"#0b0806"}}>
+<div aria-hidden="true" style={{flexShrink:"0",display:"flex",alignItems:"center",gap:"7px",padding:"9px 12px",background:"rgba(255,255,250,.03)",borderBottom:"1px solid rgba(255,255,250,.1)"}}>
+<span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
+<span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
+<span style={{width:"7px",height:"7px",borderRadius:"50%",background:"rgba(255,255,250,.2)",flexShrink:"0"}}></span>
+<span style={{marginLeft:"6px",flex:"1",background:"rgba(255,255,250,.05)",borderRadius:"999px",padding:"3px 10px",font:"500 8.5px/1.3 'JetBrains Mono',monospace",letterSpacing:".06em",color:"rgba(255,255,250,.4)",textAlign:"center",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>yourbrand.com</span>
+</div>
+<div aria-hidden="true" style={{position:"relative",flex:"1",containerType:"inline-size",overflow:"hidden"}}>
+<div style={{position:"absolute",inset:"0",display:"flex",flexDirection:"column"}}>
+<div style={{flex:"0 0 17%",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"2cqw",padding:"0 5cqw",overflow:"hidden"}}>
+<span style={{font:"700 4.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".04em",color:"rgba(255,255,250,.85)",whiteSpace:"nowrap"}}>STUDIO <span style={{opacity:".4"}}>— 2026</span></span>
+<div style={{display:"flex",alignItems:"center",gap:"2.8cqw",flexShrink:"0"}}>
+<span style={{font:"500 3.6cqw/1 Archivo,sans-serif",color:"rgba(255,255,250,.5)",whiteSpace:"nowrap"}}>Work</span>
+<span style={{display:"inline-flex",alignItems:"center",gap:"1.2cqw",border:"1px solid rgba(255,255,250,.18)",borderRadius:"999px",padding:".8cqw 2.4cqw",font:"500 3cqw/1 'JetBrains Mono',monospace",letterSpacing:".05em",textTransform:"uppercase",color:"rgba(255,255,250,.68)",whiteSpace:"nowrap"}}>
+<span style={{width:"1.6cqw",height:"1.6cqw",minWidth:"4px",minHeight:"4px",borderRadius:"50%",background:"#E6AF2E",animation:"bwBlink 1.6s steps(1,end) infinite",flexShrink:"0"}}></span>Q1 2027
+                      </span>
+</div>
+</div>
+<div style={{flex:"0 0 56%",display:"flex",alignItems:"center",padding:"0 2.5cqw",overflow:"hidden"}}>
+<span style={{font:"900 24cqw/.86 Archivo,sans-serif",letterSpacing:"-.04em",color:"#C84A1F",whiteSpace:"nowrap"}}>STUDIO</span>
+</div>
+<div data-bw-mini-ticker="" style={{flex:"0 0 15%",overflow:"hidden",background:"#C84A1F",display:"flex",alignItems:"center"}}>
+<div style={{display:"flex",alignItems:"center",gap:"3.4cqw",whiteSpace:"nowrap",width:"max-content",paddingRight:"3.4cqw",animation:"bwMarquee 18s linear infinite"}}>
+<span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Sites that ship on time</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Built for the sales call</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span><span style={{font:"700 clamp(19px,2.6cqw,26px)/1 Archivo,sans-serif",letterSpacing:".01em",textTransform:"uppercase",color:"#0b0806",flexShrink:"0"}}>Fast, structured, self-updating</span><span style={{color:"rgba(11,8,6,.45)",fontSize:"2.6cqw",flexShrink:"0"}}>/</span>
+</div>
+</div>
+<div style={{flex:"0 0 12%",display:"flex",alignItems:"center",justifyContent:"center",gap:"2.4cqw",borderTop:"1px solid rgba(255,255,250,.08)"}}>
+<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Brand</span>
+<span style={{color:"rgba(255,255,250,.2)",fontSize:"2.6cqw"}}>·</span>
+<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Web &amp; portfolio</span>
+<span style={{color:"rgba(255,255,250,.2)",fontSize:"2.6cqw"}}>·</span>
+<span style={{font:"500 2.6cqw/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"rgba(255,255,250,.4)"}}>Growth</span>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div style={{display:"flex",flexDirection:"column",gap:"16px"}}>

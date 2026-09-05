@@ -20,6 +20,7 @@
   ::view-transition-new(root) { z-index: 1; }
   @keyframes bwPing { 0% { opacity: .75; transform: scale(.55); } 100% { opacity: 0; transform: scale(2.1); } }
   @keyframes bwMarquee { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+  @media (prefers-reduced-motion: reduce) { [data-bw-mini-ticker] > div { animation: none !important; transform: none !important; } }
   [data-bw-logo] { filter: brightness(0) saturate(100%); transition: filter .3s ease; }
   html[data-bw-theme="dark"] [data-bw-logo] { filter: none; }
 
