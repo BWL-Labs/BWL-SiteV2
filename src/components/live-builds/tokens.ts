@@ -15,8 +15,13 @@ export const SPRING_SOFT = { type: "spring" as const, stiffness: 140, damping: 2
 
 /** Small uppercase monospace label, the page's established eyebrow voice. */
 export function mono(size: number, tracking = ".16em"): React.CSSProperties {
+  /* Longhand on purpose: callers layer lineHeight or fontVariantNumeric on top,
+     and React warns when those meet the `font` shorthand. */
   return {
-    font: `500 ${size}px/1.3 'JetBrains Mono', monospace`,
+    fontFamily: "'JetBrains Mono', monospace",
+    fontWeight: 500,
+    fontSize: size,
+    lineHeight: 1.3,
     letterSpacing: tracking,
     textTransform: "uppercase",
   };

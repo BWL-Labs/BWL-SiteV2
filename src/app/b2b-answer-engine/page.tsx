@@ -2,6 +2,7 @@
 
 import "@/styles/pages/sales.css";
 import { useSalesPageLogic } from "@/generated/sales.logic";
+import { DecisionPath } from "@/components/answer-engine/decision-path";
 export default function SalesPage() {
   const v = useSalesPageLogic();
   const { enter0, enter1, enter2, enter3, leave0, leave1, leave2, leave3, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, showPricing, tilt0, tilt1, tilt2, tilt3 } = v;
@@ -131,53 +132,7 @@ export default function SalesPage() {
 <span style={{font:"500 11px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".5"}}>// 02 — The shift in how buyers research</span>
 <h2 style={{margin:"0",maxWidth:"26ch",fontWeight:"800",fontSize:"clamp(32px,4.2vw,64px)",lineHeight:".94",letterSpacing:"-.04em"}}>Buyers decide before they reach your website.</h2>
 <span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".5",marginTop:"8px"}}>SEO won the old path. This is who decides the new one.</span>
-<div style={{position:"relative",width:"100%",aspectRatio:"1200/420",marginTop:"4px"}}>
-<svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid meet" style={{position:"absolute",inset:"0",width:"100%",height:"100%",overflow:"visible"}} aria-hidden="true">
-<defs>
-<filter id="beamGlow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="4"></feGaussianBlur></filter>
-</defs>
-<path d="M90,210 Q330,110 580,75" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M90,210 Q330,195 580,180" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M90,210 Q330,225 580,245" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M90,210 Q330,330 580,355" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M580,75 Q850,110 1110,210" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M580,180 Q850,195 1110,210" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M580,245 Q850,225 1110,210" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<path d="M580,355 Q850,330 1110,210" fill="none" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></path>
-<g id="bwBeamsLeft">
-<circle r="9" fill="#E6AF2E" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="3.2s" begin="0s" repeatCount="indefinite" path="M90,210 Q330,110 580,75"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="3.2s" begin="0s" repeatCount="indefinite" path="M90,210 Q330,110 580,75"></animateMotion></circle>
-<circle r="9" fill="#E6AF2E" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="3.2s" begin="0.5s" repeatCount="indefinite" path="M90,210 Q330,195 580,180"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="3.2s" begin="0.5s" repeatCount="indefinite" path="M90,210 Q330,195 580,180"></animateMotion></circle>
-<circle r="9" fill="#E6AF2E" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="3.2s" begin="1s" repeatCount="indefinite" path="M90,210 Q330,225 580,245"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="3.2s" begin="1s" repeatCount="indefinite" path="M90,210 Q330,225 580,245"></animateMotion></circle>
-<circle r="9" fill="#E6AF2E" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="3.2s" begin="1.5s" repeatCount="indefinite" path="M90,210 Q330,330 580,355"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="3.2s" begin="1.5s" repeatCount="indefinite" path="M90,210 Q330,330 580,355"></animateMotion></circle>
-</g>
-<g id="bwBeamsRight">
-<circle r="9" fill="#C84A1F" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="2.6s" begin="1.6s" repeatCount="indefinite" path="M580,75 Q850,110 1110,210"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="2.6s" begin="1.6s" repeatCount="indefinite" path="M580,75 Q850,110 1110,210"></animateMotion></circle>
-<circle r="9" fill="#C84A1F" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="2.6s" begin="2.1s" repeatCount="indefinite" path="M580,180 Q850,195 1110,210"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="2.6s" begin="2.1s" repeatCount="indefinite" path="M580,180 Q850,195 1110,210"></animateMotion></circle>
-<circle r="9" fill="#C84A1F" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="2.6s" begin="2.6s" repeatCount="indefinite" path="M580,245 Q850,225 1110,210"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="2.6s" begin="2.6s" repeatCount="indefinite" path="M580,245 Q850,225 1110,210"></animateMotion></circle>
-<circle r="9" fill="#C84A1F" opacity="0.5" filter="url(#beamGlow)"><animateMotion dur="2.6s" begin="3.1s" repeatCount="indefinite" path="M580,355 Q850,330 1110,210"></animateMotion></circle>
-<circle r="3.5" fill="#FFFFFA"><animateMotion dur="2.6s" begin="3.1s" repeatCount="indefinite" path="M580,355 Q850,330 1110,210"></animateMotion></circle>
-</g>
-<circle cx="90" cy="210" r="30" fill="var(--bw-bg)" style={{stroke:"var(--bw-fg)"}} strokeWidth="1.5"></circle>
-<circle cx="580" cy="75" r="26" fill="var(--bw-bg)" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></circle>
-<circle cx="580" cy="180" r="26" fill="var(--bw-bg)" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></circle>
-<circle cx="580" cy="245" r="26" fill="var(--bw-bg)" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></circle>
-<circle cx="580" cy="355" r="26" fill="var(--bw-bg)" style={{stroke:"var(--bw-rule)"}} strokeWidth="1.5"></circle>
-<circle cx="1110" cy="210" r="36" fill="#080705" stroke="#E6AF2E" strokeWidth="2"></circle>
-</svg>
-<div style={{position:"absolute",left:"7.5%",top:"50%",transform:"translate(-50%,26px)",textAlign:"center",whiteSpace:"nowrap",font:"600 12px/1.3 Archivo,sans-serif",letterSpacing:"-.01em"}}>Buyer<br />asks a question</div>
-<div style={{position:"absolute",left:"48.33%",top:"17.86%",transform:"translate(-50%,20px)",textAlign:"center",whiteSpace:"nowrap",font:"700 13px/1 Archivo,sans-serif",letterSpacing:"-.02em"}}>ChatGPT</div>
-<div style={{position:"absolute",left:"48.33%",top:"42.86%",transform:"translate(-50%,20px)",textAlign:"center",whiteSpace:"nowrap",font:"700 13px/1 Archivo,sans-serif",letterSpacing:"-.02em"}}>Perplexity</div>
-<div style={{position:"absolute",left:"48.33%",top:"58.33%",transform:"translate(-50%,20px)",textAlign:"center",whiteSpace:"nowrap",font:"700 13px/1 Archivo,sans-serif",letterSpacing:"-.02em"}}>Gemini</div>
-<div style={{position:"absolute",left:"48.33%",top:"84.52%",transform:"translate(-50%,20px)",textAlign:"center",whiteSpace:"nowrap",font:"700 13px/1 Archivo,sans-serif",letterSpacing:"-.02em"}}>Claude</div>
-<div style={{position:"absolute",left:"92.5%",top:"50%",transform:"translate(-50%,32px)",textAlign:"center",whiteSpace:"nowrap",font:"800 14px/1 Archivo,sans-serif",letterSpacing:"-.02em",color:"#E6AF2E"}}>Your brand</div>
-</div>
+<DecisionPath />
 <span style={{fontSize:"15px",lineHeight:"1.5",fontWeight:"600",opacity:".85",marginTop:"12px"}}>If AI never names you, you're not in the game.</span>
 </div>
 </section>

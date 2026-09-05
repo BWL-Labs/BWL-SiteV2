@@ -75,3 +75,6 @@
 .sales-p44:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .sales-p45:active { transform:scale(.97) !important }
 .sales-p46:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Decision-path diagram: stack below 720px; freeze the beams for reduced motion. */
+  @container (max-width: 719px) { [data-bw-path-wide] { display: none !important; } [data-bw-path-stack] { display: flex !important; } }
+  @media (prefers-reduced-motion: reduce) { [data-bw-beams] { display: none; } }
