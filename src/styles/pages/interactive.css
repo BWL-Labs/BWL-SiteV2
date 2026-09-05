@@ -89,3 +89,9 @@
 .interactive-p58:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .interactive-p59:active { transform:scale(.97) !important }
 .interactive-p60:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
+  /* Phone demos: the screen is always dark, so the range thumb can't use the theme foreground. */
+  [data-bw-phone] input[data-bw-range]{height:3px}
+  [data-bw-phone] input[data-bw-range]::-webkit-slider-thumb{width:16px;height:16px;background:#FFFFFA;border:2px solid #E6AF2E}
+  [data-bw-phone] input[data-bw-range]::-moz-range-thumb{width:16px;height:16px;background:#FFFFFA;border:2px solid #E6AF2E}
+  [data-bw-phone] input[data-bw-range]:focus-visible{outline:2px solid #E6AF2E;outline-offset:3px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

@@ -2,9 +2,10 @@
 
 import "@/styles/pages/interactive.css";
 import { useInteractivePageLogic } from "@/generated/interactive.logic";
+import { LiveBuildsCarousel } from "@/components/live-builds/live-builds-carousel";
 export default function InteractivePage() {
   const v = useInteractivePageLogic();
-  const { dot0, dot1, dot2, dot3, dotop0, dotop1, dotop2, dotop3, dotw0, dotw1, dotw2, dotw3, enter0, enter1, enter2, enter3, go0, go1, go2, go3, leave0, leave1, leave2, leave3, next, pause, ph0, ph1, ph2, ph3, pho0, pho1, pho2, pho3, phz0, phz1, phz2, phz3, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, prev, resume, showPricing, tilt0, tilt1, tilt2, tilt3 } = v;
+  const { enter0, enter1, enter2, enter3, leave0, leave1, leave2, leave3, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, showPricing, tilt0, tilt1, tilt2, tilt3 } = v;
   return (<>
 <meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" /><link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <div style={{background:"var(--bw-bg)",color:"var(--bw-fg)",minHeight:"100vh",position:"relative"}}>
@@ -128,54 +129,7 @@ export default function InteractivePage() {
 </section>
 <section style={{padding:"96px 0 0"}}>
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"14px"}}>
-<div onMouseEnter={pause} onMouseLeave={resume} style={{position:"relative",border:"1px solid var(--bw-rule)",borderRadius:"16px",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E'),radial-gradient(at 18% 8%,oklch(0.6 0.13 84 / .42) 0%,rgba(8,7,5,0) 58%),radial-gradient(at 88% 96%,oklch(0.48 0.14 34 / .38) 0%,rgba(8,7,5,0) 62%)",backgroundSize:"90px 90px,auto,auto",backgroundBlendMode:"overlay,normal,normal",color:"#FFFFFA",overflow:"hidden",padding:"64px 24px 30px"}}>
-<span style={{position:"absolute",top:"22px",left:"26px",font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".2em",textTransform:"uppercase",color:"#E6AF2E"}}>// live builds</span>
-<div style={{position:"relative",height:"clamp(400px,52vh,470px)",perspective:"1400px",display:"grid",placeItems:"center"}}>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph0,opacity:pho0,zIndex:phz0}}>
-<div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
-<div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
-<span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
-<span style={{font:"500 10px/1.7 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".6"}}>Drop ROI calculator screen</span>
-</div>
-</div>
-</div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph1,opacity:pho1,zIndex:phz1}}>
-<div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
-<div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
-<span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
-<span style={{font:"500 10px/1.7 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".6"}}>Drop configurator screen</span>
-</div>
-</div>
-</div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph2,opacity:pho2,zIndex:phz2}}>
-<div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
-<div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
-<span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
-<span style={{font:"500 10px/1.7 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".6"}}>Drop product tour screen</span>
-</div>
-</div>
-</div>
-<div style={{position:"absolute",height:"100%",width:"auto",aspectRatio:"9/19",transformStyle:"preserve-3d",transition:"transform .8s cubic-bezier(.2,.7,.2,1),opacity .8s cubic-bezier(.2,.7,.2,1)",transform:ph3,opacity:pho3,zIndex:phz3}}>
-<div style={{position:"absolute",inset:"0",borderRadius:"34px",background:"#050505",border:"1px solid rgba(255,255,250,.22)",boxShadow:"0 40px 80px -40px rgba(0,0,0,.9)",padding:"9px"}}>
-<div style={{position:"relative",height:"100%",borderRadius:"26px",overflow:"hidden",background:"#101010",backgroundImage:"repeating-linear-gradient(135deg,rgba(255,255,250,.07) 0 2px,rgba(255,255,250,0) 2px 11px)",display:"grid",placeItems:"center",padding:"18px",textAlign:"center"}}>
-<span style={{position:"absolute",top:"9px",left:"50%",translate:"-50% 0",width:"58px",height:"16px",borderRadius:"999px",background:"#050505"}}></span>
-<span style={{font:"500 10px/1.7 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".6"}}>Drop benchmark screen</span>
-</div>
-</div>
-</div>
-</div>
-<div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",paddingTop:"30px"}}>
-<button className="interactive-p15 interactive-p16 interactive-p17" type="button" onClick={prev} aria-label="Previous screen" style={{width:"38px",height:"38px",borderRadius:"999px",border:"1px solid rgba(255,255,250,.24)",background:"transparent",color:"#FFFFFA",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",fontSize:"14px",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>←</button>
-<div style={{display:"flex",alignItems:"center",gap:"8px"}}>
-<button className="interactive-p18 interactive-p19" type="button" onClick={go0} aria-label="ROI calculator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1)",width:dotw0,opacity:dotop0,background:dot0,color:"#FFFFFA"}}></button>
-<button className="interactive-p20 interactive-p21" type="button" onClick={go1} aria-label="Configurator" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1)",width:dotw1,opacity:dotop1,background:dot1,color:"#FFFFFA"}}></button>
-<button className="interactive-p22 interactive-p23" type="button" onClick={go2} aria-label="Product tour" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1)",width:dotw2,opacity:dotop2,background:dot2,color:"#FFFFFA"}}></button>
-<button className="interactive-p24 interactive-p25" type="button" onClick={go3} aria-label="Benchmark" style={{height:"8px",border:"0",borderRadius:"999px",padding:"0",cursor:"pointer",transition:"width .4s cubic-bezier(.2,.7,.2,1),opacity .4s ease,transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1)",width:dotw3,opacity:dotop3,background:dot3,color:"#FFFFFA"}}></button>
-</div>
-<button className="interactive-p26 interactive-p27 interactive-p28" type="button" onClick={next} aria-label="Next screen" style={{width:"38px",height:"38px",borderRadius:"999px",border:"1px solid rgba(255,255,250,.24)",background:"transparent",color:"#FFFFFA",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",fontSize:"14px",display:"grid",placeItems:"center",flexShrink:"0",padding:"0",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>→</button>
-</div>
-</div>
-<span style={{font:"500 10px/1 'JetBrains Mono',monospace",letterSpacing:".16em",textTransform:"uppercase",opacity:".42"}}>Fig. 01 — Pipeline calculator, 2026</span>
+<LiveBuildsCarousel />
 </div>
 </section>
 <section style={{marginTop:"120px",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.4%27/%3E%3C/svg%3E')",backgroundSize:"90px 90px",backgroundBlendMode:"overlay",color:"#FFFFFA",padding:"110px 0"}}>
