@@ -435,3 +435,13 @@ h1,
 h2 {
   font-family: var(--font-display), "Barlow Condensed", Archivo, sans-serif;
 }
+
+/* ── brand-design hero: text + artifact fan side by side ─────────────────────
+   Bespoke to this one page: the hero pairs the headline with a fanned hand of
+   five brand-system artifact cards (the same plates the carousel further down
+   this page uses) instead of the generic ink-plate wash the other seven
+   service heroes carry. Below 900px there isn't room for both at a readable
+   size, so the fan drops beneath the text. */
+@media (max-width: 900px) {
+  [data-bw-hero-split] { grid-template-columns: 1fr !important; }
+}

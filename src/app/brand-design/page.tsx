@@ -2,6 +2,7 @@
 
 import "@/styles/pages/brand.css";
 import { useBrandDesignPageLogic } from "@/generated/brand.logic";
+import { BrandHeroFan } from "@/components/brand-design/hero-fan";
 export default function BrandDesignPage() {
   const v = useBrandDesignPageLogic();
   const { cardT0, cardT1, cardT2, cardT3, cardT4, cardT5, cardT6, cardT7, closeSel, enter0, enter1, enter2, enter3, hasSel, leave0, leave1, leave2, leave3, onDown, onMove, onUp, pick0, pick1, pick2, pick3, pick4, pick5, pick6, pick7, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, ringRef, selName, tilt0, tilt1, tilt2, tilt3 } = v;
@@ -30,8 +31,9 @@ export default function BrandDesignPage() {
 </div>
 </header>
 <section data-bw-hero="" style={{padding:"186px 0 0"}}>
-<img data-bw-hero-art="" src="/uploads/hero-brand-design.webp" alt="" aria-hidden="true" decoding="async" fetchPriority="high" style={{objectPosition:"72% 44%"}} />
-<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"34px"}}>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px"}}>
+<div data-bw-hero-split="" style={{display:"grid",gridTemplateColumns:"1fr minmax(300px,420px)",gap:"48px",alignItems:"center"}}>
+<div style={{display:"flex",flexDirection:"column",gap:"34px",minWidth:0}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 01 — Brand design</div>
 <h1 style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>A brand that survives the sales call</h1>
@@ -44,6 +46,9 @@ export default function BrandDesignPage() {
 </div>
 <div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid var(--bw-rule)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".7"}}>
 <span>9 weeks typical</span><span>From $18k</span><span>Senior team only</span><span>Two Q4 2026 slots</span>
+</div>
+</div>
+<BrandHeroFan />
 </div>
 </div>
 </section>
