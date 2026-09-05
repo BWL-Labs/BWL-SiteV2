@@ -2,7 +2,6 @@
 
 import "@/styles/pages/brand.css";
 import { useBrandDesignPageLogic } from "@/generated/brand.logic";
-import { BrandHeroFan } from "@/components/brand-design/hero-fan";
 export default function BrandDesignPage() {
   const v = useBrandDesignPageLogic();
   const { cardT0, cardT1, cardT2, cardT3, cardT4, cardT5, cardT6, cardT7, closeSel, enter0, enter1, enter2, enter3, hasSel, leave0, leave1, leave2, leave3, onDown, onMove, onUp, pick0, pick1, pick2, pick3, pick4, pick5, pick6, pick7, pinO0, pinO1, pinO2, pinO3, pinT0, pinT1, pinT2, pinT3, ringRef, selName, tilt0, tilt1, tilt2, tilt3 } = v;
@@ -30,25 +29,24 @@ export default function BrandDesignPage() {
 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#FFFFFA",animation:"bwBlink 2s steps(1,end) infinite"}}></span>Book a call</a></div>
 </div>
 </header>
-<section data-bw-hero="" style={{padding:"186px 0 0"}}>
+<section data-bw-hero="" data-bw-hero-photo-section="" style={{padding:"186px 0 0",position:"relative",overflow:"hidden"}}>
+<img data-bw-hero-photo="" src="/uploads/brand-hero-bg.webp" alt="" aria-hidden="true" decoding="async" fetchPriority="high" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover",objectPosition:"right center",zIndex:0}} />
+<span aria-hidden="true" style={{position:"absolute",inset:0,zIndex:0,background:"linear-gradient(to right, rgba(8,7,5,.35) 0%, rgba(8,7,5,0) 60%)"}}></span>
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px"}}>
-<div data-bw-hero-split="" style={{display:"grid",gridTemplateColumns:"1fr minmax(300px,420px)",gap:"48px",alignItems:"center"}}>
-<div style={{display:"flex",flexDirection:"column",gap:"34px",minWidth:0}}>
-<div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
-<span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 01 — Brand design</div>
-<h1 style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>A brand that survives the sales call</h1>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"40px",flexWrap:"wrap",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
-<p style={{margin:"0",maxWidth:"52ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Positioning, naming, identity systems, and the messaging spine everything else hangs from. Built to hold up in a boardroom and on a banner ad.</p>
+<div data-bw-hero-safe="" style={{maxWidth:"min(640px,50%)",display:"flex",flexDirection:"column",gap:"34px"}}>
+<div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
+<span style={{width:"7px",height:"7px",background:"#E6AF2E",display:"block"}}></span>// 01 — Brand design</div>
+<h1 style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",color:"#FFFFFA",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>A brand that survives the sales call</h1>
+<div style={{display:"flex",flexDirection:"column",gap:"22px",alignItems:"flex-start",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
+<p style={{margin:"0",maxWidth:"48ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",color:"#FFFFFA",opacity:".78",textWrap:"pretty"}}>Positioning, naming, identity systems, and the messaging spine everything else hangs from. Built to hold up in a boardroom and on a banner ad.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>
-<a className="brand-p9 brand-p10 brand-p11" data-bw-cta="" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#FFFFFA",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.45%27/%3E%3C/svg%3E') 56%) 58%) 62%);background-size:90px 90px;background-blend-mode:overlay;box-shadow:0 16px 34px -20px rgba(8,7,5,.9),0 1px 0 rgba(255,255,255,.26) inset;transition:transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a brand brief<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
-<a className="brand-p12 brand-p13 brand-p14" href="#included" style={{border:"1px solid var(--bw-fg)",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.12%27/%3E%3C/svg%3E')",backgroundSize:"90px 90px",borderRadius:"999px",padding:"18px 28px",fontSize:"15px",fontWeight:"600",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>What's included</a>
+<a className="brand-p9 brand-p10 brand-p11" data-bw-cta="" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#080705",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",backgroundColor:"#E6AF2E",boxShadow:"0 16px 34px -20px rgba(0,0,0,.65),0 1px 0 rgba(255,255,255,.4) inset",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a brand brief<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
+<a className="brand-p12 brand-p13 brand-p14" href="#included" style={{border:"1px solid rgba(255,255,250,.55)",color:"#FFFFFA",borderRadius:"999px",padding:"18px 28px",fontSize:"15px",fontWeight:"600",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>What's included</a>
 </div>
 </div>
-<div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid var(--bw-rule)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".7"}}>
+<div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid rgba(255,255,250,.28)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",opacity:".82"}}>
 <span>9 weeks typical</span><span>From $18k</span><span>Senior team only</span><span>Two Q4 2026 slots</span>
 </div>
-</div>
-<BrandHeroFan />
 </div>
 </div>
 </section>

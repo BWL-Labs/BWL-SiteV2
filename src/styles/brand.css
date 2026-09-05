@@ -436,12 +436,23 @@ h2 {
   font-family: var(--font-display), "Barlow Condensed", Archivo, sans-serif;
 }
 
-/* ── brand-design hero: text + artifact fan side by side ─────────────────────
-   Bespoke to this one page: the hero pairs the headline with a fanned hand of
-   five brand-system artifact cards (the same plates the carousel further down
-   this page uses) instead of the generic ink-plate wash the other seven
-   service heroes carry. Below 900px there isn't room for both at a readable
-   size, so the fan drops beneath the text. */
-@media (max-width: 900px) {
-  [data-bw-hero-split] { grid-template-columns: 1fr !important; }
+/* ── brand-design hero photo: keep text off the artwork ──────────────────────
+   The photo is a fanned hand of tabbed cards on the right against a plain
+   dark ground on the left; the hero text sits in that dark ground with
+   object-position:right keeping the cards fully visible on desktop.
+
+   Below ~1300px that stops being safe. object-fit:cover + object-position:
+   right scales the image to fill height, which crops in from the left — at
+   narrower widths that crop reaches past the dark ground into the cards
+   before the (also-narrowing) text column has shrunk enough to clear it.
+   Measured with the real image: at 1120px the safe dark zone and the text
+   column's right edge sit within 12px of each other; at 1024px flip sides by
+   24px. Below 1300px, object-position:0% holds a clean 160px+ margin at
+   every width down to 375px, at the cost of cropping the cards out of frame
+   on those narrower views — the plain dark ground carries the hero instead.
+
+   !important because this overrides the element's own inline object-position;
+   inline styles beat a stylesheet rule at any selector specificity. */
+@media (max-width: 1300px) {
+  [data-bw-hero-photo] { object-position: 0% center !important; }
 }
