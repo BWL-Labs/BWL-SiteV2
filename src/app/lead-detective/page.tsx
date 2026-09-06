@@ -31,21 +31,24 @@ export default function LeadDetectivePage() {
 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#FFFFFA",animation:"bwBlink 2s steps(1,end) infinite"}}></span>Book a call</a></div>
 </div>
 </header>
-<section data-bw-hero="" style={{padding:"186px 0 0"}}>
-<img data-bw-hero-art="" src="/uploads/hero-lead-detective.webp" alt="" aria-hidden="true" decoding="async" fetchPriority="high" style={{objectPosition:"72% 44%"}} />
-<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"34px"}}>
-<div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
-<span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 05 — Lead Detective</div>
-<HeroHeadingReveal style={{margin:"0",maxWidth:"24ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase"}}>Lead quality shouldn't be someone's manual job</HeroHeadingReveal>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"40px",flexWrap:"wrap",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
-<p style={{margin:"0",maxWidth:"52ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Lead Detective ingests your leads, filters out the noise, and routes only the qualified ones straight into your CRM — automatically, at scale.</p>
+<section data-bw-hero="" style={{padding:"186px 0 88px",position:"relative",overflow:"hidden"}}>
+<img data-bw-lead-hero-photo="" src="/uploads/lead-detective-hero-bg.webp" alt="" aria-hidden="true" decoding="async" fetchPriority="high" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover",objectPosition:"right center",zIndex:0}} />
+<span aria-hidden="true" style={{position:"absolute",inset:0,zIndex:0,background:"linear-gradient(to right, rgba(8,7,5,.35) 0%, rgba(8,7,5,0) 60%)"}}></span>
+<div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px"}}>
+<div data-bw-hero-safe="" style={{maxWidth:"min(600px,46%)",display:"flex",flexDirection:"column",gap:"34px"}}>
+<div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
+<span style={{width:"7px",height:"7px",background:"#E6AF2E",display:"block"}}></span>// 05 — Lead Detective</div>
+<HeroHeadingReveal style={{margin:"0",maxWidth:"24ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",color:"#FFFFFA"}}>Lead quality shouldn't be someone's manual job</HeroHeadingReveal>
+<div style={{display:"flex",flexDirection:"column",gap:"22px",alignItems:"flex-start",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
+<p style={{margin:"0",maxWidth:"48ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",color:"#FFFFFA",opacity:".78",textWrap:"pretty"}}>Lead Detective ingests your leads, filters out the noise, and routes only the qualified ones straight into your CRM — automatically, at scale.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>
-<a className="lead-p9 lead-p10 lead-p11" data-bw-cta="" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#FFFFFA",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",backgroundColor:"#080705",backgroundImage:"url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2790%27 height=%2790%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%270.45%27/%3E%3C/svg%3E') 56%) 58%) 62%);background-size:90px 90px;background-blend-mode:overlay;box-shadow:0 16px 34px -20px rgba(8,7,5,.9),0 1px 0 rgba(255,255,255,.26) inset;transition:transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a lead brief<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
+<a className="lead-p9 lead-p10 lead-p11" data-bw-cta="" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#080705",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",backgroundColor:"#E6AF2E",boxShadow:"0 16px 34px -20px rgba(0,0,0,.65),0 1px 0 rgba(255,255,255,.4) inset",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a lead brief<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
 
 </div>
 </div>
-<div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid var(--bw-rule)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",opacity:".55"}}>
+<div style={{display:"flex",gap:"44px",flexWrap:"wrap",borderTop:"1px solid rgba(255,255,250,.28)",paddingTop:"22px",font:"500 11px/1.6 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",opacity:".82"}}>
 <span>Client sources the leads</span><span>Any CRM with API</span><span>Automated at scale</span>
+</div>
 </div>
 </div>
 </section>

@@ -508,3 +508,24 @@ h2 {
 @media (max-width: 1500px) {
   [data-bw-sales-hero-video] { object-position: 0% center !important; }
 }
+
+/* ── lead-detective hero image: keep text off the illustration ───────────────
+   A flat vector illustration with a razor-clean vertical split -- pure black
+   0-50%, a rust/orange "spotlight singling one figure out of a lineup" scene
+   50-100% -- measured directly on the source (brightness crosses the safe
+   threshold at exactly x=50.0%, no gradient or texture to account for).
+
+   Even a clean 50% source split isn't automatically safe once real hero
+   height is factored in: margin with object-position:right is already
+   negative (-1px) at 1440px and gets worse from there, recovering only
+   slowly as viewport widens (+13px per +40px width) before plateauing
+   around +80px past ~1700px. Breakpoint sits at 1700px rather than
+   somewhere in that thin recovering range; object-position:0% below it
+   holds 161px+ margin at every width down to 320px. Confirmed 1700/1701
+   land on opposite sides of the switch, both at +82px.
+
+   !important for the same reason as the other hero-media rules: overriding
+   the element's own inline object-position needs it regardless of specificity. */
+@media (max-width: 1700px) {
+  [data-bw-lead-hero-photo] { object-position: 0% center !important; }
+}
