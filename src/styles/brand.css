@@ -486,3 +486,25 @@ h2 {
 @media (max-width: 700px) {
   [data-bw-hero-video] { object-position: 0% center !important; }
 }
+
+/* ── b2b-answer-engine hero video: keep text off the search mockup ───────────
+   The video is a dark Google-search UI mockup (a typing search box, autocomplete
+   suggestions) sitting right-of-centre against a black ground -- overall much
+   dimmer than the previous two hero videos (peak brightness ~45-51 vs 100-200+),
+   but still bright enough relative to a near-black ground to need the same
+   avoidance treatment. Full-loop sampling (14s duration, ~40 timestamps) put
+   the safe fraction at 52.5%, content reaching the source's right edge.
+
+   Unlike interactive-assets (which needed left-anchoring permanently) but like
+   brand-design and website-and-portfolio, this video DOES stay safe with
+   object-position:right at wide viewports -- but only barely: margin is +48px
+   at 1440px and dips to -2px at 1260px, not a comfortable cushion. Rather than
+   set the breakpoint at 1440 riding that thin margin, it sits at 1500px, which
+   measures +74px right at the boundary; object-position:0% below it holds
+   160px+ margin at every width down to 320px, confirmed on the real built page.
+
+   !important for the same reason as the other two hero-video rules: overriding
+   the element's own inline object-position needs it regardless of specificity. */
+@media (max-width: 1500px) {
+  [data-bw-sales-hero-video] { object-position: 0% center !important; }
+}
