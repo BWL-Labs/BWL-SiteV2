@@ -34,9 +34,6 @@
 .researchify-p9:hover { color:#FFFFFA !important; opacity:1 !important; transform:translateY(-1px) !important }
 .researchify-p10:active { transform:scale(.97) !important }
 .researchify-p11:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
-.researchify-p12:hover { background:var(--bw-fg) !important; color:var(--bw-bg) !important; opacity:1 !important }
-.researchify-p13:active { transform:scale(.97) !important }
-.researchify-p14:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }
 .researchify-p15:hover { background:var(--bw-fg) !important; color:var(--bw-bg) !important; opacity:1 !important }
 .researchify-p16:active { transform:scale(.97) !important }
 .researchify-p17:focus-visible { outline:2px solid #E6AF2E !important; outline-offset:3px !important }

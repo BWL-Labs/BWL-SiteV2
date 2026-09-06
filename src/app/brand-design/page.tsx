@@ -29,7 +29,7 @@ export default function BrandDesignPage() {
 <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#FFFFFA",animation:"bwBlink 2s steps(1,end) infinite"}}></span>Book a call</a></div>
 </div>
 </header>
-<section data-bw-hero="" data-bw-hero-photo-section="" style={{padding:"186px 0 0",position:"relative",overflow:"hidden"}}>
+<section data-bw-hero="" data-bw-hero-photo-section="" style={{padding:"186px 0 88px",position:"relative",overflow:"hidden"}}>
 <img data-bw-hero-photo="" src="/uploads/brand-hero-bg.webp" alt="" aria-hidden="true" decoding="async" fetchPriority="high" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover",objectPosition:"right center",zIndex:0}} />
 <span aria-hidden="true" style={{position:"absolute",inset:0,zIndex:0,background:"linear-gradient(to right, rgba(8,7,5,.35) 0%, rgba(8,7,5,0) 60%)"}}></span>
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px"}}>
@@ -41,7 +41,7 @@ export default function BrandDesignPage() {
 <p style={{margin:"0",maxWidth:"48ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",color:"#FFFFFA",opacity:".78",textWrap:"pretty"}}>Positioning, naming, identity systems, and the messaging spine everything else hangs from. Built to hold up in a boardroom and on a banner ad.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>
 <a className="brand-p9 brand-p10 brand-p11" data-bw-cta="" href="/contact" style={{display:"inline-flex",alignItems:"center",gap:"12px",padding:"18px 28px",borderRadius:"999px",color:"#080705",fontSize:"15px",fontWeight:"600",letterSpacing:"-.01em",backgroundColor:"#E6AF2E",boxShadow:"0 16px 34px -20px rgba(0,0,0,.65),0 1px 0 rgba(255,255,255,.4) inset",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>Start a brand brief<span style={{fontFamily:"'JetBrains Mono',monospace"}}>→</span></a>
-<a className="brand-p12 brand-p13 brand-p14" href="#included" style={{border:"1px solid rgba(255,255,250,.55)",color:"#FFFFFA",borderRadius:"999px",padding:"18px 28px",fontSize:"15px",fontWeight:"600",transition:"transform 140ms cubic-bezier(.2,.7,.2,1),background-color 200ms cubic-bezier(.2,.7,.2,1),border-color 200ms cubic-bezier(.2,.7,.2,1),color 200ms cubic-bezier(.2,.7,.2,1),opacity 200ms cubic-bezier(.2,.7,.2,1)"}}>What's included</a>
+
 </div>
 </div>
 </div>
