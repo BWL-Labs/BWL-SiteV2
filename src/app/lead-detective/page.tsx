@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/pages/lead.css";
+import { HeroHeadingReveal } from "@/components/ui/hero-heading-reveal";
 import { useLeadDetectivePageLogic } from "@/generated/lead.logic";
 import { LeadDetectiveDemo } from "@/components/lead-detective/lead-detective-demo";
 export default function LeadDetectivePage() {
@@ -35,7 +36,7 @@ export default function LeadDetectivePage() {
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"34px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 05 — Lead Detective</div>
-<h1 style={{margin:"0",maxWidth:"24ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Lead quality shouldn't be someone's manual job</h1>
+<HeroHeadingReveal style={{margin:"0",maxWidth:"24ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase"}}>Lead quality shouldn't be someone's manual job</HeroHeadingReveal>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"40px",flexWrap:"wrap",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
 <p style={{margin:"0",maxWidth:"52ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>Lead Detective ingests your leads, filters out the noise, and routes only the qualified ones straight into your CRM — automatically, at scale.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>

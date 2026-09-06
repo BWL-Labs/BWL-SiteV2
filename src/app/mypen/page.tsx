@@ -2,6 +2,7 @@
 
 import { Fragment } from "react";
 import "@/styles/pages/mypen.css";
+import { HeroHeadingReveal } from "@/components/ui/hero-heading-reveal";
 import { useMypenPageLogic } from "@/generated/mypen.logic";
 export default function MypenPage() {
   const v = useMypenPageLogic();
@@ -35,7 +36,7 @@ export default function MypenPage() {
 <div data-bw-pad="" style={{maxWidth:"1440px",margin:"0 auto",padding:"0 40px",display:"flex",flexDirection:"column",gap:"34px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#080705",display:"block"}}></span>// 06 — Mypen</div>
-<h1 style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>Cold email fails when it feels cold</h1>
+<HeroHeadingReveal style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase"}}>Cold email fails when it feels cold</HeroHeadingReveal>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-end",gap:"40px",flexWrap:"wrap",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
 <p style={{margin:"0",maxWidth:"56ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",opacity:".7",textWrap:"pretty"}}>We run AI research on every recipient, write a genuinely personalized email for each one, and send at scale through a dedicated infrastructure — so your outreach reads like it was written by someone who actually did their homework.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>

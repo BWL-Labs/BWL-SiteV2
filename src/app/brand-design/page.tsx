@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/pages/brand.css";
+import { HeroHeadingReveal } from "@/components/ui/hero-heading-reveal";
 import { useBrandDesignPageLogic } from "@/generated/brand.logic";
 export default function BrandDesignPage() {
   const v = useBrandDesignPageLogic();
@@ -36,7 +37,7 @@ export default function BrandDesignPage() {
 <div data-bw-hero-safe="" style={{maxWidth:"min(640px,50%)",display:"flex",flexDirection:"column",gap:"34px"}}>
 <div style={{display:"flex",alignItems:"center",gap:"10px",font:"500 12px/1 'JetBrains Mono',monospace",letterSpacing:".14em",textTransform:"uppercase",color:"#FFFFFA",animation:"bwRise .7s cubic-bezier(.16,1,.3,1) both"}}>
 <span style={{width:"7px",height:"7px",background:"#E6AF2E",display:"block"}}></span>// 01 — Brand design</div>
-<h1 style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",color:"#FFFFFA",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .06s both"}}>A brand that survives the sales call</h1>
+<HeroHeadingReveal style={{margin:"0",maxWidth:"22ch",fontWeight:"900",letterSpacing:"-.01em",lineHeight:".86",fontSize:"clamp(36px,6.3vw,104px)",textTransform:"uppercase",color:"#FFFFFA"}}>A brand that survives the sales call</HeroHeadingReveal>
 <div style={{display:"flex",flexDirection:"column",gap:"22px",alignItems:"flex-start",animation:"bwRise .8s cubic-bezier(.16,1,.3,1) .12s both"}}>
 <p style={{margin:"0",maxWidth:"48ch",fontSize:"18px",lineHeight:"1.5",fontWeight:"500",color:"#FFFFFA",opacity:".78",textWrap:"pretty"}}>Positioning, naming, identity systems, and the messaging spine everything else hangs from. Built to hold up in a boardroom and on a banner ad.</p>
 <div style={{display:"flex",gap:"14px",flexWrap:"wrap",alignItems:"center"}}>
